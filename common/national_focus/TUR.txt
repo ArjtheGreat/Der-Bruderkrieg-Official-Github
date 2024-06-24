@@ -5667,4 +5667,302 @@ shared_focus = {
     completion_reward = {
 
     }
+     INDUSTRY
+    shared_focus = {    
+    id = TUR_industry
+    icon = GFX_CHI_a_new_chinese_economy-27406
+    x = 40
+    y = 0
+    cost = 5
+    available_if_capitulated = yes
+    ai_will_do = {
+        factor = 100
+    }
+    available = {
+      }
+    completion_reward = {
+      add_political_power = 100
+    }
+    }
+    shared_focus = {
+    id = TUR_corporatism
+    icon = GFX_goal_generic_dangerous_deal
+    prerequisite = { focus = TUR_industry }
+	mutually_exclusive = { focus = Turkish_planned_eco }
+    x = -1
+    y = 1
+    relative_position_id = TUR_industry
+    cost = 5
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_RESEARCH }
+
+    completion_reward = {
+      add_war_support = 0.05
+	  add_ideas = generic_industrial_concern
+    }
+  }
+    shared_focus = {
+    id = Expansion_state_owned
+    icon = GFX_goal_landlordism
+    prerequisite = { focus = TUR_corporatism }
+    x = -1
+    y = 2
+    relative_position_id = TUR_industry
+    cost = 5
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_RESEARCH }
+
+    completion_reward = {
+      
+				49 = {
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 1
+				}
+				842 = {
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 1
+				}
+				804 = {
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 1
+			    add_ideas:0 SOV_first_five_year_plan_tax
+    }
+   }
+  } 
+    shared_focus = {
+    id = Labor_union_collab
+    icon = GFX_goal_generic_consumer_goods
+    prerequisite = { focus = Expansion_state_owned }
+    x = 0.5
+    y = 1
+    relative_position_id = Expansion_state_owned
+    cost = 5
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_RESEARCH }
+
+    completion_reward = {
+      add_war_support = 0.05
+	  add_ideas = SOV_crushing_uncooperative_unions
+    }
+  }
+    shared_focus = {
+    id = Public_Private_Partner
+    icon = GFX_goal_generic_construction2
+    prerequisite = { focus = Labor_union_collab }
+    x = 0.5
+    y = 1
+    relative_position_id = Labor_union_collab
+    cost = 5
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_RESEARCH }
+
+    completion_reward = {
+      add_war_support = 0.05
+    }
+  }
+    shared_focus = {
+    id = New_Housing_Act
+    icon = GFX_goal_generic_construction
+    prerequisite = { focus = Labor_union_collab }
+    x = 0.5
+    y = 1
+    relative_position_id = Labor_union_collab
+    cost = 5
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_RESEARCH }
+
+    completion_reward = {
+      		    835 = {
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 1
+				}
+				838 = {
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 1
+				}
+				349 = {
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 1
+    }
+  }
+  }
+    shared_focus = {
+    id = Turkish_planned_eco
+    icon = GFX_goal_generic_positive_trade_relations
+    prerequisite = { focus = TUR_industry }
+    mutually_exclusive = { focus = TUR_corporatism }
+    x = 1
+    y = 1
+    relative_position_id = TUR_industry
+    cost = 5
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    completion_reward = {
+    add_ideas = war_of_the_worlds
+    }
+  }
+    shared_focus = {
+    id = Five_year_plan
+    icon = GFX_goal_generic_production2
+    prerequisite = { focus = Turkish_planned_eco }
+    x = 0.5
+    y = 1
+    relative_position_id = Turkish_planned_eco
+    cost = 5
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    completion_reward = {
+	  add_ideas = SOV_first_five_year_plan_tax
+  }
+  }
+    shared_focus = {
+    id = Industrial_Automation
+    icon = GFX_goal_generic_construct_civilian
+    prerequisite = { focus = Five_year_plan }
+    x = 0.5
+    y = 1
+    relative_position_id = Five_year_plan
+    cost = 5
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    completion_reward = {
+      add_war_support = 0.05
+	        		    835 = {
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 1
+				}
+				838 = {
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 1
+				}
+				349 = {
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 1
+    }
+    }
+  }
+    shared_focus = {
+    id = Centr_Resourc_manage
+    icon = GFX_goal_rural_economy
+    prerequisite = { focus = Industrial_Automation }
+    x = 0.5
+    y = 1
+    relative_position_id = Industrial_Automation
+    cost = 5
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    completion_reward = {
+      add_ideas = SOV_collectivization_efforts_focus
+    }
+  }
+    shared_focus = {
+    id = Attract_immigrants
+    icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+    prerequisite = { focus = Centr_Resourc_manage focus = New_Housing_Act }
+    x = -1
+    y = 1
+    relative_position_id = Centr_Resourc_manage
+    cost = 5
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    completion_reward = {
+      add_war_support = 0.05
+	  add_manpower = 10000
+	            804 = {
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 1
+  }
+ }
+ }
+    shared_focus = {
+    id = Renewed_1520
+    icon = GFX_focus_generic_befriend_turkey
+    prerequisite = { focus = Attract_immigrants }
+    x = 0.5
+    y = 1
+    relative_position_id = Attract_immigrants
+    cost = 5
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    completion_reward = {
+      add_ideas = Industrialized
+  }
+  }
+    shared_focus = {
+    id = Highway_Moderniz
+    icon = GFX_focus_generic_improve_roads
+    prerequisite = { focus = TUR_industry }
+    x = -3
+    y = 1
+    relative_position_id = TUR_industry
+    cost = 5
+    ai_will_do = {
+      factor = 1
+    }
+    completion_reward = {
+      add_war_support = 0.05
+      804 = {
+	  add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+	  49 = {
+	  add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+	  342 = {
+	  add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+	  346 = {
+	  add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+	  804 = {
+	  add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+	  835 = {
+	  add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+    }
+  }
   }
