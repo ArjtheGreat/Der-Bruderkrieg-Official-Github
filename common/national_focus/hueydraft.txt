@@ -1,0 +1,1050 @@
+# shared_focus = {
+# 		id = USA_mavericks_new_deal
+# 		icon = GFX_goal_USA_mavericks_new_deal
+# 		x = 6
+# 		y = 0
+# 		cost = 1
+# 		available_if_capitulated = yes
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			country_event = USA_maverick_events.3 
+# 		}
+# 	}
+# 	shared_focus = {
+# 		id = USA_the_maverick_plan
+# 		icon = GFX_goal_USA_the_maverick_plan
+# 		x = 0
+# 		y = 1
+# 		cost = 1
+# 		available_if_capitulated = yes
+# 		prerequisite = {
+# 			focus = USA_mavericks_new_deal
+
+# 		}
+# 		relative_position_id = USA_mavericks_new_deal
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			country_event = USA_maverick_events.4
+# 		}
+# 	}
+# 	# shared_focus = {
+# 	# 	id = USA_hueys_dream_for_america
+# 	# 	icon = GFX_goal_USA_hueys_dream_for_america
+# 	# 	x = 0
+# 	# 	y = 1
+# 	# 	cost = 3
+# 	# 	available_if_capitulated = yes
+# 	# 	prerequisite = {
+# 	# 		focus = USA_the_maverick_plan
+
+# 	# 	}
+# 	# 	relative_position_id = USA_the_maverick_plan
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	}
+# 	# 	completion_reward = {
+# 	# 		add_political_power = 30
+# 	# 		random_owned_controlled_state = {
+# 	# 			add_extra_state_shared_building_slots = 1
+# 	# 		}
+# 	# 	}
+# 	# }
+# 	shared_focus = {
+# 		id = USA_ease_racial_laws
+# 		icon = GFX_goal_USA_ease_racial_laws
+# 		x = -1
+# 		y = 1
+# 		cost = 5
+# 		available_if_capitulated = yes
+# 		prerequisite = {
+# 			focus = USA_the_maverick_plan
+
+# 		}
+# 		# available = {
+# 		# 	USA_has_congress_majority = yes
+# 		# }
+# 		relative_position_id = USA_the_maverick_plan
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			swap_ideas = {
+# 				add_idea = USA_radical_reform_plan
+# 				remove_idea = USA_era_of_segregation
+# 			}
+# 		}
+# 	}
+# 	shared_focus = {
+# 		id = USA_anti_klan_laws
+# 		icon = GFX_goal_USA_anti_klan_laws
+# 		x = -1
+# 		y = 1
+# 		cost = 5
+# 		available_if_capitulated = yes
+# 		prerequisite = {
+# 			focus = USA_ease_racial_laws
+
+# 		}
+# 		relative_position_id = USA_ease_racial_laws
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = { 
+# 			country_event = USA_article_286.1
+# 		}
+# 	}
+	
+# 	shared_focus = {
+# 		id = USA_send_troops_to_secure_the_south
+# 		icon = GFX_goal_USA_send_troops_to_sundown_towns
+# 		x = 0
+# 		y = 1
+# 		cost = 6
+# 		available_if_capitulated = yes 
+# 		prerequisite = {
+# 			focus = USA_anti_klan_laws
+
+# 		}
+# 		available = {
+# 			has_idea = USA_south_in_shambles
+# 		}
+# 		relative_position_id = USA_anti_klan_laws
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			country_event = USA_maverick_events.6	
+# 		}
+# 	}
+# 	# shared_focus = {
+# 	# 	id = USA_antidiscrimination_organizations
+# 	# 	icon = GFX_goal_USA_anti_discrimination_speeches
+# 	# 	x = 0
+# 	# 	y = 1
+# 	# 	cost = 3
+# 	# 	available_if_capitulated = yes
+# 	# 	prerequisite = {
+# 	# 		focus = USA_send_troops_to_secure_the_south
+
+# 	# 	}
+# 	# 	relative_position_id = USA_send_troops_to_secure_the_south
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	}
+# 	# 	completion_reward = {
+# 	# 		swap_ideas = {
+# 	# 			add_idea = USA_high_racial_tensions_2
+# 	# 			remove_idea = USA_high_racial_tensions
+# 	# 		}
+# 	# 	}
+# 	# }
+
+# 	# shared_focus = {
+# 	# 	id = USA_battle_the_corrupt_and_greedy
+# 	# 	icon = GFX_goal_USA_battle_the_corrupt_and_greedy
+# 	# 	x = 2
+# 	# 	y = 1
+# 	# 	cost = 2
+# 	# 	available_if_capitulated = yes
+# 	# 	prerequisite = {
+# 	# 		focus = USA_the_maverick_plan
+	
+# 	# 	}
+# 	# 	relative_position_id = USA_the_maverick_plan
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	}
+# 	# 	completion_reward = {
+# 	# 		add_to_variable = {
+# 	# 			tooltip = USA_increase_progressive_senator_by_3
+# 	# 			global.usa_senate_seat_array^0 = 3
+# 	# 		}
+# 	# 		add_to_variable = {
+# 	# 			global.usa_senate_seat_array^1 = -1
+# 	# 		}
+# 	# 		add_to_variable = {
+# 	# 			global.usa_senate_seat_array^2 = -1
+# 	# 		}
+# 	# 		add_to_variable = {
+# 	# 			global.usa_senate_seat_array^3 = -1
+# 	# 		}
+			
+# 	# 	}
+# 	# }
+# 	shared_focus = {
+# 		id = USA_take_down_standard_oil
+# 		icon = GFX_goal_USA_take_down_standard_oil
+# 		x = 1
+# 		y = 1
+# 		cost = 2
+# 		available_if_capitulated = yes 
+# 		prerequisite = {
+# 			focus = USA_the_maverick_plan
+	
+# 		}
+# 		relative_position_id = USA_the_maverick_plan
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			country_event = USA_maverick_events.5
+# 		}
+# 	}
+	
+
+	
+
+# 	# shared_focus = {
+# 	# 	id = USA_restore_public_support_in_government
+# 	# 	icon = GFX_goal_USA_restore_public_trust_in_government
+# 	# 	x = 0
+# 	# 	y = 1
+# 	# 	cost = 3
+# 	# 	available_if_capitulated = yes
+# 	# 	prerequisite = {
+# 	# 		focus = USA_hueys_dream_for_america
+
+# 	# 	}
+# 	# 	relative_position_id = USA_hueys_dream_for_america
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	}
+# 	# 	completion_reward = {
+# 	# 		add_stability = 0.05
+# 	# 		add_political_power = 20
+# 	# 	}
+# 	# }
+# 	# shared_focus = {
+# 	# 	id = USA_free_polio_vaccines
+# 	# 	icon = GFX_goal_USA_free_polio_vaccines
+# 	# 	x = 0
+# 	# 	y = 1
+# 	# 	cost = 7
+# 	# 	available_if_capitulated = yes
+# 	# 	prerequisite = {
+# 	# 		focus = USA_restore_public_support_in_government 
+
+# 	# 	}
+# 	# 	# available = {
+# 	# 	# 	USA_has_congress_majority = yes
+# 	# 	# }
+# 	# 	relative_position_id = USA_restore_public_support_in_government
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	}
+# 	# 	completion_reward = {
+# 	# 		swap_ideas = {
+# 	# 			add_idea = USA_plagued_by_polio_2
+# 	# 			remove_idea = USA_plagued_by_polio
+# 	# 		}
+# 	# 	}
+# 	# }
+	
+# 	# shared_focus = {
+# 	# 	id = USA_literacy_programs
+# 	# 	icon = GFX_goal_USA_literacy_programs
+# 	# 	x = 1
+# 	# 	y = 1
+# 	# 	cost = 5
+# 	# 	available_if_capitulated = yes
+# 	# 	prerequisite = {
+# 	# 		focus = USA_free_polio_vaccines
+
+# 	# 	}
+# 	# 	prerequisite = {
+# 	# 		focus = USA_take_down_standard_oil
+# 	# 	}
+# 	# 	# available = {
+# 	# 	# 	USA_has_congress_majority = yes
+# 	# 	# }
+# 	# 	relative_position_id = USA_free_polio_vaccines
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	}
+# 	# 	completion_reward = {
+# 	# 		remove_ideas = USA_plagued_by_polio_2
+# 	# 	}
+# 	# }
+	
+# 	shared_focus = {
+# 		id = USA_fund_public_universities
+# 		icon = GFX_goal_USA_fund_public_universities
+# 		x = -1
+# 		y = 1
+# 		cost = 3
+# 		available_if_capitulated = yes
+# 		prerequisite = {
+# 			focus = USA_take_down_standard_oil
+# 			focus = USA_ease_racial_laws
+# 		}
+# 		# available = {
+# 		# 	USA_has_congress_majority = yes
+# 		# }
+# 		relative_position_id = USA_take_down_standard_oil
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			add_research_slot = 1
+# 		}
+# 	}
+# 	shared_focus = {
+# 		id = USA_republican_bipartisanship
+# 		icon = GFX_goal_USA_republican_bipartisanship
+# 		x = 0
+# 		y = 1
+# 		cost = 1
+# 		available_if_capitulated = yes
+# 		prerequisite = {
+# 			focus = USA_fund_public_universities
+	
+# 		}
+# 		relative_position_id = USA_fund_public_universities
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			add_to_variable = {
+# 				tooltip = USA_increase_progressive_senator_by_1
+# 				global.usa_senate_seat_array^0 = 1
+# 			}
+# 			add_to_variable = {
+# 				global.usa_senate_seat_array^2 = -1
+# 			}
+# 			modify_senate_seats = yes
+# 			add_to_variable = {
+# 				tooltip = USA_increase_progressive_senator_by_1
+# 				global.usa_senate_seat_array^0 = 1
+# 			}
+# 			add_to_variable = {
+# 				global.usa_senate_seat_array^2 = -1
+# 			}
+# 			modify_senate_seats = yes
+# 		}
+# 	}
+# 	##Walace
+# 	shared_focus = {
+# 		id = USA_the_wallace_plan
+# 		icon = GFX_goal_USA_the_wallace_plan
+# 		x = -5
+# 		y = 1
+# 		cost = 1
+# 		available_if_capitulated = yes
+# 		prerequisite = {
+# 			focus = USA_mavericks_new_deal
+
+# 		}
+# 		relative_position_id = USA_mavericks_new_deal
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			country_event = USA_wallace_events.1
+# 		}
+# 	}
+# 	shared_focus = {
+# 		id = USA_agricultural_relief_program
+# 		icon = GFX_goal_USA_agricultural_reform_bill
+# 		x = 0
+# 		y = 1
+# 		cost = 5
+# 		available_if_capitulated = yes
+# 		prerequisite = {
+# 			focus = USA_the_wallace_plan
+
+# 		}
+# 		# available = {
+# 		# 	USA_has_congress_majority = yes
+# 		# }
+# 		relative_position_id = USA_the_wallace_plan
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			country_event = USA_wallace_events.2
+# 		}
+# 	}
+
+# 	shared_focus = {
+# 		id = USA_farmer_tax_breaks
+# 		icon = GFX_goal_USA_farmer_tax_breaks
+# 		x = -1
+# 		y = 1
+# 		cost = 5
+# 		available_if_capitulated = yes
+# 		prerequisite = {
+# 			focus = USA_agricultural_relief_program
+
+# 		}
+# 		relative_position_id = USA_agricultural_relief_program
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			add_ideas = USA_farmer_tax_breaks
+# 		}
+# 	}
+
+# 	shared_focus = {
+# 		id = USA_help_southern_sharecroppers
+# 		icon = GFX_goal_USA_help_southern_sharecroppers 
+# 		x = 0
+# 		y = 1
+# 		cost = 5
+# 		available_if_capitulated = yes
+# 		prerequisite = {
+# 			focus = USA_farmer_tax_breaks
+
+# 		}
+		
+# 		relative_position_id = USA_farmer_tax_breaks
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			swap_ideas = {
+# 				add_idea = USA_dust_bowl_2
+# 				remove_idea = USA_dust_bowl
+# 			}
+# 		}
+# 	}
+
+# 	shared_focus = {
+# 		id = USA_reinforce_the_breadbasket_of_america
+# 		icon = GFX_goal_USA_reinforce_the_breadbasket
+# 		x = 0
+# 		y = 1
+# 		cost = 7
+# 		available_if_capitulated = yes
+# 		prerequisite = {
+# 			focus = USA_help_southern_sharecroppers
+
+# 		}
+# 		relative_position_id = USA_help_southern_sharecroppers
+# 		ai_will_do = { 
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			375 = {
+# 				add_building_construction = {
+# 				  type = infrastructure
+# 				  level = 1
+# 				  instant_build = yes
+# 				}
+# 			  }
+# 			  374 = {
+# 				add_building_construction = {
+# 				  type = infrastructure
+# 				  level = 1
+# 				  instant_build = yes
+# 				}
+# 			  }
+# 			  383 = {
+# 				add_building_construction = {
+# 				  type = infrastructure
+# 				  level = 1
+# 				  instant_build = yes
+# 				}
+# 			  }
+# 			  392 = {
+# 				add_building_construction = {
+# 				  type = infrastructure
+# 				  level = 1
+# 				  instant_build = yes
+# 				}
+# 			  }
+# 		}
+# 	}
+
+
+# 	shared_focus = {
+# 		id = USA_flood_the_dustbowl
+# 		icon = GFX_goal_USA_flood_the_dustbowl
+# 		x = 1
+# 		y = 1
+# 		cost = 5
+# 		available_if_capitulated = yes
+# 		prerequisite = {
+# 			focus = USA_agricultural_relief_program
+
+# 		}
+# 		relative_position_id = USA_agricultural_relief_program
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			add_ideas = USA_dust_bowl_reforms
+# 		}
+# 	}
+
+# 	shared_focus = {
+# 		id = USA_irrigation_for_the_southwestern_desert
+# 		icon = GFX_goal_USA_irrigation_for_south
+# 		x = 0
+# 		y = 1
+# 		cost = 7
+# 		available_if_capitulated = yes
+# 		prerequisite = {
+# 			focus = USA_flood_the_dustbowl
+
+# 		}
+# 		relative_position_id = USA_flood_the_dustbowl
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			376 = {
+# 				add_building_construction = {
+# 				  type = infrastructure
+# 				  level = 1
+# 				  instant_build = yes
+# 				}
+# 			  }
+# 			377 = {
+# 			add_building_construction = {
+# 				type = infrastructure
+# 				level = 1
+# 				instant_build = yes
+# 			}
+# 			}
+# 			swap_ideas ={
+# 				add_idea = USA_dust_bowl_reforms_2
+# 				remove_idea = USA_dust_bowl_reforms
+# 			}
+# 		} 
+# 	}
+
+# 	shared_focus = {
+# 		id = USA_agriculture_minimum_wage
+# 		icon = GFX_goal_USA_agricultural_minimum_wage
+# 		x = 0
+# 		y = 1
+# 		cost = 3
+# 		available_if_capitulated = yes
+# 		prerequisite = {
+# 			focus = USA_irrigation_for_the_southwestern_desert
+
+# 		}
+# 		relative_position_id = USA_irrigation_for_the_southwestern_desert
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			swap_ideas ={
+# 				add_idea = USA_dust_bowl_reforms_3
+# 				remove_idea = USA_dust_bowl_reforms_2
+# 			}
+# 		}
+# 	}
+
+
+# 	shared_focus = {
+# 		id = USA_economic_reform_plan
+# 		icon = GFX_goal_USA_economic_reform_plan
+# 		x = 1
+# 		y = 1
+# 		cost = 1
+# 		available_if_capitulated = yes
+# 		prerequisite = {
+# 			focus = USA_take_down_standard_oil
+	
+# 		}
+# 		relative_position_id = USA_take_down_standard_oil
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			country_event = USA_economic_reform_plan.1
+# 		}
+# 	}
+# 	# shared_focus = {
+# 	# 	id = USA_share_our_wealth
+# 	# 	icon = GFX_goal_USA_share_our_wealth
+# 	# 	x = 0
+# 	# 	y = 1
+# 	# 	cost = 5
+# 	# 	available_if_capitulated = yes
+# 	# 	prerequisite = {
+# 	# 		focus = USA_economic_reform_plan
+	
+# 	# 	}
+# 	# 	relative_position_id = USA_economic_reform_plan
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	}
+# 	# 	completion_reward = {
+# 	# 		swap_ideas = { 
+# 	# 			add_idea = USA_great_depression_2
+# 	# 			remove_idea =  USA_great_depression
+# 	# 		}
+# 	# 	}
+# 	# }
+	
+# 	shared_focus = {
+# 		id = USA_new_roads
+# 		icon = GFX_goal_USA_build_new_roads
+# 		x = 0
+# 		y = 1
+# 		cost = 5
+# 		available_if_capitulated = yes
+# 		prerequisite = {
+# 			focus = USA_economic_reform_plan
+	
+# 		}
+# 		relative_position_id = USA_economic_reform_plan
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			unlock_decision_category_tooltip = USA_maury_mavericks_road_plan
+
+# 			custom_effect_tooltip = USA_new_roads_tt
+# 		}
+# 	}
+	
+# 	# shared_focus = {
+# 	# 	id = USA_create_social_security
+# 	# 	icon = GFX_goal_USA_create_social_security
+# 	# 	x = 0
+# 	# 	y = 1
+# 	# 	cost = 6
+# 	# 	available_if_capitulated = yes
+# 	# 	prerequisite = {
+# 	# 		focus = USA_new_roads
+	
+# 	# 	}
+# 	# 	# available = {
+# 	# 	# 	USA_has_congress_majority = yes
+# 	# 	# }
+# 	# 	relative_position_id = USA_new_roads
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	}
+# 	# 	completion_reward = {
+# 	# 		country_event =  USA_economic_reform_plan.3
+# 	# 	}
+# 	# }
+	
+# 	# shared_focus = {
+# 	# 	id = USA_grub_for_the_poor
+# 	# 	icon = GFX_goal_USA_grub_for_the_poor
+# 	# 	x = 1
+# 	# 	y = 1
+# 	# 	cost = 2
+# 	# 	available_if_capitulated = yes
+# 	# 	prerequisite = {
+# 	# 		focus = USA_create_social_security
+	
+# 	# 	}
+# 	# 	prerequisite = {
+# 	# 		focus = USA_government_work_programs
+# 	# 	}
+# 	# 	relative_position_id = USA_create_social_security
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	}
+# 	# 	completion_reward = {
+# 	# 		country_event = USA_economic_reform_plan.4	
+# 	# 	}
+# 	# }
+	
+	
+# 	# shared_focus = {
+# 	# 	id = USA_lower_taxes_on_small_businesses
+# 	# 	icon = GFX_goal_USA_lower_taxes_on_small_businesses
+# 	# 	x = 1
+# 	# 	y = 1
+# 	# 	cost = 5
+# 	# 	available_if_capitulated = yes
+# 	# 	prerequisite = {
+# 	# 		focus = USA_share_our_wealth
+	
+# 	# 	}
+# 	# 	# available = {
+# 	# 	# 	USA_has_congress_majority = yes
+# 	# 	# }
+# 	# 	relative_position_id = USA_share_our_wealth
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	}
+# 	# 	completion_reward = {
+# 	# 		swap_ideas = {
+# 	# 			add_idea = USA_great_depression_3
+# 	# 			remove_idea =  USA_great_depression_2
+# 	# 		}
+# 	# 	}
+# 	# }
+	
+# 	# shared_focus = {
+# 	# 	id = USA_government_work_programs
+# 	# 	icon = GFX_goal_USA_government_work_programs
+# 	# 	x = 0
+# 	# 	y = 1
+# 	# 	cost = 5
+# 	# 	available_if_capitulated = yes
+# 	# 	prerequisite = {
+# 	# 		focus = USA_lower_taxes_on_small_businesses
+	
+# 	# 	}
+# 	# 	# available = {
+# 	# 	# 	USA_has_congress_majority = yes
+# 	# 	# }
+# 	# 	relative_position_id = USA_lower_taxes_on_small_businesses
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	}
+# 	# 	completion_reward = {
+# 	# 		swap_ideas = {
+# 	# 			add_idea = USA_great_depression_4
+# 	# 			remove_idea =  USA_great_depression_3
+# 	# 		}
+# 	# 		random_owned_controlled_state = {
+# 	# 			add_building_construction = {
+# 	# 				type = industrial_complex
+# 	# 				level = 1
+# 	# 				instant_build = yes
+# 	# 			}
+# 	# 			add_extra_state_shared_building_slots = 1
+# 	# 		}
+# 	# 	}
+# 	# }
+	
+# 	# shared_focus = {
+# 	# 	id = USA_jobs_for_the_middle_class
+# 	# 	icon = GFX_goal_USA_jobs_for_the_middle_class
+# 	# 	x = 2
+# 	# 	y = 1
+# 	# 	cost = 5
+# 	# 	available_if_capitulated = yes
+# 	# 	prerequisite = {
+# 	# 		focus = USA_lower_taxes_on_small_businesses
+	
+# 	# 	}
+# 	# 	relative_position_id = USA_lower_taxes_on_small_businesses
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	}
+# 	# 	completion_reward = {
+# 	# 		360 = {
+# 	# 			add_extra_state_shared_building_slots = 1
+# 	# 		}
+# 	# 		393 = {
+# 	# 			add_extra_state_shared_building_slots = 1
+# 	# 		}
+# 	# 		395 = {
+# 	# 			add_extra_state_shared_building_slots = 1
+# 	# 		}
+# 	# 		378 = {
+# 	# 			add_extra_state_shared_building_slots = 1
+# 	# 		}
+# 	# 		375 = {
+# 	# 			add_extra_state_shared_building_slots = 1
+# 	# 		}
+# 	# 		362 = {
+# 	# 			add_extra_state_shared_building_slots = 1
+# 	# 		}
+# 	# 	}
+# 	# }
+
+
+# 	shared_focus = {
+# 		id = USA_deify_the_common_man
+# 		icon = GFX_goal_USA_deify_the_common_man
+# 		x = -1
+# 		y = 1
+# 		cost = 5
+# 		available_if_capitulated = yes
+
+# 		prerequisite = {
+# 			focus = USA_agriculture_minimum_wage
+# 		}
+# 		prerequisite = {
+# 			focus = USA_reinforce_the_breadbasket_of_america
+# 		}
+# 		relative_position_id = USA_agriculture_minimum_wage
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			country_event = USA_wallace_events.3
+# 		} 
+# 	}
+
+# 	# shared_focus = {
+# 	# 	id = USA_work_with_the_unions
+# 	# 	icon = GFX_goal_USA_work_with_unions
+# 	# 	x = 0
+# 	# 	y = 1
+# 	# 	cost = 2
+# 	# 	available_if_capitulated = yes
+
+# 	# 	prerequisite = {
+# 	# 		focus = USA_grub_for_the_poor
+# 	# 	}
+		
+# 	# 	relative_position_id = USA_grub_for_the_poor
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	}
+# 	# 	completion_reward = {
+# 	# 		country_event = USA_economic_reform_plan.5
+# 	# 	}
+# 	# }
+
+
+# 	# shared_focus = {
+# 	# 	id = USA_an_educated_america
+# 	# 	icon = GFX_goal_USA_an_educated_america
+# 	# 	x = 1
+# 	# 	y = 1
+# 	# 	cost = 2
+# 	# 	available_if_capitulated = yes
+
+# 	# 	prerequisite = {
+# 	# 		focus = USA_fund_public_universities
+# 	# 	}
+# 	# 	prerequisite = {
+# 	# 		focus = USA_republican_bipartisanship
+# 	# 	}
+# 	# 	relative_position_id = USA_fund_public_universities
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	}
+# 	# 	completion_reward = {
+			
+# 	# 	}
+# 	# }
+# 	# shared_focus = {
+# 	# 	id = USA_no_more_slums
+# 	# 	icon = GFX_goal_USA_no_more_slums
+# 	# 	x = 1
+# 	# 	y = 1
+# 	# 	cost = 3
+# 	# 	available_if_capitulated = yes
+# 	# 	prerequisite = {
+# 	# 		focus = USA_work_with_the_unions
+# 	# 	}
+# 	# 	prerequisite = {
+# 	# 		focus = USA_republican_bipartisanship
+# 	# 	}
+	
+# 	# 	relative_position_id = USA_republican_bipartisanship
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	} 
+# 	# 	completion_reward = {
+# 	# 		swap_ideas = {
+# 	# 			add_idea = USA_great_depression_5
+# 	# 			remove_idea =  USA_great_depression_4
+# 	# 		}
+# 	# 	}
+# 	# }
+	
+	
+# 	# shared_focus = {
+# 	# 	id = USA_regulate_wall_street
+# 	# 	icon = GFX_goal_laise_faire
+# 	# 	x = -1
+# 	# 	y = 1
+# 	# 	cost = 3
+# 	# 	available_if_capitulated = yes
+# 	# 	prerequisite = {
+# 	# 		focus = USA_no_more_slums
+	
+# 	# 	}
+# 	# 	prerequisite = {
+# 	# 		focus = USA_an_educated_america
+# 	# 	}
+# 	# 	relative_position_id = USA_no_more_slums
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	}
+# 	# 	completion_reward = {
+# 	# 		swap_ideas = {
+# 	# 			add_idea = USA_great_depression_6
+# 	# 			remove_idea =  USA_great_depression_5
+# 	# 		}
+# 	# 		add_stability = 0.03
+# 	# 		add_political_power = 40
+# 	# 	}
+# 	# }
+	
+# 	# shared_focus = {
+# 	# 	id = USA_united_as_americans
+# 	# 	icon = GFX_goal_USA_united_as_americans
+# 	# 	x = 1
+# 	# 	y = 1
+# 	# 	cost = 2
+# 	# 	available_if_capitulated = yes
+# 	# 	prerequisite = {
+# 	# 		focus = USA_antidiscrimination_organizations
+	
+# 	# 	}
+# 	# 	prerequisite = {
+# 	# 		focus = USA_work_with_the_unions
+# 	# 	}
+# 	# 	relative_position_id = USA_antidiscrimination_organizations
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	}
+# 	# 	completion_reward = {
+# 	# 		country_event = USA_maverick_events.8	
+# 	# 	}
+# 	# }
+	
+# 	shared_focus = {
+# 		id = USA_the_american_dream_reborn
+# 		icon = GFX_goal_USA_the_american_dream_reborn
+# 		x = -1
+# 		y = 1
+# 		cost = 2
+# 		available_if_capitulated = yes
+# 		prerequisite = {
+# 			focus = USA_republican_bipartisanship
+	
+# 		}
+# 		prerequisite = {focus = USA_send_troops_to_secure_the_south }
+# 		prerequisite = {focus = USA_new_roads}
+# 		relative_position_id = USA_republican_bipartisanship
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			add_ideas = USA_the_american_dream_reborn	
+# 		}
+# 	}
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+
+# 	# shared_focus = {
+# 	# 	id = USA_the_end_of_prohibition
+# 	# 	icon = GFX_goal_USA_end_of_prohibition
+# 	# 	x = 2
+# 	# 	y = 1
+# 	# 	cost = 2
+# 	# 	available_if_capitulated = yes
+# 	# 	prerequisite = {
+# 	# 		focus = USA_deify_the_common_man
+	
+# 	# 	}
+# 	# 	prerequisite = {
+# 	# 		focus = USA_antidiscrimination_organizations
+# 	# 	}
+# 	# 	relative_position_id = USA_deify_the_common_man
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	} 
+# 	# 	completion_reward = {
+# 	# 		remove_ideas = USA_prohibition
+# 	# 		USA_update_nyc_mafia_var = yes
+# 	# 		custom_effect_tooltip = USA_the_end_of_prohibition_tt
+
+# 	# 		358 = {
+# 	# 			add_dynamic_modifier = {
+# 	# 				modifier = USA_mafia_effect_var
+# 	# 			}
+# 	# 		}
+
+# 	# 		unlock_decision_category_tooltip = USA_the_mafia
+# 	# 	}
+# 	# }
+
+# 	# shared_focus = {
+# 	# 	id = USA_a_thriving_and_supporting_hollywood
+# 	# 	icon = GFX_goal_USA_a_thriving_and_supportive_hollywood
+# 	# 	x = 1
+# 	# 	y = 1
+# 	# 	cost = 2
+# 	# 	available_if_capitulated = yes
+# 	# 	prerequisite = {
+# 	# 		focus = USA_the_end_of_prohibition
+			
+# 	# 	}
+# 	# 	prerequisite = {focus = USA_united_as_americans}
+# 	# 	relative_position_id = USA_the_end_of_prohibition
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	}
+# 	# 	completion_reward = {
+# 	# 		country_event = USA_maverick_events.9
+# 	# 	}
+# 	# }
+# 	shared_focus = {
+# 		id = USA_every_american_a_maverick
+# 		icon = GFX_goal_USA_god_bless_the_kingfish
+# 		x = 1
+# 		y = 1
+# 		cost = 2
+# 		available_if_capitulated = yes
+# 		prerequisite = {
+# 			focus = USA_republican_bipartisanship
+	
+# 		}
+# 		prerequisite = {focus = USA_send_troops_to_secure_the_south }
+# 		prerequisite = {focus = USA_new_roads}
+# 		relative_position_id = USA_republican_bipartisanship
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+		
+# 			swap_ruler_traits = { remove = USA_americas_maverick add = USA_americas_maverick_2 }
+# 		}
+# 	}
+		
+
+# 	# shared_focus = {
+# 	# 	id = USA_large_and_prosperous_middle_class
+# 	# 	icon = GFX_goal_USA_large_and_prosperous_middle_class
+# 	# 	x = 1
+# 	# 	y = 1
+# 	# 	cost = 2
+# 	# 	available_if_capitulated = yes
+# 	# 	prerequisite = {
+# 	# 		focus = USA_a_thriving_and_supporting_hollywood
+	
+# 	# 	}
+# 	# 	prerequisite = {focus = USA_the_american_dream_reborn}
+# 	# 	prerequisite = {focus = USA_regulate_wall_street}
+# 	# 	relative_position_id = USA_a_thriving_and_supporting_hollywood
+# 	# 	ai_will_do = {
+# 	# 		factor = 100
+# 	# 	}
+# 	# 	completion_reward = {
+# 	# 		remove_ideas = USA_great_depression_6
+# 	# 	}
+# 	# }
+# 	shared_focus = {
+# 		id = USA_a_new_dawn_for_america
+# 		icon = GFX_goal_USA_a_new_dawn_for_america
+# 		x = -1
+# 		y = 1
+# 		cost = 5
+# 		available_if_capitulated = yes
+	
+# 		prerequisite = {
+# 			focus = USA_every_american_a_maverick
+# 		}
+# 		prerequisite = {
+# 			focus = USA_the_american_dream_reborn
+# 		}
+# 		relative_position_id = USA_every_american_a_maverick
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		completion_reward = {
+# 			country_event = USA_maverick_events.10
+# 		}
+# 	}

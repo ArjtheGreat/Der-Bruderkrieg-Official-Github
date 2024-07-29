@@ -1,6 +1,0 @@
-spriteTypes = {
-	spriteType = {
-		name = "GFX_ingameclock_bg"
-		texturefile = "gfx/interface/ingameclock_bg.dds"
-	}
-}

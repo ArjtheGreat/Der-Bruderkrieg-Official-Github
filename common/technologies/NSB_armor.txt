@@ -19,8 +19,6 @@ technologies = {
 	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
 	gwtank_chassis = { #Leichttraktor
 
-		show_equipment_icon = yes
-
 		enable_equipments = {
 			light_tank_chassis_0
 			medium_tank_chassis_0
@@ -144,9 +142,7 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
-			mio_cat_tech_light_armor_and_modules
 		}
 	}
 
@@ -182,14 +178,6 @@ technologies = {
 					}
 
 					load_oob = "unlock_tanks"
-				}
-
-				if = { #Italian templates
-					limit = {
-						original_tag = ITA
-						has_completed_focus = ITA_italian_tankettes
-					}
-					ITA_add_improved_light_tank_templates = yes
 				}
 			}
 
@@ -234,9 +222,7 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
-			mio_cat_tech_light_armor_and_modules
 		}
 	}
 
@@ -273,11 +259,9 @@ technologies = {
 			modifier = {
 				factor = 2
 				is_major = yes
-				NOT = {
-					AND = {
-						tag = JAP
-						num_of_military_factories < 50
-					}
+				not = {
+					tag = JAP
+					num_of_military_factories < 50
 				}
 			}
 			modifier = {
@@ -289,12 +273,6 @@ technologies = {
 			modifier = {
 				tag = SOV
 				factor = 3
-			}
-			modifier = {
-				factor = 3
-				# Matilda II was designed and entered production in 1937
-				tag = ENG
-				date > "1936.9.1"
 			}
 
 			modifier = {
@@ -313,21 +291,9 @@ technologies = {
 			}
 		}
 
-		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					has_completed_focus = ITA_italian_tankettes
-				}
-				ITA_add_improved_light_tank_templates = yes
-			}
-		}
-
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
-			mio_cat_tech_light_armor_and_modules
 		}
 	}
 
@@ -389,9 +355,7 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
 			tp_tech
-			mio_cat_tech_light_armor_and_modules
 		}
 	}
 
@@ -451,9 +415,7 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
 			tp_tech
-			mio_cat_tech_light_armor_and_modules
 		}
 	}
 
@@ -478,7 +440,7 @@ technologies = {
 			factor = 0.5
 			modifier = {
 				is_major = no
-				factor = 2  # Minors prefer light tanks
+				factor = 2
 			}
 
 			modifier = {
@@ -499,9 +461,7 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
-			mio_cat_tech_light_armor_and_modules
 		}
 	}
 
@@ -563,11 +523,9 @@ technologies = {
 			modifier = {
 				factor = 2
 				is_major = yes
-				NOT = {
-					AND = {
-						tag = JAP
-						num_of_military_factories < 50
-					}
+				not = {
+					tag = JAP
+					num_of_military_factories < 50
 				}
 				date > "1938.1.1"
 			}
@@ -575,12 +533,6 @@ technologies = {
 				tag = SOV
 				factor = 1.5
 			}
-
-			modifier = {
-				factor = 1.1
-				date > "1939.1.1"
-			}
-
 			modifier = {
 				factor = 1.1
 				date > "1940.1.1"
@@ -605,9 +557,7 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
-			mio_cat_tech_medium_armor_and_modules
 		}
 	}
 
@@ -635,18 +585,6 @@ technologies = {
 			position = { x = 2 y = @1940 }
 		}
 
-		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					OR = {
-						has_completed_focus = ITA_end_fiat_ansaldo_duopoly
-						has_completed_focus = ITA_modernize_ansaldo_facilities
-					}
-				}
-				ITA_add_improved_medium_tank_templates = yes
-			}
-		}
 
 		ai_will_do = {
 			factor = 3
@@ -654,11 +592,9 @@ technologies = {
 			modifier = {
 				factor = 2
 				is_major = yes
-				NOT = {
-					AND = {
-						tag = JAP
-						num_of_military_factories < 50
-					}
+				not = {
+					tag = JAP
+					num_of_military_factories < 50
 				}
 			}
 			modifier = {
@@ -693,9 +629,7 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
-			mio_cat_tech_medium_armor_and_modules
 		}
 	}
 
@@ -721,15 +655,6 @@ technologies = {
 			position = { x = 2 y = @1943 }
 		}
 
-		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					has_completed_focus = ITA_ferrea_mole_ferreo_cuore
-				}
-				ITA_add_advanced_medium_tank_templates = yes
-			}
-		}
 
 		ai_will_do = {
 			factor = 1
@@ -752,9 +677,7 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
-			mio_cat_tech_medium_armor_and_modules
 		}
 	}
 
@@ -799,9 +722,7 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
-			mio_cat_tech_medium_armor_and_modules
 		}
 	}
 
@@ -888,9 +809,7 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
-			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -921,18 +840,6 @@ technologies = {
 			position = { x = 5 y = @1940 }
 		}
 
-		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					OR = {
-						has_completed_focus = ITA_end_fiat_ansaldo_duopoly
-						has_completed_focus = ITA_modernize_ansaldo_facilities
-					}
-				}
-				ITA_add_improved_heavy_tank_templates = yes
-			}
-		}
 
 		ai_will_do = {
 			factor = 0.8
@@ -959,9 +866,7 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
-			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -988,15 +893,6 @@ technologies = {
 			position = { x = 5 y = @1943 }
 		}
 
-		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					has_completed_focus = ITA_ferrea_mole_ferreo_cuore
-				}
-				ITA_add_advanced_heavy_tank_templates = yes
-			}
-		}
 
 		ai_will_do = {
 			factor = 0.8
@@ -1019,9 +915,7 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
-			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -1049,31 +943,6 @@ technologies = {
 			position = { x = 8 y = @1943 }
 		}
 
-		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-				}
-				if = {
-					limit = {
-						has_completed_focus = ITA_capo_supremo
-					}
-					ITA_add_il_duce_sh_tank_template_and_production = yes
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = ITA_modern_musculus
-					}
-					ITA_add_modern_musculus_sh_tank_template_and_production = yes
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = ITA_a_time_for_war
-					}
-					ITA_add_hand_of_god_sh_tank_template_and_production = yes
-				}
-			}
-		}
 
 		ai_will_do = {
 			factor = 0 # Hitler cries on the inside
@@ -1081,9 +950,7 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
-			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -1139,10 +1006,6 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -1198,10 +1061,6 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -1255,10 +1114,6 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -1306,10 +1161,6 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -1361,10 +1212,6 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -1418,10 +1265,6 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -1473,10 +1316,6 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -1522,38 +1361,6 @@ technologies = {
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
-
-	NOR_rikstanken_tech = {
-
-		allow = { always = no } #Only obtained through Rikstanken Event
-
-		enable_equipment_modules = {
-			NOR_rikstanken_turret
-			NOR_tank_rikstanken_armor
-		}
-
-		path = {
-		}
-
-		on_research_complete = {
-		
-		}
-
-		show_effect_as_desc = no
-
-		research_cost = 1
-		start_year = 1936
-
-
-		categories = {
-			armor
-		}
-	}
-
 }

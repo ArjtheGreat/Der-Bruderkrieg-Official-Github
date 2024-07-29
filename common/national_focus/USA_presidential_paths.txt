@@ -655,12 +655,6 @@ focus_tree = {
 				}
 				usa_maverick_modify_electoral_college_effect = yes
 			}
-			hidden_effect = {
-				news_event = {
-					id = USA_maverick_events.2
-					days = 300
-				}
-			}
 		}
 	}
 
@@ -881,12 +875,6 @@ focus_tree = {
 			377 = {
 				usa_borah_modify_electoral_college_effect = yes
 			}
-			hidden_effect = {
-				news_event = {
-					id = USA_shipstead_victory.1
-					days = 300
-				}
-			}
 		}
 	}
 
@@ -1062,13 +1050,6 @@ focus_tree = {
 					has_state_category = rural
 				}
 				usa_smith_modify_electoral_college_effect = yes
-			}
-
-			hidden_effect = {
-				country_event = {
-					id = USA_smith_victory.1
-					days = 300
-				}
 			}
 		}
 	}

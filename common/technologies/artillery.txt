@@ -35,7 +35,6 @@ technologies = {
 
 		categories = {
 			artillery
-			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
@@ -107,16 +106,10 @@ technologies = {
 
 		categories = {
 			artillery
-			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
 			factor = 2
-
-			modifier = { #This is needed for a lot of tank designs
-				factor = 2.0
-				is_major = yes
-			}
 
 			modifier = {
 				factor = 2
@@ -162,7 +155,6 @@ technologies = {
 
 		categories = {
 			artillery
-			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
@@ -233,7 +225,6 @@ technologies = {
 
 		categories = {
 			artillery
-			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
@@ -302,7 +293,6 @@ technologies = {
 
 		categories = {
 			artillery
-			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
@@ -345,7 +335,6 @@ technologies = {
 
 		categories = {
 			artillery
-			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
@@ -411,7 +400,6 @@ technologies = {
 
 		categories = {
 			artillery
-			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
@@ -495,7 +483,6 @@ technologies = {
 
 		categories = {
 			rocketry
-			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -539,7 +526,6 @@ technologies = {
 
 		categories = {
 			rocketry
-			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -583,7 +569,6 @@ technologies = {
 
 		categories = {
 			rocketry
-			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -618,7 +603,6 @@ technologies = {
 
 		categories = {
 			rocketry
-			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -664,7 +648,7 @@ technologies = {
 					tag = CHI
 					tag = PRC
 					tag = XSM
-					tag = SIK
+					tag = XNJ
 					tag = GXC
 					tag = SHX
 					tag = YUN
@@ -689,7 +673,6 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_air
-			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -741,7 +724,6 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_air
-			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -793,7 +775,6 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_air
-			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -849,7 +830,6 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_air
-			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -901,7 +881,6 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_air
-			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -949,7 +928,6 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_air
-			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -978,7 +956,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			base = 1
+			factor = 1
 
 			modifier = {
 				factor = 0.2
@@ -987,7 +965,7 @@ technologies = {
 					tag = CHI
 					tag = PRC
 					tag = XSM
-					tag = SIK
+					tag = XNJ
 					tag = GXC
 					tag = SHX
 					tag = YUN
@@ -997,15 +975,11 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_war_with = SOV
+						has_War_with = SOV
 						has_war_with = USA
 					}
 				}
 				factor = 0.5
-			}
-			modifier = { #This is needed for a lot of tank designs
-				factor = 4.0
-				is_major = yes
 			}
 			modifier = {
 				factor = 2
@@ -1037,7 +1011,6 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
-			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -1131,7 +1104,6 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
-			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -1209,7 +1181,6 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
-			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -1306,7 +1277,6 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
-			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -1398,7 +1368,6 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
-			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -1463,56 +1432,6 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
-			mio_cat_all_artillery_equipment
-		}
-	}
-
-	SWE_bofors_antitank_gun = {
-
-		research_cost = 1
-
-		# only from focus!!! Bofors anti tank gun ##### 
-		allow = {
-			always = no
-		}
-
-		anti_tank = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		mot_anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		super_heavy_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		modern_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-
-		categories = {
-			cat_anti_tank
-			artillery
-			mio_cat_all_artillery_equipment
 		}
 	}
 

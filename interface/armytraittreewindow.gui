@@ -191,12 +191,30 @@ guiTypes = {
 			format = center
 			text = "7"
 		}
-
-		positionType = {
-			name = "leader_xp_progressbar_position"
+		
+		iconType = {
+			name = "leader_exp_bg"
 			position = { x = 84 y = 148 }
+			spriteType ="GFX_leader_exp_bg"		
 		}
-
+		
+		iconType = {
+			name = "leader_exp_fg_mid"
+			position = { x = 84 y = 147 }
+			spriteType ="GFX_leader_exp_fg_mid"
+		}
+		
+		iconType = {
+			name = "leader_exp_fg_begin"
+			position = { x = 84 y = 148 }
+			spriteType ="GFX_leader_exp_fg_begin"		
+		}
+		
+		iconType = {
+			name = "leader_exp_fg_end"
+			position = { x = 104 y = 148 }
+			spriteType ="GFX_leader_exp_fg_end"		
+		}
 		containerWindowType = {
 			name = "advisor_traits_window"
 			position = {x=0 y=0}
@@ -253,8 +271,6 @@ guiTypes = {
 			size = {width=265 height=500}
 			Orientation = upper_left
 			clipping = yes
-			scroll_wheel_factor = 40
-			smooth_scrolling = yes
 			
 			containerWindowType = {
 				name = "personal_traits_title"
@@ -603,6 +619,7 @@ guiTypes = {
 				}					
 			}
 		}
+
 		
 		containerWindowType = {
 			name = "regular_traits_window"
@@ -646,28 +663,31 @@ guiTypes = {
 				name = "regular_traits"
 				position = {x=294 y=110}
 				size = {width=636 height=640}
+				Orientation = upper_left
 				clipping = yes
 				
 				drag_scroll = { left middle }
 				verticalScrollbar = "right_vertical_slider"
 				scroll_wheel_factor = 40
 				smooth_scrolling = yes
-
+				
+				containerWindowType = {
+					name = "lines"
+					position = {x=0 y=0}
+					
+				}
+				
+				iconType = {
+					name = "scroll_fixer"
+					position = { x = 50 y = 0 }
+					quadTextureSprite ="GFX_tiled_window_transparent"		
+				}
+				
 				background = {
 					name = "Background"
 					quadTextureSprite ="GFX_tiled_window_transparent"
 				}
-
-				containerWindowType = {
-					name = "tree"
-					position = {x=0 y=0}
-					clipping = no
-
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_window_transparent"
-					}
-				}
+			
 			}
 			instantTextboxType = {
 			name = "terrain_traits_text"
@@ -690,18 +710,31 @@ guiTypes = {
 				verticalScrollbar = "right_vertical_slider"
 				scroll_wheel_factor = 40
 				smooth_scrolling = yes
-
+				
 				containerWindowType = {
-					name = "tree"
+					name = "lines"
 					position = {x=0 y=0}
 				}
-
+				
+				iconType = {
+					name = "scroll_fixer"
+					position = { x = 50 y = 0 }
+					quadTextureSprite ="GFX_tiled_window_transparent"		
+				}
+				
 				background = {
 					name = "Background"
 					quadTextureSprite ="GFX_tiled_window_transparent"
 				}
 			}
 		}
+		
+
+		
+		
+		
+
+
 		
 		buttonType = {
 			name = "close_button"

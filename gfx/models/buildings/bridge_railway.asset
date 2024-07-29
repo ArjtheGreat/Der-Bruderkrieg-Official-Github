@@ -1,4 +1,0 @@
-entity = {
-	name = "bridge_railway_entity"
-	pdxmesh = "bridge_railway_mesh"
-}

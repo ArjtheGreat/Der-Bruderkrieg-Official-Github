@@ -7,6 +7,12 @@ characters={
 				small="gfx/interface/advisors/ENG/ENG_winston_churchill.dds"
 			}
 		}
+		country_leader={
+			#desc="POLITICS_WINSTON_CHURCHILL_DESC"
+			ideology=democratic_conservative
+			expire="1965.1.1.1"
+			id=-1
+		}
 		advisor={
 			slot = head_of_government
 			idea_token = winston_churchill
@@ -90,46 +96,16 @@ characters={
 		country_leader={
 			desc="ALBERT_VICTOR"
 			ideology=democratic_conservative
-			traits={ paranoid_monarch }
-			expire="1938.1.1.1"
-			id=-1
-		}
-		country_leader={
-			desc="ALBERT_VICTOR"
-			ideology=democratic_liberal
-			traits={ paranoid_monarch }
-			expire="1938.1.1.1"
-			id=-1
-		}
-		country_leader={
-			desc="ALBERT_VICTOR"
-			ideology=social_democratic
-			traits={ paranoid_monarch }
-			expire="1938.1.1.1"
-			id=-1
-		}
-		country_leader={
-			desc="ALBERT_VICTOR"
-			ideology=authoritarian_conservatism
-			traits={ paranoid_monarch }
+			traits={ unpopular_monarch }
 			expire="1938.1.1.1"
 			id=-1
 		}
 	}
-	ENG_henry_ix={
-		name="Henry IX"
+	ENG_oswald_mosley={
+		name="Oswald Mosley"
 		portraits={
 			civilian={
-				large="gfx/leaders/ENG/HenryIX.dds"
-			}
-		}
-		
-	}
-	ENG_harold_hamsworth={
-		name="Harold Hamsworth"
-		portraits={
-			civilian={
-				large="gfx/leaders/ENG/HaroldHamsworth.dds"
+				large="gfx/leaders/ENG/Portrait_Britain_Oswald_Mosley.dds"
 			}
 		}
 		country_leader={
