@@ -17,18 +17,15 @@
 
 technology_sharing_group = {
 
-	id = slavic_research
-	name = slavic_research_name
-	desc = slavic_research_desc
+	id = comintern_research
+	name = comintern_research_name
+	desc = comintern_research_desc
 	picture = GFX_technology_sharing_default
     
 	research_sharing_per_country_bonus = 0.1
 
     available = {
         is_in_faction_with = SOV
-		SOV = {
-			has_completed_focus = SOV_Aid_Fabrika_Oruzja_i_Municiie_Uzice
-		}
     }
 
 }
@@ -79,6 +76,22 @@ technology_sharing_group = {
 
 }
 
+
+technology_sharing_group = {
+
+	id = NORDIC_research_tech_sharing  #NORDIC_NTH: Write Description and image
+	name = NORDIC_research_tech_sharing_name
+	desc = us_research_desc
+	picture = GFX_technology_sharing_default 
+
+	research_sharing_per_country_bonus = 0.05
+
+    available = {
+        NORDIC_basic_joint_trigger = yes 
+        #has_completed_focus = NORDIC_nordic_research
+    }
+
+}
 
 technology_sharing_group = {
 
@@ -498,9 +511,10 @@ technology_sharing_group = {
 	categories = { industry electronics nuclear rocketry }
 
 	available = {
-		OR = {
-			original_tag = SOV
-		}
+		#OR = {
+		#	original_tag = SOV
+		#	SOV_is_valid_academy_of_sciences_target = yes
+		#}
 	}
 }
 
@@ -516,9 +530,10 @@ technology_sharing_group = { #Alternative Soviet Academy of Sciences for non com
 	categories = { industry electronics nuclear rocketry }
 
 	available = {
-		OR = {
-			original_tag = SOV
-		}
+		#OR = {
+		#	original_tag = SOV
+		#	SOV_is_valid_academy_of_sciences_target = yes
+		#}
 	}
 }
 
@@ -554,4 +569,217 @@ technology_sharing_group = { #Non-commie version of the COMECON
 			is_subject_of = SOV
 		}
 	}
+}
+
+### BBA ###
+
+technology_sharing_group = {
+
+	id = ITA_naval_cooperation_program_research_group
+	name = ITA_naval_cooperation_program_research_group_name
+	desc = ITA_naval_cooperation_program_research_group_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.2
+
+	categories = { naval_equipment }
+
+	available = {
+		OR = {
+			original_tag = ITA
+			is_in_faction_with = ITA
+		}
+	}
+}
+
+technology_sharing_group = {
+
+	id = ITA_program_for_scientific_cooperation
+	name = ITA_program_for_scientific_cooperation_name
+	desc = ITA_program_for_scientific_cooperation_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.15
+
+	available = {
+		OR = {
+			original_tag = ITA
+			is_in_faction_with = ITA
+		}
+	}
+}
+
+technology_sharing_group = {
+
+	id = ITA_anglo_italian_tech_sharing
+	name = ITA_anglo_italian_tech_sharing_name
+	desc = ITA_anglo_italian_tech_sharing_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.15
+
+	categories = { naval_equipment air_equipment  }
+
+    available = {
+        NOT = { has_war_with = ENG }
+    }
+}
+
+technology_sharing_group = {
+
+	id = ITA_franco_italian_tech_sharing
+	name = ITA_franco_italian_tech_sharing_name
+	desc = ITA_franco_italian_tech_sharing_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.15
+
+	categories = { armor infantry_weapons }
+
+    available = {
+        NOT = { has_war_with = FRA }
+	}
+}
+
+technology_sharing_group = {
+
+	id = ITA_italian_hegemony_program
+	name = ITA_italian_hegemony_program_name
+	desc = ITA_italian_hegemony_program_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.2
+
+	available = {
+		OR = {
+			original_tag = ITA
+			is_subject_of = ITA
+		}
+	}
+}
+
+
+#### AAT ####
+
+technology_sharing_group = {
+
+	id = FIN_joint_research_and_development_program
+	name = FIN_joint_research_and_development_program_name
+	desc = FIN_joint_research_and_development_program_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.2
+
+	available = {
+		OR = {
+			AND = {
+				original_tag = FIN
+				OR = {
+					has_idea = FIN_the_lone_wolf
+					is_in_faction = yes
+				}
+			}
+			is_in_faction_with = FIN
+			overlord = {
+				original_tag = FIN
+				has_idea = FIN_the_lone_wolf
+			}
+		}
+	}
+}
+
+technology_sharing_group = {
+
+	id = DEN_danish_partnership_tech_sharing
+	name = DEN_danish_partnership_tech_sharing
+	desc = DEN_danish_partnership_tech_sharing_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+       OR = {
+			AND = {
+				original_tag = DEN
+				is_subject = no
+				NOT = {
+					has_war_with = var:DEN.DEN_guaranteeing_nation
+				}
+			}
+			AND = {
+				tag = var:DEN.DEN_guaranteeing_nation
+				is_subject = no
+				NOT = {
+					var:DEN.DEN_guaranteeing_nation = {	has_war_with = DEN }
+				}
+			}
+		}
+	}
+}
+
+technology_sharing_group = {
+
+	id = DEN_danish_military_cooperation_program
+	name = DEN_danish_military_cooperation_program
+	desc = DEN_danish_military_cooperation_program_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.15
+
+    available = {
+       OR = {
+			AND = {
+				original_tag = DEN
+				is_subject = no
+				NOT = {
+					has_war_with = var:DEN.DEN_allied_nation
+				}
+			}
+			AND = {
+				tag = var:DEN.DEN_allied_nation
+				is_subject = no
+				NOT = {
+					var:DEN.DEN_allied_nation = { has_war_with = DEN }
+				}
+			}
+		}
+	}
+}
+
+technology_sharing_group = {
+
+	id = DEN_german_danish_joint_military_program
+	name = DEN_german_danish_joint_military_program
+	desc = DEN_german_danish_joint_military_program_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.2
+
+	categories = { armor air_equipment naval_equipment }
+
+    available = {
+		OR = {
+			original_tag = DEN
+			is_in_faction_with = DEN
+		}
+	}
+}
+
+technology_sharing_group = {
+
+	id = DEN_northern_technological_advancements_group
+	name = DEN_northern_technological_advancements_group
+	desc = DEN_northern_technological_advancements_group_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.15
+
+	available = {
+		OR = {
+			original_tag = DEN
+			is_in_faction_with = DEN
+		}
+	}
+}
+
 }

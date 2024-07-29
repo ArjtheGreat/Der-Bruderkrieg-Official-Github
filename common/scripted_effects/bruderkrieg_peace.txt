@@ -753,13 +753,12 @@ prussia_loses_peace_deal = {
 
        if = {
        	limit = {
-       		FRA = {
-       			NOT = { has_war_with = GER }
-       		}
+       		NOT = {
+                has_global_flag = france_austria_split_deal
+            }
        	}
        	AUS = { country_event = second_treaty_of_vienna.1 }
        	else = {
-       		set_global_flag = france_austria_split_deal
        		every_country = {
        			limit = {
        				OR = {

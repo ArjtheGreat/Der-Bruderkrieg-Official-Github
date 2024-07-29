@@ -1083,6 +1083,17 @@ leader_traits = {
 		}
 	}
 
+	paranoid_monarch = {
+		random = no
+		political_power_factor = -0.15
+		stability_factor = -0.1
+		war_support_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	socialite_connections = {
 		random = no
 		trade_laws_cost_factor = -0.25

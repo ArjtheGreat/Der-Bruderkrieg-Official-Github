@@ -1217,7 +1217,7 @@ TUR_conscription_idea_2 =  {
 	modifier = {
 		conscription = 0.02
 		war_support_factor = 0.05
-		stability_factor = -005
+		stability_factor = -0.05
 		non_core_manpower = 0.1
 	}
 }
@@ -1237,7 +1237,7 @@ TUR_conscription_idea_3 =  {
 	modifier = {
 		conscription = 0.02
 		war_support_factor = 0.05
-		stability_factor = -005
+		stability_factor = -0.05
 		non_core_manpower = 0.1
 		production_speed_infrastructure_factor = 0.15
 		out_of_supply_factor = -0.1

@@ -1,1032 +1,1032 @@
-FGD_hunting_westfalen_nationalists = {
-	FGD_nationalist_coup = {
+# FGD_hunting_westfalen_nationalists = {
+# 	FGD_nationalist_coup = {
 	
-		priority = 10
+# 		priority = 10
 	
-		icon = generic_ignite_civil_war
+# 		icon = generic_ignite_civil_war
 	
-		available = {
-			hidden_trigger = { always = no }
-		}
+# 		available = {
+# 			hidden_trigger = { always = no }
+# 		}
 	
-		days_mission_timeout = 350
+# 		days_mission_timeout = 350
 	
-		fire_only_once = yes
+# 		fire_only_once = yes
 	
-		activation = {
-			OR = {
-				has_completed_focus = FGD_end_the_nationalist_threat
-				has_completed_focus = FGD_crush_the_rhine_homefront
-			}
-		}
+# 		activation = {
+# 			OR = {
+# 				has_completed_focus = FGD_end_the_nationalist_threat
+# 				has_completed_focus = FGD_crush_the_rhine_homefront
+# 			}
+# 		}
 	
-		visible = {
-		tag = FGD
-		NOT = {
-			has_country_flag = FGD_westfalen_nationalist_coup_crushed
-		}
-		} 
+# 		visible = {
+# 		tag = FGD
+# 		NOT = {
+# 			has_country_flag = FGD_westfalen_nationalist_coup_crushed
+# 		}
+# 		} 
 	
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 	
-		is_good = yes
+# 		is_good = yes
 	 
-		timeout_effect = {
-			FGD = {
-				country_event = westfalen_subtree_events.3
-			}
+# 		timeout_effect = {
+# 			FGD = {
+# 				country_event = westfalen_subtree_events.3
+# 			}
 
-		}
-	}
-	FGD_supress_nationalist_rally = {
-		icon = generic_political_rally
-		available = {
-			command_power > 10
+# 		}
+# 	}
+# 	FGD_supress_nationalist_rally = {
+# 		icon = generic_political_rally
+# 		available = {
+# 			command_power > 10
 			
-		}
-		visible = {
-			tag = FGD
-			#has_event_target = current_westfalen_gui_state
-		}
-		complete_effect = {
-			set_country_flag = FGD_currently_doing_westfalen_operation_in_state
-		}
-		custom_cost_trigger = {
-			command_power > 10
-		}
-		custom_cost_text = FGD_westflen_cost_text_tt
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				add = 1000
-			}
-			modifier = {
-				add = 500
-			}
-		}
-		fire_only_once = no
-		days_remove = 10
-		remove_effect = {
-			add_to_variable = {
-				tooltip = FGD_decrease_westfalen_coup_probality
-				westfalen_coup_probability = -5
-			}
-			hidden_effect = {
-				add_command_power = -10
-			}
-		}
-	}
-	FGD_arrest_nationalist_leaders = {
-		icon = eng_trade_unions_demand
-		available = {
+# 		}
+# 		visible = {
+# 			tag = FGD
+# 			#has_event_target = current_westfalen_gui_state
+# 		}
+# 		complete_effect = {
+# 			set_country_flag = FGD_currently_doing_westfalen_operation_in_state
+# 		}
+# 		custom_cost_trigger = {
+# 			command_power > 10
+# 		}
+# 		custom_cost_text = FGD_westflen_cost_text_tt
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				add = 1000
+# 			}
+# 			modifier = {
+# 				add = 500
+# 			}
+# 		}
+# 		fire_only_once = no
+# 		days_remove = 10
+# 		remove_effect = {
+# 			add_to_variable = {
+# 				tooltip = FGD_decrease_westfalen_coup_probality
+# 				westfalen_coup_probability = -5
+# 			}
+# 			hidden_effect = {
+# 				add_command_power = -10
+# 			}
+# 		}
+# 	}
+# 	FGD_arrest_nationalist_leaders = {
+# 		icon = eng_trade_unions_demand
+# 		available = {
 			
-		}
-		visible = {
-			tag = FGD
-			#has_event_target = current_westfalen_gui_state
-		}
-		complete_effect = {
-			set_country_flag = FGD_currently_doing_westfalen_operation_in_state
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				add = 1000
-			}
-			modifier = {
-				add = 500
-			}
-		}
-		fire_only_once = no
-		cost = 25
-		days_remove = 10
-		remove_effect = {
-			add_to_variable = {
-				tooltip = FGD_decrease_westfalen_coup_probality
-				westfalen_coup_probability = -5
-			}
-		}
-	}
-	FGD_promoting_invidualism = {
-		icon = generic_decision
-		available = {
+# 		}
+# 		visible = {
+# 			tag = FGD
+# 			#has_event_target = current_westfalen_gui_state
+# 		}
+# 		complete_effect = {
+# 			set_country_flag = FGD_currently_doing_westfalen_operation_in_state
+# 		}
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				add = 1000
+# 			}
+# 			modifier = {
+# 				add = 500
+# 			}
+# 		}
+# 		fire_only_once = no
+# 		cost = 25
+# 		days_remove = 10
+# 		remove_effect = {
+# 			add_to_variable = {
+# 				tooltip = FGD_decrease_westfalen_coup_probality
+# 				westfalen_coup_probability = -5
+# 			}
+# 		}
+# 	}
+# 	FGD_promoting_invidualism = {
+# 		icon = generic_decision
+# 		available = {
 			
-		}
-		visible = {
-			tag = FGD
-			#has_event_target = current_westfalen_gui_state
-		}
-		complete_effect = {
-			set_country_flag = FGD_currently_doing_westfalen_operation_in_state
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				add = 1000
-			}
-			modifier = {
-				add = 500
-			}
-		}
-		fire_only_once = no
-		cost = 10
-		days_remove = 10
-		remove_effect = {
-			add_to_variable = {
-				tooltip = FGD_decrease_westfalen_coup_probality
-				westfalen_coup_probability = -5
-			}
-		}
-	}
-	FGD_limiting_german_polticial_rights = {
-		icon = generic_break_treaty
-		available = {
+# 		}
+# 		visible = {
+# 			tag = FGD
+# 			#has_event_target = current_westfalen_gui_state
+# 		}
+# 		complete_effect = {
+# 			set_country_flag = FGD_currently_doing_westfalen_operation_in_state
+# 		}
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				add = 1000
+# 			}
+# 			modifier = {
+# 				add = 500
+# 			}
+# 		}
+# 		fire_only_once = no
+# 		cost = 10
+# 		days_remove = 10
+# 		remove_effect = {
+# 			add_to_variable = {
+# 				tooltip = FGD_decrease_westfalen_coup_probality
+# 				westfalen_coup_probability = -5
+# 			}
+# 		}
+# 	}
+# 	FGD_limiting_german_polticial_rights = {
+# 		icon = generic_break_treaty
+# 		available = {
 			
 			
-		}
-		visible = {
-			tag = FGD
-			#has_event_target = current_westfalen_gui_state
-		}
-		complete_effect = {
-			set_country_flag = FGD_currently_doing_westfalen_operation_in_state
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				add = 1000
-			}
-			modifier = {
-				add = 500
-			}
-		}
-		fire_only_once = no
-		cost = 15
-		days_remove = 10
-		remove_effect = {
-			add_to_variable = {
-				tooltip = FGD_decrease_westfalen_coup_probality
-				westfalen_coup_probability = -5
-			}
-		}
-	}
+# 		}
+# 		visible = {
+# 			tag = FGD
+# 			#has_event_target = current_westfalen_gui_state
+# 		}
+# 		complete_effect = {
+# 			set_country_flag = FGD_currently_doing_westfalen_operation_in_state
+# 		}
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				add = 1000
+# 			}
+# 			modifier = {
+# 				add = 500
+# 			}
+# 		}
+# 		fire_only_once = no
+# 		cost = 15
+# 		days_remove = 10
+# 		remove_effect = {
+# 			add_to_variable = {
+# 				tooltip = FGD_decrease_westfalen_coup_probality
+# 				westfalen_coup_probability = -5
+# 			}
+# 		}
+# 	}
 	
-	FGD_ban_fascist_organizings = {
-		icon = generic_political_rally
-		available = {
+# 	FGD_ban_fascist_organizings = {
+# 		icon = generic_political_rally
+# 		available = {
 			
 			 
-		}
-		visible = {
-			tag = FGD
-			#has_event_target = current_westfalen_gui_state
-		}
-		complete_effect = {
-			set_country_flag = FGD_currently_doing_westfalen_operation_in_state
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				add = 1000
-			}
-			modifier = {
-				add = 500
-			}
-		}
+# 		}
+# 		visible = {
+# 			tag = FGD
+# 			#has_event_target = current_westfalen_gui_state
+# 		}
+# 		complete_effect = {
+# 			set_country_flag = FGD_currently_doing_westfalen_operation_in_state
+# 		}
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				add = 1000
+# 			}
+# 			modifier = {
+# 				add = 500
+# 			}
+# 		}
 	
-		fire_only_once = no
-		cost = 30
-		days_remove = 15
-		remove_effect = {
-			add_to_variable = {
-				tooltip = FGD_decrease_westfalen_coup_probality
-				westfalen_coup_probability = -5
-			}
+# 		fire_only_once = no
+# 		cost = 30
+# 		days_remove = 15
+# 		remove_effect = {
+# 			add_to_variable = {
+# 				tooltip = FGD_decrease_westfalen_coup_probality
+# 				westfalen_coup_probability = -5
+# 			}
 			
-		}
-	}
-	FGD_hinder_prussian_arms_shipments = {
-		icon = ger_military_buildup
-		available = {
-			has_army_manpower = {
-				size > 100
-			}
+# 		}
+# 	}
+# 	FGD_hinder_prussian_arms_shipments = {
+# 		icon = ger_military_buildup
+# 		available = {
+# 			has_army_manpower = {
+# 				size > 100
+# 			}
 			
 			
-		}
-		visible = {
-			tag = FGD
-			#has_event_target = current_westfalen_gui_state
-		}
-		complete_effect = {
-			set_country_flag = FGD_currently_doing_westfalen_operation_in_state
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				add = 1000
-			}
-			modifier = {
-				add = 500
-			}
-		}
-		cost = 20
-		custom_cost_trigger = {
-			has_army_manpower = {
-				size > 100
-			}
-		}
-		custom_cost_text = FGD_hinder_prussian_arms_shipments_tt
-		fire_only_once = no
-		days_remove = 10
-		remove_effect = {
-			add_to_variable = {
-				tooltip = FGD_decrease_westfalen_coup_probality
-				westfalen_coup_probability = -5
-			}
-			hidden_effect = {
-				add_manpower = -100
-			}
-		}
-	}
-	FGD_raid_hideout = {
-		icon = generic_assassination
-		available = {
-			has_army_manpower = {
-				size > 100
-			}
+# 		}
+# 		visible = {
+# 			tag = FGD
+# 			#has_event_target = current_westfalen_gui_state
+# 		}
+# 		complete_effect = {
+# 			set_country_flag = FGD_currently_doing_westfalen_operation_in_state
+# 		}
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				add = 1000
+# 			}
+# 			modifier = {
+# 				add = 500
+# 			}
+# 		}
+# 		cost = 20
+# 		custom_cost_trigger = {
+# 			has_army_manpower = {
+# 				size > 100
+# 			}
+# 		}
+# 		custom_cost_text = FGD_hinder_prussian_arms_shipments_tt
+# 		fire_only_once = no
+# 		days_remove = 10
+# 		remove_effect = {
+# 			add_to_variable = {
+# 				tooltip = FGD_decrease_westfalen_coup_probality
+# 				westfalen_coup_probability = -5
+# 			}
+# 			hidden_effect = {
+# 				add_manpower = -100
+# 			}
+# 		}
+# 	}
+# 	FGD_raid_hideout = {
+# 		icon = generic_assassination
+# 		available = {
+# 			has_army_manpower = {
+# 				size > 100
+# 			}
 			
-		}
-		visible = {
-			tag = FGD
-			#has_event_target = current_westfalen_gui_state
-		}	
-		complete_effect = {
-			set_country_flag = FGD_currently_doing_westfalen_operation_in_state
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				add = 1000
-			}
-			modifier = {
-				add = 500
-			}
-		}
-		custom_cost_trigger = {
-			has_army_manpower = {
-				size > 100
-			}
-		}
-		custom_cost_text = FGD_raid_hideout_tt
-		fire_only_once = no
-		cost = 10
-		days_remove = 5
-		remove_effect = {
-			add_to_variable = {
-				tooltip = FGD_decrease_westfalen_coup_probality
-				westfalen_coup_probability = -5
-			}
-		}
-	}
-	FGD_stop_the_coup = {
-		icon = generic_operation
-		available = {
-			custom_trigger_tooltip = {
-			tooltip = FGD_all_states_have_been_pacified
-			check_variable = {
-				var = westfalen_coup_probability value = 20 compare = less_than_or_equals
-			}
-		}
+# 		}
+# 		visible = {
+# 			tag = FGD
+# 			#has_event_target = current_westfalen_gui_state
+# 		}	
+# 		complete_effect = {
+# 			set_country_flag = FGD_currently_doing_westfalen_operation_in_state
+# 		}
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				add = 1000
+# 			}
+# 			modifier = {
+# 				add = 500
+# 			}
+# 		}
+# 		custom_cost_trigger = {
+# 			has_army_manpower = {
+# 				size > 100
+# 			}
+# 		}
+# 		custom_cost_text = FGD_raid_hideout_tt
+# 		fire_only_once = no
+# 		cost = 10
+# 		days_remove = 5
+# 		remove_effect = {
+# 			add_to_variable = {
+# 				tooltip = FGD_decrease_westfalen_coup_probality
+# 				westfalen_coup_probability = -5
+# 			}
+# 		}
+# 	}
+# 	FGD_stop_the_coup = {
+# 		icon = generic_operation
+# 		available = {
+# 			custom_trigger_tooltip = {
+# 			tooltip = FGD_all_states_have_been_pacified
+# 			check_variable = {
+# 				var = westfalen_coup_probability value = 20 compare = less_than_or_equals
+# 			}
+# 		}
 
-		}
-		visible = {
-			tag = FGD
-			#has_event_target = current_westfalen_gui_state
-		}	
-		complete_effect = {
-			set_country_flag = FGD_currently_doing_westfalen_operation_in_state
-		}
-		ai_will_do = {
-			factor = 1000
-		}
+# 		}
+# 		visible = {
+# 			tag = FGD
+# 			#has_event_target = current_westfalen_gui_state
+# 		}	
+# 		complete_effect = {
+# 			set_country_flag = FGD_currently_doing_westfalen_operation_in_state
+# 		}
+# 		ai_will_do = {
+# 			factor = 1000
+# 		}
 		
-		fire_only_once = no
-		cost = 5
-		days_remove = 5
-		remove_effect = {
-			FGD = {
-				remove_ideas = Nationalist_Sympathisers
-			}
-			set_country_flag = FGD_westfalen_nationalist_coup_crushed
-		}
-	}
-}
+# 		fire_only_once = no
+# 		cost = 5
+# 		days_remove = 5
+# 		remove_effect = {
+# 			FGD = {
+# 				remove_ideas = Nationalist_Sympathisers
+# 			}
+# 			set_country_flag = FGD_westfalen_nationalist_coup_crushed
+# 		}
+# 	}
+# }
 
 
-FGD_elections = {
-	FGD_election_timeout = {
+# FGD_elections = {
+# 	FGD_election_timeout = {
 	
-		priority = 10
+# 		priority = 10
 	
-		icon = generic_ignite_civil_war
+# 		icon = generic_ignite_civil_war
 	
-		available = {
-			hidden_trigger = { always = no }
-		}
+# 		available = {
+# 			hidden_trigger = { always = no }
+# 		}
 	
-		days_mission_timeout = 120
+# 		days_mission_timeout = 120
 	
-		fire_only_once = yes
+# 		fire_only_once = yes
 	
-		activation = {
-		tag = FGD
-		has_completed_focus = FGD_the_dawn_of_the_republic
-		}
+# 		activation = {
+# 		tag = FGD
+# 		has_completed_focus = FGD_the_dawn_of_the_republic
+# 		}
 	
-		visible = {
+# 		visible = {
 			
-		} 
+# 		} 
 	
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 	
-		is_good = yes
+# 		is_good = yes
 	 
-		timeout_effect = {
-			set_country_flag = FGD_elections_are_over
-			hidden_effect = {
-				if = {
-				limit = {
-					check_variable = {
-					var = FGD_elections_conservative_support 
-					compare = greater_than
-					value = FGD_elections_liberal_support
-					}
-				}
-				country_event = FGD_adenaur_republic.4
-				}
-				else_if = {
-				limit = {
-					check_variable = {
-					var = FGD_elections_liberal_support 
-					compare = greater_than
-					value = FGD_elections_conservative_support
-					}
-				}
-				country_event = FGD_adenaur_republic.5
-				}
-				else = {
-				country_event = FGD_adenaur_republic.6
-				}
-			}			
-		}
-	}
-}
+# 		timeout_effect = {
+# 			set_country_flag = FGD_elections_are_over
+# 			hidden_effect = {
+# 				if = {
+# 				limit = {
+# 					check_variable = {
+# 					var = FGD_elections_conservative_support 
+# 					compare = greater_than
+# 					value = FGD_elections_liberal_support
+# 					}
+# 				}
+# 				country_event = FGD_adenaur_republic.4
+# 				}
+# 				else_if = {
+# 				limit = {
+# 					check_variable = {
+# 					var = FGD_elections_liberal_support 
+# 					compare = greater_than
+# 					value = FGD_elections_conservative_support
+# 					}
+# 				}
+# 				country_event = FGD_adenaur_republic.5
+# 				}
+# 				else = {
+# 				country_event = FGD_adenaur_republic.6
+# 				}
+# 			}			
+# 		}
+# 	}
+# }
 
-FGD_preparing_the_rhine_homefront_revolt = {
-	FGD_boost_hideout = {
-		icon = generic_assassination
-		available = {
-			has_army_manpower = {
-				size > 100
-			}
+# FGD_preparing_the_rhine_homefront_revolt = {
+# 	FGD_boost_hideout = {
+# 		icon = generic_assassination
+# 		available = {
+# 			has_army_manpower = {
+# 				size > 100
+# 			}
 			
-		}
-		visible = {
-			tag = FGD
-			#has_event_target = current_westfalen_gui_state
-		}	
-		complete_effect = {
-			set_country_flag = FGD_currently_doing_westfalen_operation_in_state
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				add = 1000
-			}
-			modifier = {
-				add = 500
-			}
-		}
-		custom_cost_trigger = {
-			has_army_manpower = {
-				size > 100
-			}
-		}
-		custom_cost_text = FGD_raid_hideout_tt
-		fire_only_once = no
-		cost = 10
-		days_remove = 5
-		remove_effect = {
+# 		}
+# 		visible = {
+# 			tag = FGD
+# 			#has_event_target = current_westfalen_gui_state
+# 		}	
+# 		complete_effect = {
+# 			set_country_flag = FGD_currently_doing_westfalen_operation_in_state
+# 		}
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				add = 1000
+# 			}
+# 			modifier = {
+# 				add = 500
+# 			}
+# 		}
+# 		custom_cost_trigger = {
+# 			has_army_manpower = {
+# 				size > 100
+# 			}
+# 		}
+# 		custom_cost_text = FGD_raid_hideout_tt
+# 		fire_only_once = no
+# 		cost = 10
+# 		days_remove = 5
+# 		remove_effect = {
 			
-		}
-	}
-}
+# 		}
+# 	}
+# }
 
-FGD_the_cologne_conference = {
-	FGD_the_cologne_conference_timeout = {
+# FGD_the_cologne_conference = {
+# 	FGD_the_cologne_conference_timeout = {
 
-		priority = 10
+# 		priority = 10
 	
-		icon = generic_ignite_civil_war
+# 		icon = generic_ignite_civil_war
 	
-		available = {
-		  hidden_trigger = { always = no }
-		}
+# 		available = {
+# 		  hidden_trigger = { always = no }
+# 		}
 	
-		days_mission_timeout = 150
+# 		days_mission_timeout = 150
 	
-		fire_only_once = yes 
+# 		fire_only_once = yes 
 	
-		activation = {
-		  tag = FGD
-		  has_completed_focus = FGD_host_the_cologne_conference
-		}
+# 		activation = {
+# 		  tag = FGD
+# 		  has_completed_focus = FGD_host_the_cologne_conference
+# 		}
 	
-		visible = {
-		  tag = FGD
-		} 
+# 		visible = {
+# 		  tag = FGD
+# 		} 
 
 	
 	
-		#cancel_if_not_visible = yes
+# 		#cancel_if_not_visible = yes
 	
-		is_good = yes
+# 		is_good = yes
 	
-		timeout_effect = {
-			if = {
-				limit = {
-					check_variable = {
-						global.cologneconferencesgcsupport > 49
-					}
-				}
-				annex_country = {
-					target = GPU
-					transfer_troops = yes
-				}
-				annex_country = {
-					target = BAD
-					transfer_troops = yes
-				}
-				annex_country = {
-					target = WUR
-					transfer_troops = yes
-				}
-				annex_country = {
-					target = NAS
-					transfer_troops = yes
-				}
-				annex_country = {
-					target = HES
-					transfer_troops = yes
-				}
+# 		timeout_effect = {
+# 			if = {
+# 				limit = {
+# 					check_variable = {
+# 						global.cologneconferencesgcsupport > 49
+# 					}
+# 				}
+# 				annex_country = {
+# 					target = GPU
+# 					transfer_troops = yes
+# 				}
+# 				annex_country = {
+# 					target = BAD
+# 					transfer_troops = yes
+# 				}
+# 				annex_country = {
+# 					target = WUR
+# 					transfer_troops = yes
+# 				}
+# 				annex_country = {
+# 					target = NAS
+# 					transfer_troops = yes
+# 				}
+# 				annex_country = {
+# 					target = HES
+# 					transfer_troops = yes
+# 				}
 
-				if = {
-					limit = {
-						has_completed_focus = FGD_crown_rupprecht_king
-					}
-					GPU = {
-						GPU_prince_rupprecht_of_bavaria = {
-							set_nationality = FGD
-						}
-					}
-					FGD = {
-						add_country_leader_role = {
-							character = GPU_prince_rupprecht_of_bavaria
-							promote_leader = yes
-							country_leader={
-								ideology=despotic
-								expire="1965.1.1.1"
-								id=-1
-							}
-						}
-						add_country_leader_role = {
-							character = GPU_prince_rupprecht_of_bavaria
-							promote_leader = yes
-							country_leader={
-								ideology=democratic_conservative
-								expire="1965.1.1.1"
-								id=-1
-							}
-						}
-						add_country_leader_role = {
-							character = GPU_prince_rupprecht_of_bavaria
-							promote_leader = yes
-							country_leader={
-								ideology=democratic_liberal
-								expire="1965.1.1.1"
-								id=-1
-							}
-						}
-						add_country_leader_role = {
-							character = GPU_prince_rupprecht_of_bavaria
-							promote_leader = yes
-							country_leader={
-								ideology=authoritarian_democrat
-								expire="1965.1.1.1"
-								id=-1
-							}
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					check_variable = {
-						global.cologneconferenceprussiansupport > 49
-					}
-				}
-				annex_country = {
-					target = GER
-					transfer_troops = yes
-				}
+# 				if = {
+# 					limit = {
+# 						has_completed_focus = FGD_crown_rupprecht_king
+# 					}
+# 					GPU = {
+# 						GPU_prince_rupprecht_of_bavaria = {
+# 							set_nationality = FGD
+# 						}
+# 					}
+# 					FGD = {
+# 						add_country_leader_role = {
+# 							character = GPU_prince_rupprecht_of_bavaria
+# 							promote_leader = yes
+# 							country_leader={
+# 								ideology=despotic
+# 								expire="1965.1.1.1"
+# 								id=-1
+# 							}
+# 						}
+# 						add_country_leader_role = {
+# 							character = GPU_prince_rupprecht_of_bavaria
+# 							promote_leader = yes
+# 							country_leader={
+# 								ideology=democratic_conservative
+# 								expire="1965.1.1.1"
+# 								id=-1
+# 							}
+# 						}
+# 						add_country_leader_role = {
+# 							character = GPU_prince_rupprecht_of_bavaria
+# 							promote_leader = yes
+# 							country_leader={
+# 								ideology=democratic_liberal
+# 								expire="1965.1.1.1"
+# 								id=-1
+# 							}
+# 						}
+# 						add_country_leader_role = {
+# 							character = GPU_prince_rupprecht_of_bavaria
+# 							promote_leader = yes
+# 							country_leader={
+# 								ideology=authoritarian_democrat
+# 								expire="1965.1.1.1"
+# 								id=-1
+# 							}
+# 						}
+# 					}
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					check_variable = {
+# 						global.cologneconferenceprussiansupport > 49
+# 					}
+# 				}
+# 				annex_country = {
+# 					target = GER
+# 					transfer_troops = yes
+# 				}
 	
-			}
-		}
-	}
+# 			}
+# 		}
+# 	}
 
-	FGD_campaign_in_baden_cologne = {
+# 	FGD_campaign_in_baden_cologne = {
 
-		icon = generic_political_discourse
+# 		icon = generic_political_discourse
 
-		cost = 15
+# 		cost = 15
 
-		days_remove = 10
+# 		days_remove = 10
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		modifier = {
-		}
+# 		modifier = {
+# 		}
 
-		visible = {
+# 		visible = {
 			
-		}
+# 		}
 
-		remove_effect = {
-			add_to_variable = {
-				tooltip = cologneconferencesgcsupport_increase_by_5
-				global.cologneconferencesgcsupport = 5
-			}
-		}
-	}
-	FGD_campaign_in_bavaria_cologne = {
+# 		remove_effect = {
+# 			add_to_variable = {
+# 				tooltip = cologneconferencesgcsupport_increase_by_5
+# 				global.cologneconferencesgcsupport = 5
+# 			}
+# 		}
+# 	}
+# 	FGD_campaign_in_bavaria_cologne = {
 
-		icon = generic_political_discourse
+# 		icon = generic_political_discourse
 
-		cost = 15
+# 		cost = 15
 
-		days_remove = 10
+# 		days_remove = 10
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		modifier = {
-		}
+# 		modifier = {
+# 		}
 
-		visible = {
+# 		visible = {
 			
-		}
+# 		}
 
-		remove_effect = {
-			add_to_variable = {
-				tooltip = cologneconferencesgcsupport_increase_by_5
-				global.cologneconferencesgcsupport = 5
-			}
-		}
-	}
+# 		remove_effect = {
+# 			add_to_variable = {
+# 				tooltip = cologneconferencesgcsupport_increase_by_5
+# 				global.cologneconferencesgcsupport = 5
+# 			}
+# 		}
+# 	}
 
-	FGD_campaign_in_berlin_cologne = {
+# 	FGD_campaign_in_berlin_cologne = {
 
-		icon = generic_political_discourse
+# 		icon = generic_political_discourse
 
-		cost = 15
+# 		cost = 15
 
-		days_remove = 10
+# 		days_remove = 10
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		modifier = {
-		}
+# 		modifier = {
+# 		}
 
-		visible = {
+# 		visible = {
 			
-		}
+# 		}
 
-		remove_effect = {
-			add_to_variable = {
-				tooltip = cologneconferenceprussiansupport_increase_by_5
-				global.cologneconferenceprussiansupport = 5
-			}
-		}
-	}
-	FGD_campaign_in_pomerania_cologne = {
+# 		remove_effect = {
+# 			add_to_variable = {
+# 				tooltip = cologneconferenceprussiansupport_increase_by_5
+# 				global.cologneconferenceprussiansupport = 5
+# 			}
+# 		}
+# 	}
+# 	FGD_campaign_in_pomerania_cologne = {
 
-		icon = generic_political_discourse
+# 		icon = generic_political_discourse
 
-		cost = 15
+# 		cost = 15
 
-		days_remove = 10
+# 		days_remove = 10
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		modifier = {
-		}
+# 		modifier = {
+# 		}
 
-		visible = {
+# 		visible = {
 			
-		}
+# 		}
 
-		remove_effect = {
-			add_to_variable = {
-				tooltip = cologneconferenceprussiansupport_increase_by_5
-				global.cologneconferenceprussiansupport = 5
-			}
-		}
-	}
+# 		remove_effect = {
+# 			add_to_variable = {
+# 				tooltip = cologneconferenceprussiansupport_increase_by_5
+# 				global.cologneconferenceprussiansupport = 5
+# 			}
+# 		}
+# 	}
 
-	## Religious Decisions
-	FGD_side_with_the_protestants = {
+# 	## Religious Decisions
+# 	FGD_side_with_the_protestants = {
 
-		icon = generic_political_discourse
+# 		icon = generic_political_discourse
 
-		cost = 0
+# 		cost = 0
 
-		days_remove = 100
+# 		days_remove = 100
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		modifier = {
-		}
+# 		modifier = {
+# 		}
 
-		visible = {
+# 		visible = {
 			
-		}
+# 		}
 
-		remove_effect = {
-			add_ideas = BAD_church_clashes
-			add_to_variable = {
-				tooltip = cologneconferenceprussiansupport_increase_by_10
-				global.cologneconferenceprussiansupport = 10
-			}
-		}
-	}
+# 		remove_effect = {
+# 			add_ideas = BAD_church_clashes
+# 			add_to_variable = {
+# 				tooltip = cologneconferenceprussiansupport_increase_by_10
+# 				global.cologneconferenceprussiansupport = 10
+# 			}
+# 		}
+# 	}
 
-	FGD_side_with_the_catholics = {
+# 	FGD_side_with_the_catholics = {
 
-		icon = generic_political_discourse
+# 		icon = generic_political_discourse
 
-		cost = 0
+# 		cost = 0
 
-		days_remove = 100
+# 		days_remove = 100
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		modifier = {
-		}
+# 		modifier = {
+# 		}
 
-		visible = {
+# 		visible = {
 			
-		}
+# 		}
 
-		remove_effect = {
-			add_to_variable = {
-				tooltip = cologneconferencesgcsupport_increase_by_10
-				global.cologneconferencesgcsupport = 10
-			}
-		}
-	}
-}
+# 		remove_effect = {
+# 			add_to_variable = {
+# 				tooltip = cologneconferencesgcsupport_increase_by_10
+# 				global.cologneconferencesgcsupport = 10
+# 			}
+# 		}
+# 	}
+# }
 
-FGD_french_assasination_decisions = {
-	FGD_assasinate_leclerc = {
+# FGD_french_assasination_decisions = {
+# 	FGD_assasinate_leclerc = {
 
-		icon = generic_political_discourse
+# 		icon = generic_political_discourse
 
-		cost = 0
+# 		cost = 0
 
-		days_remove = 0
+# 		days_remove = 0
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		modifier = {
-		}
+# 		modifier = {
+# 		}
 
-		visible = {
+# 		visible = {
 			
-		}
+# 		}
 
-		remove_effect = {
+# 		remove_effect = {
 			
-		}
-	}
-	FGD_assasinate_waygand = {
+# 		}
+# 	}
+# 	FGD_assasinate_waygand = {
 
-		icon = generic_political_discourse
+# 		icon = generic_political_discourse
 
-		cost = 0
+# 		cost = 0
 
-		days_remove = 0
+# 		days_remove = 0
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		modifier = {
-		}
+# 		modifier = {
+# 		}
 
-		visible = {
+# 		visible = {
 			
-		}
+# 		}
 
-		remove_effect = {
+# 		remove_effect = {
 			
-		}
-	}
-	FGD_assasinate_the_emperor = {
+# 		}
+# 	}
+# 	FGD_assasinate_the_emperor = {
 
-		icon = generic_political_discourse
+# 		icon = generic_political_discourse
 
-		cost = 0
+# 		cost = 0
 
-		days_remove = 0
+# 		days_remove = 0
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		modifier = {
-		}
+# 		modifier = {
+# 		}
 
-		visible = {
+# 		visible = {
 			
-		}
+# 		}
 
-		remove_effect = {
+# 		remove_effect = {
 			
-		}
-	}
-}
+# 		}
+# 	}
+# }
 
-FGD_agent_zero_revolution = {
-	FGD_agent_zero_revolution_plot = {
-		icon = generic_ignite_civil_war
-		allowed = { tag = FGD }
-		available = {
-			hidden_trigger = {
-				always = no
-			}
-		}
-		visible = {
+# FGD_agent_zero_revolution = {
+# 	FGD_agent_zero_revolution_plot = {
+# 		icon = generic_ignite_civil_war
+# 		allowed = { tag = FGD }
+# 		available = {
+# 			hidden_trigger = {
+# 				always = no
+# 			}
+# 		}
+# 		visible = {
 			
-		} 
-		priority = 100
-		activation = {	has_completed_focus = FGD_destruction_from_within	}
-		days_mission_timeout = 200
-		selectable_mission = no
-		cancel_if_not_visible = yes
-		fire_only_once = yes
-		timeout_effect = {
-			USA = {
-				country_event = FGD_heydrichs_germany.5
-			}
-		}
+# 		} 
+# 		priority = 100
+# 		activation = {	has_completed_focus = FGD_destruction_from_within	}
+# 		days_mission_timeout = 200
+# 		selectable_mission = no
+# 		cancel_if_not_visible = yes
+# 		fire_only_once = yes
+# 		timeout_effect = {
+# 			USA = {
+# 				country_event = FGD_heydrichs_germany.5
+# 			}
+# 		}
 		
-	}
-}
+# 	}
+# }
 
-FGD_speers_unity_board = {
+# FGD_speers_unity_board = {
 	
-	FGD_create_state_union = {
+# 	FGD_create_state_union = {
 
-		icon = generic_political_discourse
+# 		icon = generic_political_discourse
 
-		cost = 30
+# 		cost = 30
 
-		days_remove = 14
+# 		days_remove = 14
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		modifier = {
-			consumer_goods_factor = 0.05
-			production_factory_efficiency_gain_factor = 0.1
-		}
+# 		modifier = {
+# 			consumer_goods_factor = 0.05
+# 			production_factory_efficiency_gain_factor = 0.1
+# 		}
 
-		visible = {
-			NOT = {
-				OR = {
-					has_completed_focus = FGD_empower_industrialists
-					has_completed_focus = FGD_night_long_knives
-				}
-			}
-		}
+# 		visible = {
+# 			NOT = {
+# 				OR = {
+# 					has_completed_focus = FGD_empower_industrialists
+# 					has_completed_focus = FGD_night_long_knives
+# 				}
+# 			}
+# 		}
 
-		complete_effect = {
-			set_country_flag = FGD_speer_state_union
-			add_to_variable = {
-				tooltip = FGD_increase_speer_influence
-				FGD_speer_influence_var = 1
-			}
-			add_to_variable = {
-				tooltip = FGD_increase_worker_influence
-				FGD_worker_influence_var = 1
-			}
-			add_to_variable = {
-				tooltip = FGD_decrease_industrialist_influence
-				FGD_industrialist_influence_var = -1
-			}
-		}
+# 		complete_effect = {
+# 			set_country_flag = FGD_speer_state_union
+# 			add_to_variable = {
+# 				tooltip = FGD_increase_speer_influence
+# 				FGD_speer_influence_var = 1
+# 			}
+# 			add_to_variable = {
+# 				tooltip = FGD_increase_worker_influence
+# 				FGD_worker_influence_var = 1
+# 			}
+# 			add_to_variable = {
+# 				tooltip = FGD_decrease_industrialist_influence
+# 				FGD_industrialist_influence_var = -1
+# 			}
+# 		}
 
-	}
+# 	}
 
-	FGD_crush_strikers = {
+# 	FGD_crush_strikers = {
 
-		icon = generic_industry
+# 		icon = generic_industry
 
-		cost = 30
+# 		cost = 30
 
-		days_remove = 14
+# 		days_remove = 14
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		visible = {
-			NOT = {
-				OR = {
-					has_country_flag = FGD_speer_state_union
-					has_completed_focus = FGD_night_long_knives
-				}
-			}
-		}
+# 		visible = {
+# 			NOT = {
+# 				OR = {
+# 					has_country_flag = FGD_speer_state_union
+# 					has_completed_focus = FGD_night_long_knives
+# 				}
+# 			}
+# 		}
 
-		modifier = {
-			stability_weekly = -0.02
-			industrial_capacity_factory = 0.1
-		}
+# 		modifier = {
+# 			stability_weekly = -0.02
+# 			industrial_capacity_factory = 0.1
+# 		}
 
-		complete_effect = {
-			add_to_variable = {
-				tooltip = FGD_increase_speer_influence
-				FGD_speer_influence_var = 1
-			}
-			add_to_variable = {
-				tooltip = FGD_decrease_worker_influence
-				FGD_worker_influence_var = -1
-			}
-			add_to_variable = {
-				tooltip = FGD_increase_industrialist_influence
-				FGD_industrialist_influence_var = 1
-			}
-		}
+# 		complete_effect = {
+# 			add_to_variable = {
+# 				tooltip = FGD_increase_speer_influence
+# 				FGD_speer_influence_var = 1
+# 			}
+# 			add_to_variable = {
+# 				tooltip = FGD_decrease_worker_influence
+# 				FGD_worker_influence_var = -1
+# 			}
+# 			add_to_variable = {
+# 				tooltip = FGD_increase_industrialist_influence
+# 				FGD_industrialist_influence_var = 1
+# 			}
+# 		}
 
-	}
+# 	}
 
-	FGD_offer_company_contracts = {
+# 	FGD_offer_company_contracts = {
 
-		icon = generic_construction
+# 		icon = generic_construction
 
-		cost = 30
+# 		cost = 30
 
-		days_remove = 30
+# 		days_remove = 30
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		visible = {
-			NOT = {
-				OR = {
-					has_completed_focus = FGD_central_economic_control
-					has_completed_focus = FGD_night_long_knives
-				}
-			}
-		}
+# 		visible = {
+# 			NOT = {
+# 				OR = {
+# 					has_completed_focus = FGD_central_economic_control
+# 					has_completed_focus = FGD_night_long_knives
+# 				}
+# 			}
+# 		}
 
-		modifier = {
-			production_speed_buildings_factor = -0.15
-		}
+# 		modifier = {
+# 			production_speed_buildings_factor = -0.15
+# 		}
 
-		complete_effect = {
-			add_to_variable = {
-				tooltip = FGD_increase_industrialist_influence
-				FGD_industrialist_influence_var = 1
-			}
-		}
+# 		complete_effect = {
+# 			add_to_variable = {
+# 				tooltip = FGD_increase_industrialist_influence
+# 				FGD_industrialist_influence_var = 1
+# 			}
+# 		}
 
-		remove_effect = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-		                building = industrial_complex
-		                size > 0
-		                include_locked = yes
-		            }
-				}
-				add_extra_state_shared_building_slots = 1
-		        add_building_construction = {
-		            type = industrial_complex
-		            level = 1
-		            instant_build = yes
-		        }
-			}
-		}
+# 		remove_effect = {
+# 			random_owned_state = {
+# 				limit = {
+# 					free_building_slots = {
+# 		                building = industrial_complex
+# 		                size > 0
+# 		                include_locked = yes
+# 		            }
+# 				}
+# 				add_extra_state_shared_building_slots = 1
+# 		        add_building_construction = {
+# 		            type = industrial_complex
+# 		            level = 1
+# 		            instant_build = yes
+# 		        }
+# 			}
+# 		}
 
-	}
+# 	}
 
-	FGD_use_radicals_terrorize_corporations = {
+# 	FGD_use_radicals_terrorize_corporations = {
 
-		icon = generic_industry
+# 		icon = generic_industry
 
-		cost = 25
+# 		cost = 25
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		visible = {
-			NOT = {
-				OR = {
-					has_completed_focus = FGD_empower_industrialists
-					has_completed_focus = FGD_night_long_knives
-				}
-			}
-		}
+# 		visible = {
+# 			NOT = {
+# 				OR = {
+# 					has_completed_focus = FGD_empower_industrialists
+# 					has_completed_focus = FGD_night_long_knives
+# 				}
+# 			}
+# 		}
 
-		complete_effect = {
-			random_owned_controlled_state = {
-				limit = {
-					industrial_complex > 1
-					arms_factory > 0
-				}
-				damage_building = {
-					type = industrial_complex
-					damage = 0.75
-				}
-				damage_building = {
-					type = arms_factory
-					damage = 0.5
-				}
-			}
-			add_to_variable = {
-				tooltip = FGD_decrease_industrialist_influence
-				FGD_industrialist_influence_var = -1
-			}
-			add_to_variable = {
-				tooltip = FGD_increase_worker_influence
-				FGD_worker_influence_var = 1
-			}
-		}
+# 		complete_effect = {
+# 			random_owned_controlled_state = {
+# 				limit = {
+# 					industrial_complex > 1
+# 					arms_factory > 0
+# 				}
+# 				damage_building = {
+# 					type = industrial_complex
+# 					damage = 0.75
+# 				}
+# 				damage_building = {
+# 					type = arms_factory
+# 					damage = 0.5
+# 				}
+# 			}
+# 			add_to_variable = {
+# 				tooltip = FGD_decrease_industrialist_influence
+# 				FGD_industrialist_influence_var = -1
+# 			}
+# 			add_to_variable = {
+# 				tooltip = FGD_increase_worker_influence
+# 				FGD_worker_influence_var = 1
+# 			}
+# 		}
 
-	}
+# 	}
 
-	FGD_use_junker_funds = {
+# 	FGD_use_junker_funds = {
 
-		icon = generic_political_discourse
+# 		icon = generic_political_discourse
 
-		cost = 25
+# 		cost = 25
 
-		days_remove = 14
+# 		days_remove = 14
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		visible = {
-			NOT = {
-				has_completed_focus = FGD_night_long_knives
-			}
-		}
+# 		visible = {
+# 			NOT = {
+# 				has_completed_focus = FGD_night_long_knives
+# 			}
+# 		}
 
-		available = {
-			has_completed_focus = FGD_use_junkers
-		}
+# 		available = {
+# 			has_completed_focus = FGD_use_junkers
+# 		}
 
-		modifier = {
-			consumer_goods_factor = -0.05
-		}
+# 		modifier = {
+# 			consumer_goods_factor = -0.05
+# 		}
 
-		complete_effect = {
-			add_to_variable = {
-				tooltip = FGD_increase_speer_influence
-				FGD_speer_influence_var = 1
-			}
-		}
+# 		complete_effect = {
+# 			add_to_variable = {
+# 				tooltip = FGD_increase_speer_influence
+# 				FGD_speer_influence_var = 1
+# 			}
+# 		}
 
-	}
+# 	}
 
-	FGD_sic_der_stahlhelm_on_radicals = {
+# 	FGD_sic_der_stahlhelm_on_radicals = {
 
-		icon = generic_industry
+# 		icon = generic_industry
 
-		cost = 25
+# 		cost = 25
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		visible = {
-			NOT = {
-				has_completed_focus = FGD_night_long_knives
-			}
-		}
+# 		visible = {
+# 			NOT = {
+# 				has_completed_focus = FGD_night_long_knives
+# 			}
+# 		}
 
-		available = {
-			has_completed_focus = FGD_use_junkers
-		}
+# 		available = {
+# 			has_completed_focus = FGD_use_junkers
+# 		}
 
-		complete_effect = {
-			#maybe create franz seldte or theodor duesterberg as generals?
-			add_to_variable = {
-				tooltip = FGD_decrease_worker_influence
-				FGD_worker_influence_var = -1
-			}
-		}
+# 		complete_effect = {
+# 			#maybe create franz seldte or theodor duesterberg as generals?
+# 			add_to_variable = {
+# 				tooltip = FGD_decrease_worker_influence
+# 				FGD_worker_influence_var = -1
+# 			}
+# 		}
 
-	}
+# 	}
 
-}
+# }

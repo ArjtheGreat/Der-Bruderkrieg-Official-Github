@@ -158,36 +158,7 @@ bookmarks = {
 			minor = yes
 			history = "OTHER_GATHERING_STORM_DESC"
 		}	
-		"GPU"={
-			minor = yes
-			history = "GPU_DESC"
-			ideology = authoritarian_democratic
-			ideas = {
-				GPU_unstable_nation
-				GPU_growing_nationalist_movement
-				GPU_court_factionalism
-			}
-			focuses = {
-				GPU_anti_berlin_protocols
-				GPU_loyalty_to_vienna
-				GPU_the_marshals_coup
-			}
-		}
-		"FGD"={
-			minor = yes
-			history = "FGD_DESC"
-			ideology = despotic
-			ideas = {
-				Nationalist_Sympathisers
-				Neue_Code_Napoleon
-				FGD_legacy_of_traveluer_coup
-			}
-			focuses = {
-				FGD_the_dawn_of_the_republic
-				FGD_absolute_control_of_state
-				FGD_march_on_cologne
-			}
-		}
+		
 		
 
 		

@@ -149,9 +149,9 @@ set_popularities = {
 	ultranationalism = 5
 }
 
-create_faction = "Sofia Accord"
-add_to_faction = ROM 
-add_to_faction = THS
+# create_faction = "Sofia Accord"
+# add_to_faction = ROM 
+# add_to_faction = THS
 
 
 recruit_character = BUL_hristo_lukov

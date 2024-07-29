@@ -252,7 +252,7 @@ country_event = { # March on Cologne
 
 		if = {
 			limit = {
-				has_completed_focus = FGD_speer
+				#has_completed_focus = FGD_speer
 			}
 			set_politics = {
 				ruling_party = fascism
@@ -318,11 +318,11 @@ country_event = { # March on Cologne
 		hidden_effect = {
 			if = {
 				limit = {
-					has_completed_focus = FGD_speer
+					#has_completed_focus = FGD_speer
 				}
 				if = {
 					limit = {
-						has_completed_focus = FGD_attract_europakrieg_veterans
+						#has_completed_focus = FGD_attract_europakrieg_veterans
 					}
 					swap_ideas = {
 						remove_idea = FGD_rhine_homefront_idea_moderate_1
@@ -331,7 +331,7 @@ country_event = { # March on Cologne
 				}
 				else_if = {
 					limit = {
-						has_completed_focus = FGD_embrace_populism
+						#has_completed_focus = FGD_embrace_populism
 					}
 					swap_ideas = {
 						remove_idea = FGD_rhine_homefront_idea_moderate_1
@@ -340,7 +340,7 @@ country_event = { # March on Cologne
 				}
 				else_if = {
 					limit = {
-						has_completed_focus = FGD_the_negotiator
+						#has_completed_focus = FGD_the_negotiator
 					}
 					swap_ideas = {
 						remove_idea = FGD_rhine_homefront_idea_moderate_1
@@ -351,7 +351,7 @@ country_event = { # March on Cologne
 			else = {
 				if = {
 					limit = {
-						has_completed_focus = FGD_enforce_the_rule_of_the_heydrich_gang
+						#has_completed_focus = FGD_enforce_the_rule_of_the_heydrich_gang
 					}
 					swap_ideas = {
 						remove_idea = FGD_rhine_homefront_idea_hardline_1
@@ -360,7 +360,7 @@ country_event = { # March on Cologne
 				}
 				else_if = {
 					limit = {
-						has_completed_focus = FGD_embrace_national_revolution
+						#has_completed_focus = FGD_embrace_national_revolution
 					}
 					swap_ideas = {
 						remove_idea = FGD_rhine_homefront_idea_hardline_1
@@ -369,7 +369,7 @@ country_event = { # March on Cologne
 				}
 				else_if = {
 					limit = {
-						has_completed_focus = FGD_the_icon
+						#has_completed_focus = FGD_the_icon
 					}
 					swap_ideas = {
 						remove_idea = FGD_rhine_homefront_idea_hardline_1
@@ -788,7 +788,7 @@ country_event = {
 		if = {
 			limit = {
 				FGD = {
-					has_completed_focus = FGD_spread_the_german_american_bund
+					#has_completed_focus = FGD_spread_the_german_american_bund
 				}
 			}
 			389 = {
@@ -807,7 +807,7 @@ country_event = {
 		if = {
 			limit = {
 				FGD = {
-					has_completed_focus = FGD_mobilize_distraught_unions
+					#has_completed_focus = FGD_mobilize_distraught_unions
 				}
 			}
 			394 = {

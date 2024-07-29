@@ -3690,10 +3690,10 @@ shared_focus = {
 		}
 
 		bypass = {
-			has_country_leader {
-				name = "Julius Evola"
-				ruling_only = yes
-			}
+			# has_country_leader {
+			# 	name = "Julius Evola"
+			# 	ruling_only = yes
+			# }
 		}
 
 		completion_reward = {

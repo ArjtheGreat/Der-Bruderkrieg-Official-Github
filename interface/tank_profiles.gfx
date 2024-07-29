@@ -640,6 +640,11 @@ spriteTypes = {
 		texturefile = gfx/interface/equipmentdesigner/tanks/designer/generic/generic_heavy_CAA_camo.dds
 	}
 
+
+	###############
+	### GERMANY ###
+	###############
+
 	spriteType = {
 		name = GFX_GER_light_AAB
 		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_AAB.dds
@@ -721,8 +726,98 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = GFX_GER_light_AA_tank_A
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_AA_tank_A.dds
+		name = GFX_GER_light_fixed_AFA
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_fixed_AFA.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_light_fixed_AFB
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_fixed_AFB.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_light_fixed_AFC
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_fixed_AFC.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_light_fixed_BFA
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_fixed_BFA.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_light_fixed_BFB
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_fixed_BFB.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_light_fixed_BFC
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_fixed_BFC.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_light_fixed_CFA
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_fixed_CFA.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_light_fixed_CFB
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_fixed_CFB.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_light_fixed_CFC
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_fixed_CFC.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_light_amphibious_AAA
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_amphibious_AAA.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_light_amphibious_AAB
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_amphibious_AAB.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_light_amphibious_AAC
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_amphibious_AAC.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_light_amphibious_ABA
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_amphibious_ABA.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_light_amphibious_ABB
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_amphibious_ABB.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_light_amphibious_ABC
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_amphibious_ABC.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_light_amphibious_ACA
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_amphibious_ACA.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_light_amphibious_ACB
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_amphibious_ACB.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_light_amphibious_ACC
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_amphibious_ACC.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_light_AA_A
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_AA_A.dds
 	}
 
 	spriteType = {
@@ -806,8 +901,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = GFX_GER_light_AA_tank_B
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_AA_tank_B.dds
+		name = GFX_GER_light_AA_B
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_AA_B.dds
 	}
 
 	spriteType = {
@@ -891,8 +986,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = GFX_GER_light_AA_tank_C
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_AA_tank_C.dds
+		name = GFX_GER_light_AA_C
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_light_AA_C.dds
 	}
 
 	spriteType = {
@@ -1151,6 +1246,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = GFX_GER_heavy_CAA
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_CAA.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_heavy_CAA_camo
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_CAA_camo.dds
+	}
+
+	spriteType = {
 		name = GFX_GER_heavy_CAB
 		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_CAB.dds
 	}
@@ -1268,6 +1373,16 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_GER_heavy_ABA_camo
 		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_ABA_camo.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_heavy_ABB
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_ABB.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_heavy_ABB_camo
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_ABB_camo.dds
 	}
 
 	spriteType = {
@@ -1406,6 +1521,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = GFX_GER_heavy_BCC
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_BCC.dds
+	}
+
+	spriteType = {
+		name = GFX_GER_heavy_BCC_camo
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_BCC_camo.dds
+	}
+
+	spriteType = {
 		name = GFX_GER_heavy_BAA
 		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_BAA.dds
 	}
@@ -1419,6 +1544,11 @@ spriteTypes = {
 		name = GFX_GER_heavy_AA_B
 		texturefile = gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_AA_B.dds
 	}
+
+
+	####################
+	### SOVIET UNION ###
+	####################
 
 	spriteType = {
 		name = GFX_SOV_light_AAB
@@ -1658,6 +1788,67 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_SOV_light_CAA_camo
 		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_CAA_camo.dds
+	}
+
+	spriteType = {
+		name = GFX_SOV_light_AA_A
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_AA_A.dds
+	}
+
+	spriteType = {
+		name = GFX_SOV_light_AA_B
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_AA_B.dds
+	}
+
+	spriteType = {
+		name = GFX_SOV_light_AA_C
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_AA_C.dds
+	}
+
+	
+	spriteType = {
+		name = GFX_SOV_light_amphibious_AAA
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_amphibious_AAA.dds
+	}
+	
+	spriteType = {
+		name = GFX_SOV_light_amphibious_AAB
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_amphibious_AAB.dds
+	}
+	
+	spriteType = {
+		name = GFX_SOV_light_amphibious_AAC
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_amphibious_AAC.dds
+	}
+	
+	spriteType = {
+		name = GFX_SOV_light_amphibious_ABA
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_amphibious_ABA.dds
+	}
+	
+	spriteType = {
+		name = GFX_SOV_light_amphibious_ABB
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_amphibious_ABB.dds
+	}
+	
+	spriteType = {
+		name = GFX_SOV_light_amphibious_ABC
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_amphibious_ABC.dds
+	}
+	
+	spriteType = {
+		name = GFX_SOV_light_amphibious_ACA
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_amphibious_ACA.dds
+	}
+	
+	spriteType = {
+		name = GFX_SOV_light_amphibious_ACB
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_amphibious_ACB.dds
+	}
+	
+	spriteType = {
+		name = GFX_SOV_light_amphibious_ACC
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_amphibious_ACC.dds
 	}
 
 	spriteType = {
@@ -1901,6 +2092,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = GFX_SOV_medium_AA_B
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_medium_AA_B.dds
+	}
+
+	spriteType = {
+		name = GFX_SOV_medium_AA_C
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_medium_AA_C.dds
+	}
+
+	spriteType = {
 		name = GFX_SOV_heavy_AAB
 		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_heavy_AAB.dds
 	}
@@ -2139,6 +2340,28 @@ spriteTypes = {
 		name = GFX_SOV_heavy_CAA_camo
 		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_heavy_CAA_camo.dds
 	}
+
+	spriteType = {
+		name = GFX_SOV_heavy_AA_A
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_heavy_AA_A.dds
+	}
+
+	spriteType = {
+		name = GFX_SOV_heavy_AA_B
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_heavy_AA_B.dds
+	}
+
+	spriteType = {
+		name = GFX_SOV_heavy_AA_B2
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_heavy_AA_B2.dds
+	}
+
+	spriteType = {
+		name = GFX_SOV_heavy_AA_C
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_heavy_AA_C.dds
+	}
+
+
 
 	spriteType = {
 		name = GFX_USA_light_AAB
@@ -2857,726 +3080,6 @@ spriteTypes = {
 
 	spriteType = {
 		name = GFX_USA_heavy_CAA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_CAA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_AAB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_AAB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_AAB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_AAB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_AAC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_AAC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_AAC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_AAC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_ABA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_ABA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_ABA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_ABA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_ABB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_ABB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_ABB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_ABB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_ABC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_ABC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_ABC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_ABC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_ACA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_ACA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_ACA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_ACA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_ACB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_ACB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_ACB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_ACB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_ACC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_ACC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_ACC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_ACC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_BAB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_BAB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_BAB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_BAB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_BAC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_BAC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_BAC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_BAC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_BBA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_BBA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_BBA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_BBA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_BAA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_BAA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_BAA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_BAA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_BBC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_BBC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_BBC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_BBC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_BCA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_BCA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_BCA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_BCA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_BCB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_BCB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_BCB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_BCB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_BCC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_BCC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_BCC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_BCC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_CAB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_CAB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_CAB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_CAB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_CAC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_CAC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_CAC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_CAC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_CBA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_CBA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_CBA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_CBA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_CBB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_CBB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_CBB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_CBB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_CBC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_CBC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_CBC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_CBC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_CCA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_CCA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_CCA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_CCA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_CCB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_CCB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_CCB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_CCB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_CAA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_CAA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_light_CAA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_light_CAA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_AAB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_AAB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_AAB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_AAB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_AAC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_AAC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_AAC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_AAC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_ABA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ABA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_ABA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ABA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_ABB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ABB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_ABB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ABB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_ABC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ABC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_ABC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ABC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_ACA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ACA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_ACA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ACA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_ACB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ACB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_ACB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ACB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_ACC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ACC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_ACC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ACC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_BAB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_BAB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_BAB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_BAB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_BAC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_BAC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_BAC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_BAC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_BBA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_BBA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_BBA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_BBA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_BAA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_BAA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_BAA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_BAA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_BBC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_BBC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_BBC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_BBC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_BCA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_BCA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_BCA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_BCA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_BCB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_BCB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_BCB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_BCB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_BCC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_BCC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_BCC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_BCC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_CAB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_CAB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_CAB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_CAB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_CAC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_CAC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_CAC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_CAC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_CBA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_CBA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_CBA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_CBA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_CBB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_CBB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_CBB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_CBB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_CBC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_CBC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_CBC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_CBC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_CCA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_CCA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_CCA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_CCA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_CCB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_CCB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_CCB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_CCB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_CAA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_CAA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_medium_CAA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_CAA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_AAB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_AAB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_AAB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_AAB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_AAC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_AAC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_AAC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_AAC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_ABA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ABA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_ABA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ABA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_ABB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ABB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_ABB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ABB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_ABC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ABC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_ABC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ABC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_ACA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ACA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_ACA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ACA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_ACB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ACB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_ACB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ACB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_ACC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ACC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_ACC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ACC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_BAB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_BAB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_BAB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_BAB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_BAC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_BAC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_BAC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_BAC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_BBA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_BBA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_BBA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_BBA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_BAA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_BAA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_BAA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_BAA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_BBC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_BBC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_BBC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_BBC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_BCA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_BCA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_BCA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_BCA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_BCB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_BCB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_BCB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_BCB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_BCC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_BCC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_BCC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_BCC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_CAB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_CAB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_CAB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_CAB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_CAC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_CAC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_CAC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_CAC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_CBA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_CBA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_CBA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_CBA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_CBB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_CBB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_CBB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_CBB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_CBC
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_CBC.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_CBC_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_CBC_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_CCA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_CCA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_CCA_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_CCA_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_CCB
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_CCB.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_CCB_camo
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_CCB_camo.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_CAA
-		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_CAA.dds
-	}
-
-	spriteType = {
-		name = GFX_ANC_heavy_CAA_camo
 		texturefile = gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_CAA_camo.dds
 	}
 
@@ -5740,6 +5243,11 @@ spriteTypes = {
 		texturefile = gfx/interface/equipmentdesigner/tanks/designer/JAP/JAP_heavy_CAA_camo.dds
 	}
 
+
+	#############
+	### ITALY ###
+	#############
+
 	spriteType = {
 		name = GFX_ITA_light_AAB
 		texturefile = gfx/interface/equipmentdesigner/tanks/designer/ITA/ITA_light_AAB.dds
@@ -5978,6 +5486,21 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_ITA_light_CAA_camo
 		texturefile = gfx/interface/equipmentdesigner/tanks/designer/ITA/ITA_light_CAA_camo.dds
+	}
+
+	spriteType = {
+		name = GFX_ITA_light_AA_A
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/ITA/ITA_light_AA_A.dds
+	}
+
+	spriteType = {
+		name = GFX_ITA_light_AA_B
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/ITA/ITA_light_AA_B.dds
+	}
+
+	spriteType = {
+		name = GFX_ITA_light_AA_C
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/ITA/ITA_light_AA_C.dds
 	}
 
 	spriteType = {
@@ -6221,6 +5744,21 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = GFX_ITA_medium_AA_A
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/ITA/ITA_medium_AA_A.dds
+	}
+
+	spriteType = {
+		name = GFX_ITA_medium_AA_B
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/ITA/ITA_medium_AA_B.dds
+	}
+
+	spriteType = {
+		name = GFX_ITA_medium_AA_C
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/ITA/ITA_medium_AA_C.dds
+	}
+
+	spriteType = {
 		name = GFX_ITA_heavy_AAB
 		texturefile = gfx/interface/equipmentdesigner/tanks/designer/ITA/ITA_heavy_AAB.dds
 	}
@@ -6458,6 +5996,21 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_ITA_heavy_CAA_camo
 		texturefile = gfx/interface/equipmentdesigner/tanks/designer/ITA/ITA_heavy_CAA_camo.dds
+	}
+
+	spriteType = {
+		name = GFX_ITA_heavy_AA_A
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/ITA/ITA_heavy_AA_A.dds
+	}
+
+	spriteType = {
+		name = GFX_ITA_heavy_AA_B
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/ITA/ITA_heavy_AA_B.dds
+	}
+
+	spriteType = {
+		name = GFX_ITA_heavy_AA_C
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/ITA/ITA_heavy_AA_C.dds
 	}
 
 }

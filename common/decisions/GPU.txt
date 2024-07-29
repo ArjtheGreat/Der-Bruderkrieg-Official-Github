@@ -1,1299 +1,1299 @@
-GPU_ministry_category = {
-	GPU_opposition_coup = {
+# GPU_ministry_category = {
+# 	GPU_opposition_coup = {
 	
-		priority = 10
-		icon = decision_revolt
+# 		priority = 10
+# 		icon = decision_revolt
 	
-		available = {
-			hidden_trigger = { always = no }
-		}
+# 		available = {
+# 			hidden_trigger = { always = no }
+# 		}
 	
-		days_mission_timeout = 150
+# 		days_mission_timeout = 150
 	
-		fire_only_once = yes
+# 		fire_only_once = yes
 	
-		activation = {
-			has_completed_focus = GPU_the_ministry_question
-		}
+# 		activation = {
+# 			has_completed_focus = GPU_the_ministry_question
+# 		}
 	
-		visible = {
-		tag = GPU
-		NOT = {
-			has_country_flag = SGC_court_opposition_crushed
-		}
-		} 
+# 		visible = {
+# 		tag = GPU
+# 		NOT = {
+# 			has_country_flag = SGC_court_opposition_crushed
+# 		}
+# 		} 
 	
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 	
-		is_good = yes
+# 		is_good = yes
 	 
-		timeout_effect = {
-			GPU = {
-				SGC_court_coup_effect = yes
-				remove_ideas = GPU_court_factionalism
-			}
-			set_country_flag = SGC_is_fucked
+# 		timeout_effect = {
+# 			GPU = {
+# 				SGC_court_coup_effect = yes
+# 				remove_ideas = GPU_court_factionalism
+# 			}
+# 			set_country_flag = SGC_is_fucked
 
-		}
-	}
-	GPU_calm_the_people = {
-		icon = generic_civil_support
+# 		}
+# 	}
+# 	GPU_calm_the_people = {
+# 		icon = generic_civil_support
 
-		available = { 
+# 		available = { 
 
-		}
-		visible = {
-			OR = {
-				has_completed_focus = GPU_keep_vohn_car
-				has_completed_focus = GPU_appoint_franz_ferdinand
-				has_completed_focus = GPU_appoint_von_rundstent
-			}
-		}
-		cost = 15
-		days_remove = 50
-		ai_will_do = {
-			factor = 1000
-		}
-		remove_effect = {
+# 		}
+# 		visible = {
+# 			OR = {
+# 				has_completed_focus = GPU_keep_vohn_car
+# 				has_completed_focus = GPU_appoint_franz_ferdinand
+# 				has_completed_focus = GPU_appoint_von_rundstent
+# 			}
+# 		}
+# 		cost = 15
+# 		days_remove = 50
+# 		ai_will_do = {
+# 			factor = 1000
+# 		}
+# 		remove_effect = {
 			
-		}
-		complete_effect = {
-			add_days_mission_timeout = {
-				mission = GPU_opposition_coup
-				days = 30
-			}
-		}
-	}
+# 		}
+# 		complete_effect = {
+# 			add_days_mission_timeout = {
+# 				mission = GPU_opposition_coup
+# 				days = 30
+# 			}
+# 		}
+# 	}
 
-	GPU_bribe_courtiers = {
-		icon = generic_operation
+# 	GPU_bribe_courtiers = {
+# 		icon = generic_operation
 
-		available = {
+# 		available = {
 
-		}
-		visible = {
-			OR = {
-				has_completed_focus = GPU_keep_vohn_car
-				has_completed_focus = GPU_appoint_franz_ferdinand
-				has_completed_focus = GPU_appoint_von_rundstent
-			}
-		}
-		#cost = 30
-		days_remove = 50
-		ai_will_do = {
-			factor = 1000
-		}
-		cost = 0
-		modifier = {
-			consumer_goods_factor = 0.025
-			political_power_cost = 0.075
-		}
-		remove_effect = {
-			add_to_variable = {
-				tooltip = GPU_increase_our_influence_in_court_by_5
-				court_influence_var =  5
-			}
-			#calc_court_influence = yes
-		}
-		complete_effect = {
+# 		}
+# 		visible = {
+# 			OR = {
+# 				has_completed_focus = GPU_keep_vohn_car
+# 				has_completed_focus = GPU_appoint_franz_ferdinand
+# 				has_completed_focus = GPU_appoint_von_rundstent
+# 			}
+# 		}
+# 		#cost = 30
+# 		days_remove = 50
+# 		ai_will_do = {
+# 			factor = 1000
+# 		}
+# 		cost = 0
+# 		modifier = {
+# 			consumer_goods_factor = 0.025
+# 			political_power_cost = 0.075
+# 		}
+# 		remove_effect = {
+# 			add_to_variable = {
+# 				tooltip = GPU_increase_our_influence_in_court_by_5
+# 				court_influence_var =  5
+# 			}
+# 			#calc_court_influence = yes
+# 		}
+# 		complete_effect = {
 			
-		}
-	}
-	GPU_medium_bribe = {
-		icon = generic_operation
+# 		}
+# 	}
+# 	GPU_medium_bribe = {
+# 		icon = generic_operation
 
-		available = {
+# 		available = {
 
-		}
-		visible = {
-			OR = {
-				has_completed_focus = GPU_keep_vohn_car
-				has_completed_focus = GPU_appoint_franz_ferdinand
-				has_completed_focus = GPU_appoint_von_rundstent
-			}
-		}
-		#cost = 30
-		days_remove = 20
-		ai_will_do = {
-			factor = 1000
-		}
-		modifier = {
-			consumer_goods_factor = 0.05
-			political_power_cost = 0.1
-		}
-		cost = 50
-		remove_effect = {
-			add_to_variable = {
-				tooltip = GPU_increase_our_influence_in_court_by_10
-				court_influence_var =  10
-			}
-			#calc_court_influence = yes
-		}
-		complete_effect = {
+# 		}
+# 		visible = {
+# 			OR = {
+# 				has_completed_focus = GPU_keep_vohn_car
+# 				has_completed_focus = GPU_appoint_franz_ferdinand
+# 				has_completed_focus = GPU_appoint_von_rundstent
+# 			}
+# 		}
+# 		#cost = 30
+# 		days_remove = 20
+# 		ai_will_do = {
+# 			factor = 1000
+# 		}
+# 		modifier = {
+# 			consumer_goods_factor = 0.05
+# 			political_power_cost = 0.1
+# 		}
+# 		cost = 50
+# 		remove_effect = {
+# 			add_to_variable = {
+# 				tooltip = GPU_increase_our_influence_in_court_by_10
+# 				court_influence_var =  10
+# 			}
+# 			#calc_court_influence = yes
+# 		}
+# 		complete_effect = {
 			
-		}
-	}
-	GPU_massive_bribe = {
-		icon = generic_operation
+# 		}
+# 	}
+# 	GPU_massive_bribe = {
+# 		icon = generic_operation
 
-		available = {
+# 		available = {
 
-		}
-		visible = {
-			OR = {
-				has_completed_focus = GPU_keep_vohn_car
-				has_completed_focus = GPU_appoint_franz_ferdinand
-				has_completed_focus = GPU_appoint_von_rundstent
-			}
-		}
-		#cost = 30
-		days_remove = 40
-		ai_will_do = {
-			factor = 1000
-		}
-		modifier = {
-			consumer_goods_factor = 0.075
-			political_power_cost = 0.15
-		}
-		cost = 100
-		remove_effect = {
-			add_to_variable = {
-				tooltip = GPU_increase_our_influence_in_court_by_10
-				court_influence_var =  10
-			}
-			#calc_court_influence = yes
-		}
-		complete_effect = {
+# 		}
+# 		visible = {
+# 			OR = {
+# 				has_completed_focus = GPU_keep_vohn_car
+# 				has_completed_focus = GPU_appoint_franz_ferdinand
+# 				has_completed_focus = GPU_appoint_von_rundstent
+# 			}
+# 		}
+# 		#cost = 30
+# 		days_remove = 40
+# 		ai_will_do = {
+# 			factor = 1000
+# 		}
+# 		modifier = {
+# 			consumer_goods_factor = 0.075
+# 			political_power_cost = 0.15
+# 		}
+# 		cost = 100
+# 		remove_effect = {
+# 			add_to_variable = {
+# 				tooltip = GPU_increase_our_influence_in_court_by_10
+# 				court_influence_var =  10
+# 			}
+# 			#calc_court_influence = yes
+# 		}
+# 		complete_effect = {
 			
-		}
-	}
-	GPU_dismiss_hate_courtiers = {
-		icon = generic_political_discourse
+# 		}
+# 	}
+# 	GPU_dismiss_hate_courtiers = {
+# 		icon = generic_political_discourse
 
-		available = {
+# 		available = {
 
-		}
-		visible = {
-			OR = {
-				has_completed_focus = GPU_keep_vohn_car
-				has_completed_focus = GPU_appoint_franz_ferdinand
-				has_completed_focus = GPU_appoint_von_rundstent
-			}
-		}
-		cost = 25
-		days_remove = 50
-		ai_will_do = {
-			factor = 1000
-		}
-		remove_effect = {
+# 		}
+# 		visible = {
+# 			OR = {
+# 				has_completed_focus = GPU_keep_vohn_car
+# 				has_completed_focus = GPU_appoint_franz_ferdinand
+# 				has_completed_focus = GPU_appoint_von_rundstent
+# 			}
+# 		}
+# 		cost = 25
+# 		days_remove = 50
+# 		ai_will_do = {
+# 			factor = 1000
+# 		}
+# 		remove_effect = {
 			
-			add_to_variable = {
-				tooltip = GPU_increase_our_influence_in_court_by_5
-				court_influence_var =  5
-			}
-			#calc_court_influence = yes
-		}
-		complete_effect = {
+# 			add_to_variable = {
+# 				tooltip = GPU_increase_our_influence_in_court_by_5
+# 				court_influence_var =  5
+# 			}
+# 			#calc_court_influence = yes
+# 		}
+# 		complete_effect = {
 			
-		}
-	}
-	GPU_support_loyalists = {
-		icon = generic_independence
+# 		}
+# 	}
+# 	GPU_support_loyalists = {
+# 		icon = generic_independence
 
-		available = {
+# 		available = {
 
-		}
-		visible = {
-			OR = {
-				has_completed_focus = GPU_keep_vohn_car
-				has_completed_focus = GPU_appoint_franz_ferdinand
-				has_completed_focus = GPU_appoint_von_rundstent
-			}
-		}
-		cost = 30
-		days_remove = 50
-		ai_will_do = {
-			factor = 1000
-		}
-		remove_effect = {
-			clr_country_flag = support_loyalists_decision_flag
-		}
-		complete_effect = {
-			set_country_flag = support_loyalists_decision_flag
-		}
-	}
-	GPU_arrest_court_dissenters = {
-		icon = generic_nationalism
+# 		}
+# 		visible = {
+# 			OR = {
+# 				has_completed_focus = GPU_keep_vohn_car
+# 				has_completed_focus = GPU_appoint_franz_ferdinand
+# 				has_completed_focus = GPU_appoint_von_rundstent
+# 			}
+# 		}
+# 		cost = 30
+# 		days_remove = 50
+# 		ai_will_do = {
+# 			factor = 1000
+# 		}
+# 		remove_effect = {
+# 			clr_country_flag = support_loyalists_decision_flag
+# 		}
+# 		complete_effect = {
+# 			set_country_flag = support_loyalists_decision_flag
+# 		}
+# 	}
+# 	GPU_arrest_court_dissenters = {
+# 		icon = generic_nationalism
 
-		available = {
+# 		available = {
 
-		}
-		visible = {
-			OR = {
-				has_completed_focus = GPU_keep_vohn_car
-				has_completed_focus = GPU_appoint_franz_ferdinand
-				has_completed_focus = GPU_appoint_von_rundstent
-			}
-		}
-		cost = 0
-		modifier = {
-			conscription_factor = -0.1
-			stability_factor = -0.05
-		}
-		days_remove = 35
-		ai_will_do = {
-			factor = 1000
-		}
-		remove_effect = {
-			clr_country_flag = arrest_courrt_distenter_flag
-		}
-		complete_effect = {
-			add_to_variable = {
-				tooltip = GPU_increase_our_influence_in_court_by_5
-				court_influence_var = 5
-			}
-			#calc_court_influence = yes
+# 		}
+# 		visible = {
+# 			OR = {
+# 				has_completed_focus = GPU_keep_vohn_car
+# 				has_completed_focus = GPU_appoint_franz_ferdinand
+# 				has_completed_focus = GPU_appoint_von_rundstent
+# 			}
+# 		}
+# 		cost = 0
+# 		modifier = {
+# 			conscription_factor = -0.1
+# 			stability_factor = -0.05
+# 		}
+# 		days_remove = 35
+# 		ai_will_do = {
+# 			factor = 1000
+# 		}
+# 		remove_effect = {
+# 			clr_country_flag = arrest_courrt_distenter_flag
+# 		}
+# 		complete_effect = {
+# 			add_to_variable = {
+# 				tooltip = GPU_increase_our_influence_in_court_by_5
+# 				court_influence_var = 5
+# 			}
+# 			#calc_court_influence = yes
 
 			
-		}
-	}
+# 		}
+# 	}
 	
-	GPU_dissenters_in_munich = {
-		icon = generic_ignite_civil_war
+# 	GPU_dissenters_in_munich = {
+# 		icon = generic_ignite_civil_war
 
-		available = {
+# 		available = {
 
-		}
-		visible = {
-			OR = {
-				has_completed_focus = GPU_keep_vohn_car
-				has_completed_focus = GPU_appoint_franz_ferdinand
-				has_completed_focus = GPU_appoint_von_rundstent
-			}
-		}
-		days_remove = 35
-		ai_will_do = {
-			factor = 1000
-		}
-		remove_effect = {
-			clr_country_flag = arrest_courrt_distenter_flag
-		}
-		modifier = {
-			industrial_capacity_factory = -0.1
-			stability_factor = -0.05
-		}
-		complete_effect = {
-			add_to_variable = {
-				tooltip = GPU_increase_our_influence_in_court_by_5
-				court_influence_var = 5
-			}
+# 		}
+# 		visible = {
+# 			OR = {
+# 				has_completed_focus = GPU_keep_vohn_car
+# 				has_completed_focus = GPU_appoint_franz_ferdinand
+# 				has_completed_focus = GPU_appoint_von_rundstent
+# 			}
+# 		}
+# 		days_remove = 35
+# 		ai_will_do = {
+# 			factor = 1000
+# 		}
+# 		remove_effect = {
+# 			clr_country_flag = arrest_courrt_distenter_flag
+# 		}
+# 		modifier = {
+# 			industrial_capacity_factory = -0.1
+# 			stability_factor = -0.05
+# 		}
+# 		complete_effect = {
+# 			add_to_variable = {
+# 				tooltip = GPU_increase_our_influence_in_court_by_5
+# 				court_influence_var = 5
+# 			}
 			
 			
-		}
-	}
-	GPU_show_of_force = {
-		icon = generic_army_support
+# 		}
+# 	}
+# 	GPU_show_of_force = {
+# 		icon = generic_army_support
 
-		available = {
+# 		available = {
 
-		}
-		visible = {
-			OR = {
-				has_completed_focus = GPU_keep_vohn_car
-				has_completed_focus = GPU_appoint_franz_ferdinand
-				has_completed_focus = GPU_appoint_von_rundstent
-			}
-		}
-		fire_only_once = yes
-		cost = 40
-		days_remove = 35
-		ai_will_do = {
-			factor = 1000
-		}
-		modifier = {
-			war_support_factor = 0.05
-			stability_factor = -0.025
-		}
-		remove_effect = {
-			add_to_variable = {
-				tooltip = GPU_increase_our_influence_in_court_by_5
-				court_influence_var = 10
-			}
-			add_manpower = -1000
-		}
-		complete_effect = {
+# 		}
+# 		visible = {
+# 			OR = {
+# 				has_completed_focus = GPU_keep_vohn_car
+# 				has_completed_focus = GPU_appoint_franz_ferdinand
+# 				has_completed_focus = GPU_appoint_von_rundstent
+# 			}
+# 		}
+# 		fire_only_once = yes
+# 		cost = 40
+# 		days_remove = 35
+# 		ai_will_do = {
+# 			factor = 1000
+# 		}
+# 		modifier = {
+# 			war_support_factor = 0.05
+# 			stability_factor = -0.025
+# 		}
+# 		remove_effect = {
+# 			add_to_variable = {
+# 				tooltip = GPU_increase_our_influence_in_court_by_5
+# 				court_influence_var = 10
+# 			}
+# 			add_manpower = -1000
+# 		}
+# 		complete_effect = {
 			
-		}
-	}
+# 		}
+# 	}
 
-	GPU_franz_rule_secured = {
-		icon = generic_army_support
+# 	GPU_franz_rule_secured = {
+# 		icon = generic_army_support
 
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = GPU_court_influence_over_70
-				check_variable = { court_influence_var > 69 }
-			}
-		}
-		visible = {
-			has_completed_focus = GPU_appoint_franz_ferdinand
-		}
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1000
-		}
-		complete_effect = {
-			country_event = { id = southgermanconfederationcoup.5 hours = 1 }
-		}
-	}
-	GPU_von_cahr_rule_secured = {
-		icon = generic_army_support
+# 		available = {
+# 			custom_trigger_tooltip = {
+# 				tooltip = GPU_court_influence_over_70
+# 				check_variable = { court_influence_var > 69 }
+# 			}
+# 		}
+# 		visible = {
+# 			has_completed_focus = GPU_appoint_franz_ferdinand
+# 		}
+# 		fire_only_once = yes
+# 		ai_will_do = {
+# 			factor = 1000
+# 		}
+# 		complete_effect = {
+# 			country_event = { id = southgermanconfederationcoup.5 hours = 1 }
+# 		}
+# 	}
+# 	GPU_von_cahr_rule_secured = {
+# 		icon = generic_army_support
 
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = GPU_court_influence_over_70
-				check_variable = { court_influence_var > 69 }
-			}
-		}
-		visible = {
-			has_completed_focus = GPU_keep_vohn_car
-		}
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 100
-		}
-		complete_effect = {
-			country_event = { id = southgermanconfederationcoup.1 hours = 1 }
-		}
-	}
-	GPU_von_rundstent_rule_secured = {
-		icon = generic_army_support
+# 		available = {
+# 			custom_trigger_tooltip = {
+# 				tooltip = GPU_court_influence_over_70
+# 				check_variable = { court_influence_var > 69 }
+# 			}
+# 		}
+# 		visible = {
+# 			has_completed_focus = GPU_keep_vohn_car
+# 		}
+# 		fire_only_once = yes
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		complete_effect = {
+# 			country_event = { id = southgermanconfederationcoup.1 hours = 1 }
+# 		}
+# 	}
+# 	GPU_von_rundstent_rule_secured = {
+# 		icon = generic_army_support
 
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = GPU_court_influence_over_70
-				check_variable = { court_influence_var > 69 }
-			}
-		}
-		visible = {
-			has_completed_focus = GPU_appoint_von_rundstent
-		}
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 100
-		}
-		complete_effect = {
-			country_event = { id = southgermanconfederationcoup.3 hours = 1 }
-		}
-	}
-}
+# 		available = {
+# 			custom_trigger_tooltip = {
+# 				tooltip = GPU_court_influence_over_70
+# 				check_variable = { court_influence_var > 69 }
+# 			}
+# 		}
+# 		visible = {
+# 			has_completed_focus = GPU_appoint_von_rundstent
+# 		}
+# 		fire_only_once = yes
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		complete_effect = {
+# 			country_event = { id = southgermanconfederationcoup.3 hours = 1 }
+# 		}
+# 	}
+# }
 
-GPU_von_rundstedt_fuhrer_revolt = {
-	GPU_convert_baden_to_nationalism = {
+# GPU_von_rundstedt_fuhrer_revolt = {
+# 	GPU_convert_baden_to_nationalism = {
 
-		icon = eng_trade_unions_demand
+# 		icon = eng_trade_unions_demand
 
-		allowed = {
-		}
+# 		allowed = {
+# 		}
 
-		visible = {
-			always = yes
-		}
+# 		visible = {
+# 			always = yes
+# 		}
 
-		days_remove = 100 
+# 		days_remove = 100 
 
-		cost = 0
+# 		cost = 0
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_equipment = {
-				infantry_equipment_1 > 499
-			}
-		}
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = -500
-			}
-		}
-		custom_cost_trigger = {
-			has_equipment = {
-				infantry_equipment_1 > 499
-			}
-		}
-		custom_cost_text = GPU_convert_sgc_to_nationalism_tt
-		remove_effect = {
-			BAD = {
-				set_country_flag = SGC_von_rundstedt_integrated
-				set_politics = {
-					ruling_party = ultranationalism
-				}
-			}
-		}
-	}
-	GPU_convert_wur_to_nationalism = {
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		available = {
+# 			has_equipment = {
+# 				infantry_equipment_1 > 499
+# 			}
+# 		}
+# 		complete_effect = {
+# 			add_equipment_to_stockpile = {
+# 				type = infantry_equipment_1
+# 				amount = -500
+# 			}
+# 		}
+# 		custom_cost_trigger = {
+# 			has_equipment = {
+# 				infantry_equipment_1 > 499
+# 			}
+# 		}
+# 		custom_cost_text = GPU_convert_sgc_to_nationalism_tt
+# 		remove_effect = {
+# 			BAD = {
+# 				set_country_flag = SGC_von_rundstedt_integrated
+# 				set_politics = {
+# 					ruling_party = ultranationalism
+# 				}
+# 			}
+# 		}
+# 	}
+# 	GPU_convert_wur_to_nationalism = {
 
-		icon = eng_trade_unions_demand
+# 		icon = eng_trade_unions_demand
 
-		allowed = {
-		}
+# 		allowed = {
+# 		}
 
-		visible = {
-			always = yes
-		}
+# 		visible = {
+# 			always = yes
+# 		}
 
-		days_remove = 100 
+# 		days_remove = 100 
 
-		cost = 0
+# 		cost = 0
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		ai_will_do = {
-			factor = 100
-		}
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
 
-		available = {
-			has_equipment = {
-				infantry_equipment_1 > 499
-			}
-		}
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = -500
-			}
-		}
-		custom_cost_trigger = {
-			has_equipment = {
-				infantry_equipment_1 > 499
-			}
-		}
-		custom_cost_text = GPU_convert_sgc_to_nationalism_tt
-		remove_effect = {
-			WUR = {
-				set_country_flag = SGC_von_rundstedt_integrated
-				set_politics = {
-					ruling_party = ultranationalism
-				}
-			}
-		}
-	}
-	GPU_convert_hes_to_nationalism = {
+# 		available = {
+# 			has_equipment = {
+# 				infantry_equipment_1 > 499
+# 			}
+# 		}
+# 		complete_effect = {
+# 			add_equipment_to_stockpile = {
+# 				type = infantry_equipment_1
+# 				amount = -500
+# 			}
+# 		}
+# 		custom_cost_trigger = {
+# 			has_equipment = {
+# 				infantry_equipment_1 > 499
+# 			}
+# 		}
+# 		custom_cost_text = GPU_convert_sgc_to_nationalism_tt
+# 		remove_effect = {
+# 			WUR = {
+# 				set_country_flag = SGC_von_rundstedt_integrated
+# 				set_politics = {
+# 					ruling_party = ultranationalism
+# 				}
+# 			}
+# 		}
+# 	}
+# 	GPU_convert_hes_to_nationalism = {
 
-		icon = eng_trade_unions_demand
+# 		icon = eng_trade_unions_demand
 
-		allowed = {
-		}
+# 		allowed = {
+# 		}
 
-		visible = {
-			always = yes
-		}
+# 		visible = {
+# 			always = yes
+# 		}
 
-		days_remove = 100 
+# 		days_remove = 100 
 
-		cost = 0
+# 		cost = 0
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		ai_will_do = {
-			factor = 100
-		}
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
 
-		available = {
-			has_equipment = {
-				infantry_equipment_1 > 499
-			}
-		}
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = -500
-			}
-		}
-		custom_cost_trigger = {
-			has_equipment = {
-				infantry_equipment_1 > 499
-			}
-		}
-		custom_cost_text = GPU_convert_sgc_to_nationalism_tt
+# 		available = {
+# 			has_equipment = {
+# 				infantry_equipment_1 > 499
+# 			}
+# 		}
+# 		complete_effect = {
+# 			add_equipment_to_stockpile = {
+# 				type = infantry_equipment_1
+# 				amount = -500
+# 			}
+# 		}
+# 		custom_cost_trigger = {
+# 			has_equipment = {
+# 				infantry_equipment_1 > 499
+# 			}
+# 		}
+# 		custom_cost_text = GPU_convert_sgc_to_nationalism_tt
 
-		remove_effect = {
-			HES = {
-				set_country_flag = SGC_von_rundstedt_integrated
-				set_politics = {
-					ruling_party = ultranationalism
-				}
-			}
-		}
-	}
-	GPU_convert_nas_to_nationalism = {
+# 		remove_effect = {
+# 			HES = {
+# 				set_country_flag = SGC_von_rundstedt_integrated
+# 				set_politics = {
+# 					ruling_party = ultranationalism
+# 				}
+# 			}
+# 		}
+# 	}
+# 	GPU_convert_nas_to_nationalism = {
 
-		icon = eng_trade_unions_demand
+# 		icon = eng_trade_unions_demand
 
-		allowed = {
-		}
+# 		allowed = {
+# 		}
 
-		visible = {
-			always = yes
-		}
+# 		visible = {
+# 			always = yes
+# 		}
 
-		days_remove = 100 
+# 		days_remove = 100 
 
-		cost = 0
+# 		cost = 0
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		ai_will_do = {
-			factor = 100
-		}
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
 
-		available = {
-			has_equipment = {
-				infantry_equipment_1 > 499
-			}
-		}
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = -500
-			}
-		}
-		custom_cost_trigger = {
-			has_equipment = {
-				infantry_equipment_1 > 499
-			}
-		}
-		custom_cost_text = GPU_convert_sgc_to_nationalism_tt
+# 		available = {
+# 			has_equipment = {
+# 				infantry_equipment_1 > 499
+# 			}
+# 		}
+# 		complete_effect = {
+# 			add_equipment_to_stockpile = {
+# 				type = infantry_equipment_1
+# 				amount = -500
+# 			}
+# 		}
+# 		custom_cost_trigger = {
+# 			has_equipment = {
+# 				infantry_equipment_1 > 499
+# 			}
+# 		}
+# 		custom_cost_text = GPU_convert_sgc_to_nationalism_tt
 
-		remove_effect = {
-			NAS = {
-				set_country_flag = SGC_von_rundstedt_integrated
-				set_politics = {
-					ruling_party = ultranationalism
-				}
-			}
-		}
-	}
-}
+# 		remove_effect = {
+# 			NAS = {
+# 				set_country_flag = SGC_von_rundstedt_integrated
+# 				set_politics = {
+# 					ruling_party = ultranationalism
+# 				}
+# 			}
+# 		}
+# 	}
+# }
 
-GPU_a_new_german_state = {
-	GPU_the_frankfurt_parliament_mission = {
+# GPU_a_new_german_state = {
+# 	GPU_the_frankfurt_parliament_mission = {
 	
-		priority = 10
-		icon = decision_revolt
+# 		priority = 10
+# 		icon = decision_revolt
 	
-		available = {
-			hidden_trigger = { always = no }
-		}
+# 		available = {
+# 			hidden_trigger = { always = no }
+# 		}
 	
-		days_mission_timeout = 250
+# 		days_mission_timeout = 250
 	
-		fire_only_once = yes
+# 		fire_only_once = yes
 	
-		activation = {
-			tag = GPU
-			has_completed_focus = GPU_preparing_for_german_unification
-			GER = {
-				is_puppet_of = AUS
-			}
-		}
+# 		activation = {
+# 			tag = GPU
+# 			has_completed_focus = GPU_preparing_for_german_unification
+# 			GER = {
+# 				is_puppet_of = AUS
+# 			}
+# 		}
 	
-		visible = {
-			tag = GPU
-		} 
+# 		visible = {
+# 			tag = GPU
+# 		} 
 	
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 	
-		is_good = yes
+# 		is_good = yes
 	 
-		timeout_effect = {
-			complete_national_focus = GPU_the_frankfurt_parliament
-			country_event = GPU_german_unification_events.4
-			if = {
-				limit = {
-					has_idea = BAD_church_clashes
-				}
-				remove_ideas = BAD_church_clashes
-			}
-		}
-	}
-	GPU_recruit_von_kluge = {
+# 		timeout_effect = {
+# 			complete_national_focus = GPU_the_frankfurt_parliament
+# 			country_event = GPU_german_unification_events.4
+# 			if = {
+# 				limit = {
+# 					has_idea = BAD_church_clashes
+# 				}
+# 				remove_ideas = BAD_church_clashes
+# 			}
+# 		}
+# 	}
+# 	GPU_recruit_von_kluge = {
 
-		icon = eng_trade_unions_demand
+# 		icon = eng_trade_unions_demand
 
-		allowed = {
-		}
-
-	
-
-		days_remove = 100 
-
-		cost = 0
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			GER = {
-				is_puppet_of = AUS
-			}
-		}
-		visible = {
-			has_completed_focus = GPU_preserve_the_prussian_generals_corp
-		}
-		remove_effect = {
-			GER = {
-				GER_gunther_von_kluge = {
-					set_character_flag = GPU_former_prussian_general_now_bavarian
-					set_nationality = GPU
-				}
-			}
-		}
-	}
-}
-
-GPU_anti_berlin_protocols_category = {
-	GPU_invite_hannover = {
-
-		icon = eng_trade_unions_demand
-
-		allowed = {
-		}
+# 		allowed = {
+# 		}
 
 	
 
-		days_remove = 100 
+# 		days_remove = 100 
 
-		cost = 0
+# 		cost = 0
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			NOT = {
-				HAN = {
-					is_guaranteed_by = ENG
-				}
-			}
-		}
-		visible = {
-			has_completed_focus = GER_our_german_friends
-		}
-		complete_effect = {
-			HAN = {
-				country_event = generic.5
-			}
-		}
-	}
-	GPU_order_66 = {
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		available = {
+# 			GER = {
+# 				is_puppet_of = AUS
+# 			}
+# 		}
+# 		visible = {
+# 			has_completed_focus = GPU_preserve_the_prussian_generals_corp
+# 		}
+# 		remove_effect = {
+# 			GER = {
+# 				GER_gunther_von_kluge = {
+# 					set_character_flag = GPU_former_prussian_general_now_bavarian
+# 					set_nationality = GPU
+# 				}
+# 			}
+# 		}
+# 	}
+# }
 
-		icon = eng_trade_unions_demand
+# GPU_anti_berlin_protocols_category = {
+# 	GPU_invite_hannover = {
 
-		allowed = {
-		}
+# 		icon = eng_trade_unions_demand
 
-	
-
-		days_remove = 100 
-
-		cost = 0
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_war_with = GER
-		}
-		visible = {
-			has_completed_focus = GPU_hold_the_reichsarmee
-		}
-		complete_effect = {
-			every_country = {
-				limit = {
-					is_in_faction_with = GPU
-				}
-				every_unit_leader = {
-					add_temporary_buff_to_units = {
-						combat_defense = 0.25
-						org_damage_multiplier = -1.0
-						str_damage_multiplier = 0.25
-						war_support_reduction_on_damage = 0.2
-
-						days = 100
-						tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
-					}
-				}
-			}
-		}
-	}
-	GPU_order_69 = {
-
-		icon = eng_trade_unions_demand
-
-		allowed = {
-		}
+# 		allowed = {
+# 		}
 
 	
 
-		days_remove = 100 
+# 		days_remove = 100 
 
-		cost = 0
+# 		cost = 0
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_war_with = GER
-		}
-		visible = {
-			has_completed_focus = GPU_hold_the_reichsarmee
-		}
-		complete_effect = {
-			every_country = {
-				limit = {
-					is_in_faction_with = GPU
-				}
-				every_unit_leader = {
-					add_temporary_buff_to_units = {
-						combat_offense = 0.25
-						combat_breakthrough = 0.25
-						org_damage_multiplier = -1.0
-						str_damage_multiplier = 0.25
-						war_support_reduction_on_damage = 0.2
-						cannot_retreat_while_attacking = 1.0
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		available = {
+# 			NOT = {
+# 				HAN = {
+# 					is_guaranteed_by = ENG
+# 				}
+# 			}
+# 		}
+# 		visible = {
+# 			has_completed_focus = GER_our_german_friends
+# 		}
+# 		complete_effect = {
+# 			HAN = {
+# 				country_event = generic.5
+# 			}
+# 		}
+# 	}
+# 	GPU_order_66 = {
+
+# 		icon = eng_trade_unions_demand
+
+# 		allowed = {
+# 		}
+
+	
+
+# 		days_remove = 100 
+
+# 		cost = 0
+
+# 		fire_only_once = yes
+
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		available = {
+# 			has_war_with = GER
+# 		}
+# 		visible = {
+# 			has_completed_focus = GPU_hold_the_reichsarmee
+# 		}
+# 		complete_effect = {
+# 			every_country = {
+# 				limit = {
+# 					is_in_faction_with = GPU
+# 				}
+# 				every_unit_leader = {
+# 					add_temporary_buff_to_units = {
+# 						combat_defense = 0.25
+# 						org_damage_multiplier = -1.0
+# 						str_damage_multiplier = 0.25
+# 						war_support_reduction_on_damage = 0.2
+
+# 						days = 100
+# 						tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# 	GPU_order_69 = {
+
+# 		icon = eng_trade_unions_demand
+
+# 		allowed = {
+# 		}
+
+	
+
+# 		days_remove = 100 
+
+# 		cost = 0
+
+# 		fire_only_once = yes
+
+# 		ai_will_do = {
+# 			factor = 100
+# 		}
+# 		available = {
+# 			has_war_with = GER
+# 		}
+# 		visible = {
+# 			has_completed_focus = GPU_hold_the_reichsarmee
+# 		}
+# 		complete_effect = {
+# 			every_country = {
+# 				limit = {
+# 					is_in_faction_with = GPU
+# 				}
+# 				every_unit_leader = {
+# 					add_temporary_buff_to_units = {
+# 						combat_offense = 0.25
+# 						combat_breakthrough = 0.25
+# 						org_damage_multiplier = -1.0
+# 						str_damage_multiplier = 0.25
+# 						war_support_reduction_on_damage = 0.2
+# 						cannot_retreat_while_attacking = 1.0
 									
-						days = 100
-						tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
-					}
-				}
-			}
-		}
-	}
-}
+# 						days = 100
+# 						tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# }
 
-GPU_great_purge_decision_category = {
-	GPU_pierced_wings_completed = {
+# GPU_great_purge_decision_category = {
+# 	GPU_pierced_wings_completed = {
 	
-		priority = 10
-		icon = decision_revolt
+# 		priority = 10
+# 		icon = decision_revolt
 	
-		available = {
-			hidden_trigger = { always = no }
-		}
+# 		available = {
+# 			hidden_trigger = { always = no }
+# 		}
 	
-		days_mission_timeout = 30
+# 		days_mission_timeout = 30
 	
-		fire_only_once = yes
+# 		fire_only_once = yes
 	
-		activation = {
-			has_completed_focus = GPU_deploy_the_secret_police
-		}
+# 		activation = {
+# 			has_completed_focus = GPU_deploy_the_secret_police
+# 		}
 	
-		visible = {
-			tag = GPU
-		} 
+# 		visible = {
+# 			tag = GPU
+# 		} 
 	
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 	
-		is_good = yes
+# 		is_good = yes
 	 
-		timeout_effect = {
-			country_event = GPU_absolutist_germany.5
-		}
-	}
-}
+# 		timeout_effect = {
+# 			country_event = GPU_absolutist_germany.5
+# 		}
+# 	}
+# }
 
 
-GPU_industrial_feudalism_category = {
-  GPU_send_in_former_socialists = {
-    icon = generic_civil_support
-    cost = 40
+# GPU_industrial_feudalism_category = {
+#   GPU_send_in_former_socialists = {
+#     icon = generic_civil_support
+#     cost = 40
 
-    fire_only_once = yes
-
-    
-
-    days_remove = 75
-    
-    complete_effect = {
-    }
-
-    modifier = {
-      political_power_cost = 0.15
-      communism_drift = -0.03
-      socialism_democratic_drift = -0.03
-      democratic_communism_drift = -0.03
-    }
-    
-    remove_effect = {
-      add_to_variable = {
-        tooltip = GPU_laborer_number_increase_by_10000
-        GPU_laborer_number = 10000
-      }
-    }
-  }
-  GPU_send_in_other_political_prisoners = {
-    icon = generic_civil_support
-    cost = 30
-
-    fire_only_once = yes
+#     fire_only_once = yes
 
     
 
-    days_remove = 50
+#     days_remove = 75
     
-    complete_effect = {
-    }
+#     complete_effect = {
+#     }
 
-    modifier = {
-      political_power_cost = 0.1
-      democratic_liberalism_drift = -0.1
-    }
+#     modifier = {
+#       political_power_cost = 0.15
+#       communism_drift = -0.03
+#       socialism_democratic_drift = -0.03
+#       democratic_communism_drift = -0.03
+#     }
     
-    remove_effect = {
-      add_to_variable = {
-        tooltip = GPU_laborer_number_increase_by_5000
-        GPU_laborer_number = 5000
-      }
-    }
-  }
-  GPU_send_in_mussolini_loyalists = {
-    icon = generic_civil_support
-    cost = 30
+#     remove_effect = {
+#       add_to_variable = {
+#         tooltip = GPU_laborer_number_increase_by_10000
+#         GPU_laborer_number = 10000
+#       }
+#     }
+#   }
+#   GPU_send_in_other_political_prisoners = {
+#     icon = generic_civil_support
+#     cost = 30
 
-    fire_only_once = yes
+#     fire_only_once = yes
 
     
 
-    days_remove = 50
+#     days_remove = 50
     
-    complete_effect = {
-    }
+#     complete_effect = {
+#     }
 
-    modifier = {
-      political_power_cost = 0.1
-      fascism_drift = -0.1
-    }
+#     modifier = {
+#       political_power_cost = 0.1
+#       democratic_liberalism_drift = -0.1
+#     }
     
-    remove_effect = {
-      add_to_variable = {
-        tooltip = GPU_laborer_number_increase_by_5000
-        GPU_laborer_number = 5000
-      }
-    }
-  }
+#     remove_effect = {
+#       add_to_variable = {
+#         tooltip = GPU_laborer_number_increase_by_5000
+#         GPU_laborer_number = 5000
+#       }
+#     }
+#   }
+#   GPU_send_in_mussolini_loyalists = {
+#     icon = generic_civil_support
+#     cost = 30
 
-  ##worker decisisions
-  GPU_small_build_civlian_factory_with_workers = {
-    icon = generic_industry
-    cost = 0
+#     fire_only_once = yes
+
+    
+
+#     days_remove = 50
+    
+#     complete_effect = {
+#     }
+
+#     modifier = {
+#       political_power_cost = 0.1
+#       fascism_drift = -0.1
+#     }
+    
+#     remove_effect = {
+#       add_to_variable = {
+#         tooltip = GPU_laborer_number_increase_by_5000
+#         GPU_laborer_number = 5000
+#       }
+#     }
+#   }
+
+#   ##worker decisisions
+#   GPU_small_build_civlian_factory_with_workers = {
+#     icon = generic_industry
+#     cost = 0
   
-    fire_only_once = no
+#     fire_only_once = no
   
-    available = {
-      custom_trigger_tooltip = {
-        tooltip = GPU_number_of_workers_is_greater_than_3000
-        check_variable = {
-          var = GPU_laborer_number compare = greater_than value = 3000
-        }
-      }
-    }
+#     available = {
+#       custom_trigger_tooltip = {
+#         tooltip = GPU_number_of_workers_is_greater_than_3000
+#         check_variable = {
+#           var = GPU_laborer_number compare = greater_than value = 3000
+#         }
+#       }
+#     }
   
-    visible = {
-      has_completed_focus = GPU_industrial_feudalism
-    }
+#     visible = {
+#       has_completed_focus = GPU_industrial_feudalism
+#     }
   
-    days_remove = 30
-    days_re_enable = 10
+#     days_remove = 30
+#     days_re_enable = 10
     
    
   
-   complete_effect = {
-      add_to_variable = {
-        tooltip = GPU_laborer_number_decrease_by_3000
-        GPU_laborer_number = 3000
-      }
-    }
+#    complete_effect = {
+#       add_to_variable = {
+#         tooltip = GPU_laborer_number_decrease_by_3000
+#         GPU_laborer_number = 3000
+#       }
+#     }
     
-    remove_effect = {
-      random_owned_controlled_state = {
-        add_building_construction = {
-          type = industrial_complex
-          level = 2
-          instant_build = yes
-        }
-      }
-    }
-  }
-  GPU_large_build_civlian_factory_with_workers = {
-    icon = generic_industry
-    cost = 0
+#     remove_effect = {
+#       random_owned_controlled_state = {
+#         add_building_construction = {
+#           type = industrial_complex
+#           level = 2
+#           instant_build = yes
+#         }
+#       }
+#     }
+#   }
+#   GPU_large_build_civlian_factory_with_workers = {
+#     icon = generic_industry
+#     cost = 0
   
-    fire_only_once = no
+#     fire_only_once = no
   
-    available = {
-      custom_trigger_tooltip = {
-        tooltip = GPU_number_of_workers_is_greater_than_6000
-        check_variable = {
-          var = GPU_laborer_number compare = greater_than value = 6000
-        }
-      }
-    }
+#     available = {
+#       custom_trigger_tooltip = {
+#         tooltip = GPU_number_of_workers_is_greater_than_6000
+#         check_variable = {
+#           var = GPU_laborer_number compare = greater_than value = 6000
+#         }
+#       }
+#     }
   
-    visible = {
-      has_completed_focus = GPU_industrial_feudalism
-    }
+#     visible = {
+#       has_completed_focus = GPU_industrial_feudalism
+#     }
   
-    days_remove = 60
-    days_re_enable = 10
-    
-   
-  
-   complete_effect = {
-      add_to_variable = {
-        tooltip = GPU_laborer_number_decrease_by_6000
-        GPU_laborer_number = 6000
-      }
-    }
-    
-    remove_effect = {
-      random_owned_controlled_state = {
-        add_building_construction = {
-          type = industrial_complex
-          level = 2
-          instant_build = yes
-        }
-      }
-      random_owned_controlled_state = {
-        add_building_construction = {
-          type = industrial_complex
-          level = 2
-          instant_build = yes
-        }
-      }
-    }
-  }
-  GPU_small_build_infrastructure_with_workers = {
-    icon = generic_construction
-    cost = 0
-  
-    fire_only_once = no
-  
-    available = {
-      custom_trigger_tooltip = {
-        tooltip = GPU_number_of_workers_is_greater_than_3000
-        check_variable = {
-          var = GPU_laborer_number compare = greater_than value = 3000
-        }
-      }
-    }
-  
-    visible = {
-      has_completed_focus = GPU_industrial_feudalism
-    }
-  
-    days_remove = 30
-    days_re_enable = 10
+#     days_remove = 60
+#     days_re_enable = 10
     
    
   
-   complete_effect = {
-      add_to_variable = {
-        tooltip = GPU_laborer_number_decrease_by_3000
-        GPU_laborer_number = 3000
-      }
-    }
+#    complete_effect = {
+#       add_to_variable = {
+#         tooltip = GPU_laborer_number_decrease_by_6000
+#         GPU_laborer_number = 6000
+#       }
+#     }
     
-    remove_effect = {
-      random_owned_controlled_state = {
-        add_building_construction = {
-          type = infrastructure
-          level = 2
-          instant_build = yes
-        }
-      }
-      random_owned_controlled_state = {
-        add_building_construction = {
-          type = infrastructure
-          level = 2
-          instant_build = yes
-        }
-      }
-    }
-  }
-  GPU_large_build_infrastructure_with_workers = {
-    icon = generic_construction
-    cost = 0
+#     remove_effect = {
+#       random_owned_controlled_state = {
+#         add_building_construction = {
+#           type = industrial_complex
+#           level = 2
+#           instant_build = yes
+#         }
+#       }
+#       random_owned_controlled_state = {
+#         add_building_construction = {
+#           type = industrial_complex
+#           level = 2
+#           instant_build = yes
+#         }
+#       }
+#     }
+#   }
+#   GPU_small_build_infrastructure_with_workers = {
+#     icon = generic_construction
+#     cost = 0
   
-    fire_only_once = no
+#     fire_only_once = no
   
-    available = {
-      custom_trigger_tooltip = {
-        tooltip = GPU_number_of_workers_is_greater_than_6000
-        check_variable = {
-          var = GPU_laborer_number compare = greater_than value = 6000
-        }
-      }
-    }
+#     available = {
+#       custom_trigger_tooltip = {
+#         tooltip = GPU_number_of_workers_is_greater_than_3000
+#         check_variable = {
+#           var = GPU_laborer_number compare = greater_than value = 3000
+#         }
+#       }
+#     }
   
-    visible = {
-      has_completed_focus = GPU_industrial_feudalism
-    }
+#     visible = {
+#       has_completed_focus = GPU_industrial_feudalism
+#     }
   
-    days_remove = 60
-    days_re_enable = 10
-    
-   
-  
-   complete_effect = {
-      add_to_variable = {
-        tooltip = GPU_laborer_number_decrease_by_6000
-        GPU_laborer_number = 6000
-      }
-    }
-    
-    remove_effect = {
-      random_owned_controlled_state = {
-        add_building_construction = {
-          type = infrastructure
-          level = 2
-          instant_build = yes
-        }
-      }
-      random_owned_controlled_state = {
-        add_building_construction = {
-          type = infrastructure
-          level = 2
-          instant_build = yes
-        }
-      }
-      random_owned_controlled_state = {
-        add_building_construction = {
-          type = infrastructure
-          level = 2
-          instant_build = yes
-        }
-      }
-      random_owned_controlled_state = {
-        add_building_construction = {
-          type = infrastructure
-          level = 2
-          instant_build = yes
-        }
-      }
-    }
-  }
-  GPU_small_build_military_factories_with_workers = {
-    icon = generic_army_support
-    cost = 0
-  
-    fire_only_once = no
-  
-    available = {
-      custom_trigger_tooltip = {
-        tooltip = GPU_number_of_workers_is_greater_than_3000
-        check_variable = {
-          var = GPU_laborer_number compare = greater_than value = 3000
-        }
-      }
-    }
-  
-    visible = {
-      has_completed_focus = GPU_industrial_feudalism
-    }
-  
-    days_remove = 30
-    days_re_enable = 10
+#     days_remove = 30
+#     days_re_enable = 10
     
    
   
-   complete_effect = {
-      add_to_variable = {
-        tooltip = GPU_laborer_number_decrease_by_3000
-        GPU_laborer_number = 3000
-      }
-    }
+#    complete_effect = {
+#       add_to_variable = {
+#         tooltip = GPU_laborer_number_decrease_by_3000
+#         GPU_laborer_number = 3000
+#       }
+#     }
     
-    remove_effect = {
-      random_owned_controlled_state = {
-        add_building_construction = {
-          type = arms_factory
-          level = 2
-          instant_build = yes
-        }
-      }
-    }
-  }
-  GPU_large_build_military_factories_with_workers = {
-    icon = generic_army_support
-    cost = 0
+#     remove_effect = {
+#       random_owned_controlled_state = {
+#         add_building_construction = {
+#           type = infrastructure
+#           level = 2
+#           instant_build = yes
+#         }
+#       }
+#       random_owned_controlled_state = {
+#         add_building_construction = {
+#           type = infrastructure
+#           level = 2
+#           instant_build = yes
+#         }
+#       }
+#     }
+#   }
+#   GPU_large_build_infrastructure_with_workers = {
+#     icon = generic_construction
+#     cost = 0
   
-    fire_only_once = no
+#     fire_only_once = no
   
-    available = {
-      custom_trigger_tooltip = {
-        tooltip = GPU_number_of_workers_is_greater_than_6000
-        check_variable = {
-          var = GPU_laborer_number compare = greater_than value = 6000
-        }
-      }
-    }
+#     available = {
+#       custom_trigger_tooltip = {
+#         tooltip = GPU_number_of_workers_is_greater_than_6000
+#         check_variable = {
+#           var = GPU_laborer_number compare = greater_than value = 6000
+#         }
+#       }
+#     }
   
-    visible = {
-      has_completed_focus = GPU_industrial_feudalism
-    }
+#     visible = {
+#       has_completed_focus = GPU_industrial_feudalism
+#     }
   
-    days_remove = 60
-    days_re_enable = 10
+#     days_remove = 60
+#     days_re_enable = 10
     
    
   
-   complete_effect = {
-      add_to_variable = {
-        tooltip = GPU_laborer_number_decrease_by_6000
-        GPU_laborer_number = 6000
-      }
-    }
+#    complete_effect = {
+#       add_to_variable = {
+#         tooltip = GPU_laborer_number_decrease_by_6000
+#         GPU_laborer_number = 6000
+#       }
+#     }
     
-    remove_effect = {
-      random_owned_controlled_state = {
-        add_building_construction = {
-          type = arms_factory
-          level = 2
-          instant_build = yes
-        }
-      }
-      random_owned_controlled_state = {
-        add_building_construction = {
-          type = arms_factory
-          level = 2
-          instant_build = yes
-        }
-      }
-    }
-  }
+#     remove_effect = {
+#       random_owned_controlled_state = {
+#         add_building_construction = {
+#           type = infrastructure
+#           level = 2
+#           instant_build = yes
+#         }
+#       }
+#       random_owned_controlled_state = {
+#         add_building_construction = {
+#           type = infrastructure
+#           level = 2
+#           instant_build = yes
+#         }
+#       }
+#       random_owned_controlled_state = {
+#         add_building_construction = {
+#           type = infrastructure
+#           level = 2
+#           instant_build = yes
+#         }
+#       }
+#       random_owned_controlled_state = {
+#         add_building_construction = {
+#           type = infrastructure
+#           level = 2
+#           instant_build = yes
+#         }
+#       }
+#     }
+#   }
+#   GPU_small_build_military_factories_with_workers = {
+#     icon = generic_army_support
+#     cost = 0
+  
+#     fire_only_once = no
+  
+#     available = {
+#       custom_trigger_tooltip = {
+#         tooltip = GPU_number_of_workers_is_greater_than_3000
+#         check_variable = {
+#           var = GPU_laborer_number compare = greater_than value = 3000
+#         }
+#       }
+#     }
+  
+#     visible = {
+#       has_completed_focus = GPU_industrial_feudalism
+#     }
+  
+#     days_remove = 30
+#     days_re_enable = 10
+    
+   
+  
+#    complete_effect = {
+#       add_to_variable = {
+#         tooltip = GPU_laborer_number_decrease_by_3000
+#         GPU_laborer_number = 3000
+#       }
+#     }
+    
+#     remove_effect = {
+#       random_owned_controlled_state = {
+#         add_building_construction = {
+#           type = arms_factory
+#           level = 2
+#           instant_build = yes
+#         }
+#       }
+#     }
+#   }
+#   GPU_large_build_military_factories_with_workers = {
+#     icon = generic_army_support
+#     cost = 0
+  
+#     fire_only_once = no
+  
+#     available = {
+#       custom_trigger_tooltip = {
+#         tooltip = GPU_number_of_workers_is_greater_than_6000
+#         check_variable = {
+#           var = GPU_laborer_number compare = greater_than value = 6000
+#         }
+#       }
+#     }
+  
+#     visible = {
+#       has_completed_focus = GPU_industrial_feudalism
+#     }
+  
+#     days_remove = 60
+#     days_re_enable = 10
+    
+   
+  
+#    complete_effect = {
+#       add_to_variable = {
+#         tooltip = GPU_laborer_number_decrease_by_6000
+#         GPU_laborer_number = 6000
+#       }
+#     }
+    
+#     remove_effect = {
+#       random_owned_controlled_state = {
+#         add_building_construction = {
+#           type = arms_factory
+#           level = 2
+#           instant_build = yes
+#         }
+#       }
+#       random_owned_controlled_state = {
+#         add_building_construction = {
+#           type = arms_factory
+#           level = 2
+#           instant_build = yes
+#         }
+#       }
+#     }
+#   }
 
-  ##SECOND ROUND
-  GPU_send_in_former_socialists_2 = {
-    icon = generic_ignite_civil_war
-    cost = 40
+#   ##SECOND ROUND
+#   GPU_send_in_former_socialists_2 = {
+#     icon = generic_ignite_civil_war
+#     cost = 40
   
-    fire_only_once = no
+#     fire_only_once = no
   
-    available = {
-      custom_trigger_tooltip = {
-        tooltip = GPU_number_of_workers_is_less_than_3000
-        check_variable = {
-          GPU_laborer_number = 3000
-        }
-      }
-    }
+#     available = {
+#       custom_trigger_tooltip = {
+#         tooltip = GPU_number_of_workers_is_less_than_3000
+#         check_variable = {
+#           GPU_laborer_number = 3000
+#         }
+#       }
+#     }
 
-    visible = {
-      has_completed_focus = GPU_industrial_feudalism
-    }
+#     visible = {
+#       has_completed_focus = GPU_industrial_feudalism
+#     }
   
     
   
-    days_remove = 75
-    
-   
-  
-    modifier = {
-      political_power_cost = 0.15
-      communism_drift = -0.03
-      socialism_democratic_drift = -0.03
-      democratic_communism_drift = -0.03
-    }
-    
-    remove_effect = {
-      add_to_variable = {
-        tooltip = GPU_laborer_number_increase_by_10000
-        GPU_laborer_number = 10000
-      }
-    }
-  }
-  GPU_send_in_other_political_prisoners_2 = {
-    icon = generic_civil_support
-    cost = 30
-  
-    fire_only_once = no
-  
-    available = {
-      custom_trigger_tooltip = {
-        tooltip = GPU_number_of_workers_is_less_than_3000
-        check_variable = {
-          GPU_laborer_number = 3000
-        }
-      }
-    }
-  
-    visible = {
-      has_completed_focus = GPU_industrial_feudalism
-    }
-    
-  
-    days_remove = 50
+#     days_remove = 75
     
    
   
-    modifier = {
-      political_power_cost = 0.1
-      democratic_liberalism_drift = -0.1
-    }
+#     modifier = {
+#       political_power_cost = 0.15
+#       communism_drift = -0.03
+#       socialism_democratic_drift = -0.03
+#       democratic_communism_drift = -0.03
+#     }
     
-    remove_effect = {
-      add_to_variable = {
-        tooltip = GPU_laborer_number_increase_by_5000
-        GPU_laborer_number = 5000
-      }
-    }
-  }
-  GPU_send_in_mussolini_loyalists_2 = {
-    icon = generic_nationalism
-    cost = 30
+#     remove_effect = {
+#       add_to_variable = {
+#         tooltip = GPU_laborer_number_increase_by_10000
+#         GPU_laborer_number = 10000
+#       }
+#     }
+#   }
+#   GPU_send_in_other_political_prisoners_2 = {
+#     icon = generic_civil_support
+#     cost = 30
   
-    fire_only_once = no
+#     fire_only_once = no
   
-    available = {
-      custom_trigger_tooltip = {
-        tooltip = GPU_number_of_workers_is_less_than_3000
-        check_variable = {
-          GPU_laborer_number = 3000
-        }
-      }
-    }
+#     available = {
+#       custom_trigger_tooltip = {
+#         tooltip = GPU_number_of_workers_is_less_than_3000
+#         check_variable = {
+#           GPU_laborer_number = 3000
+#         }
+#       }
+#     }
   
-    visible = {
-      has_completed_focus = GPU_industrial_feudalism
-    }
+#     visible = {
+#       has_completed_focus = GPU_industrial_feudalism
+#     }
+    
   
-    days_remove = 50
+#     days_remove = 50
     
    
   
-    modifier = {
-      political_power_cost = 0.1
-      fascism_drift = -0.1
-    }
+#     modifier = {
+#       political_power_cost = 0.1
+#       democratic_liberalism_drift = -0.1
+#     }
     
-    remove_effect = {
-      add_to_variable = {
-        tooltip = GPU_laborer_number_increase_by_5000
-        GPU_laborer_number = 5000
-      }
-    }
-  }
-}
+#     remove_effect = {
+#       add_to_variable = {
+#         tooltip = GPU_laborer_number_increase_by_5000
+#         GPU_laborer_number = 5000
+#       }
+#     }
+#   }
+#   GPU_send_in_mussolini_loyalists_2 = {
+#     icon = generic_nationalism
+#     cost = 30
+  
+#     fire_only_once = no
+  
+#     available = {
+#       custom_trigger_tooltip = {
+#         tooltip = GPU_number_of_workers_is_less_than_3000
+#         check_variable = {
+#           GPU_laborer_number = 3000
+#         }
+#       }
+#     }
+  
+#     visible = {
+#       has_completed_focus = GPU_industrial_feudalism
+#     }
+  
+#     days_remove = 50
+    
+   
+  
+#     modifier = {
+#       political_power_cost = 0.1
+#       fascism_drift = -0.1
+#     }
+    
+#     remove_effect = {
+#       add_to_variable = {
+#         tooltip = GPU_laborer_number_increase_by_5000
+#         GPU_laborer_number = 5000
+#       }
+#     }
+#   }
+# }

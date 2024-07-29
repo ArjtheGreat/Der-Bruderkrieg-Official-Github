@@ -2272,6 +2272,16 @@ shared_focus = {
 
     relative_position_id = TUR_codify_arab_autonomy
     completion_reward = {
+      every_owned_state = {
+        limit = {
+          has_dynamic_modifier = {
+            modifier = TUR_the_dersim_movement
+          }
+        }
+        remove_dynamic_modifier = {
+          modifier = TUR_the_dersim_movement
+        }
+      }
       hidden_effect = {
         KUR = {
           set_popularities = {
@@ -2288,16 +2298,7 @@ shared_focus = {
         target = KUR
         autonomous_state = autonomy_ottoman_vilayet
       }
-      every_owned_state = {
-        limit = {
-          has_dynamic_modifier = {
-            modifier = TUR_the_dersim_movement
-          }
-        }
-        remove_dynamic_modifier = {
-          modifier = TUR_the_dersim_movement
-        }
-      }
+      
 
       hidden_effect = {
         KUR = {
@@ -2323,6 +2324,16 @@ shared_focus = {
 
     relative_position_id = TUR_a_kurdish_state
     completion_reward = {
+      every_owned_state = {
+        limit = {
+          has_dynamic_modifier = {
+            modifier = TUR_the_iraqi_movement
+          }
+        }
+        remove_dynamic_modifier = {
+          modifier = TUR_the_iraqi_movement
+        }
+      }
       hidden_effect = {
         IRQ = {
           set_popularities = {
@@ -2339,18 +2350,12 @@ shared_focus = {
         target = IRQ
         autonomous_state = autonomy_ottoman_vilayet
       }
-      every_owned_state = {
-        limit = {
-          has_dynamic_modifier = {
-            modifier = TUR_the_iraqi_movement
-          }
-        }
-        remove_dynamic_modifier = {
-          modifier = TUR_the_iraqi_movement
-        }
-      }
+      
       hidden_effect = {
         IRQ = {
+          every_owned_state = {
+            set_demilitarized_zone = no
+          }
           set_cosmetic_tag = TUR_vilayet_cosmetic
           reset_government = yes
         }
@@ -2386,6 +2391,16 @@ shared_focus = {
       }
       
       hidden_effect = {
+        every_owned_state = {
+          limit = {
+            has_dynamic_modifier = {
+              modifier = TUR_the_syrian_movement
+            }
+          }
+          remove_dynamic_modifier = {
+            modifier = TUR_the_syrian_movement
+          }
+        }
         SYR = {
           add_state_core = 680
           add_state_core = 677
@@ -2407,16 +2422,7 @@ shared_focus = {
         target = SYR
         autonomous_state = autonomy_ottoman_vilayet
       }
-      every_owned_state = {
-        limit = {
-          has_dynamic_modifier = {
-            modifier = TUR_the_syrian_movement
-          }
-        }
-        remove_dynamic_modifier = {
-          modifier = TUR_the_syrian_movement
-        }
-      }
+      
       hidden_effect = {
         SYR = {
           set_cosmetic_tag = TUR_vilayet_cosmetic
@@ -4140,7 +4146,7 @@ shared_focus = {
     id = TUR_learn_from_constantinople
     icon = GFX_focus_GRE_stage_an_incident_in_the_bosporus
     prerequisite = { focus = TUR_national_defense_department }
-    mutually_exclusive = { focus = TUR_learn_from_constantinople }
+    mutually_exclusive = { focus = TUR_revenge_for_constantinople }
     x = 3
     y = 1
     relative_position_id = TUR_national_defense_department

@@ -2200,26 +2200,26 @@ on_actions = {
 					}
 				}
 			}
-			else_if = {
-				limit = {
-					NOT = {
-						FROM = {
-							tag = MNG
-						}
-						FROM = {
-							tag = QNG
-						}
-						FROM = {
-							tag = XSM
-						}
-					}
-				}
-				FROM = {
-					annex_country = {
-						target = CRE
-					}
-				}
-			}
+			# else_if = {
+			# 	limit = {
+			# 		NOT = {
+			# 			FROM = {
+			# 				tag = MNG
+			# 			}
+			# 			FROM = {
+			# 				tag = QNG
+			# 			}
+			# 			FROM = {
+			# 				tag = XSM
+			# 			}
+			# 		}
+			# 	}
+			# 	FROM = {
+			# 		annex_country = {
+			# 			target = CRE
+			# 		}
+			# 	}
+			# }
 			if = {
 				limit = {
 					tag = CRE
@@ -2305,26 +2305,26 @@ on_actions = {
 					}
 				}
 			}
-			else_if = {
-				limit = {
-					NOT = {
-						FROM = {
-							tag = MNG
-						}
-						FROM = {
-							tag = QNG
-						}
-						FROM = {
-							tag = XSM
-						}
-					}
-				}
-				FROM = {
-					annex_country = {
-						target = CRE
-					}
-				}
-			}
+			# else_if = {
+			# 	limit = {
+			# 		NOT = {
+			# 			FROM = {
+			# 				tag = MNG
+			# 			}
+			# 			FROM = {
+			# 				tag = QNG
+			# 			}
+			# 			FROM = {
+			# 				tag = XSM
+			# 			}
+			# 		}
+			# 	}
+			# 	FROM = {
+			# 		annex_country = {
+			# 			target = CRE
+			# 		}
+			# 	}
+			# }
 			if = {
 				limit = {
 					tag = CRE

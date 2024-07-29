@@ -1,77 +1,77 @@
-GPU_ministry_category = {
+# GPU_ministry_category = {
 
-	icon = hol_gateway_to_europe
+# 	icon = hol_gateway_to_europe
 
-	allowed = {
-    original_tag = GPU
-	}
+# 	allowed = {
+#     original_tag = GPU
+# 	}
 
-	#picture = GFX_decision_cat_picture_gateway_to_europe
-	priority = {
-		base = 10
-	}
-
-
-	visible_when_empty = yes
-
-	visible = {
-    has_completed_focus = GPU_the_ministry_question
-	has_idea = GPU_court_factionalism
-	}
-	scripted_gui = AUS_solving_court_factionalism_scripted_gui
-}
-
-GPU_von_rundstedt_fuhrer_revolt = {
-	allowed = {
-		tag = GPU
-	}
-	visible = {
-		has_completed_focus = GPU_protect_patriots
-	}
-}
-
-GPU_a_new_german_state = {
-	allowed = {
-		tag = GPU
-	}
-	visible = {
-		has_completed_focus = GPU_preparing_for_german_unification
-		NOT = {
-			has_completed_focus = GPU_the_frankfurt_parliament
-		}
-	}
-	scripted_gui = GPU_german_unification_scripted_gui
-	visible_when_empty = yes
-}
+# 	#picture = GFX_decision_cat_picture_gateway_to_europe
+# 	priority = {
+# 		base = 10
+# 	}
 
 
-GPU_anti_berlin_protocols_category = {
-	allowed = {
-		tag = GPU
-	}
+# 	visible_when_empty = yes
 
-	visible = {
-		has_completed_focus = GPU_anti_berlin_protocols
-	}
-}
+# 	visible = {
+#     has_completed_focus = GPU_the_ministry_question
+# 	has_idea = GPU_court_factionalism
+# 	}
+# 	scripted_gui = AUS_solving_court_factionalism_scripted_gui
+# }
 
-GPU_great_purge_decision_category = {
-	allowed = {
-		tag = GPU
-	}
-	visible = {
-		has_completed_focus = GPU_deploy_the_secret_police
-		NOT = {
-			has_completed_focus = GPU_the_state_secured
-		}
-	}
-}
+# GPU_von_rundstedt_fuhrer_revolt = {
+# 	allowed = {
+# 		tag = GPU
+# 	}
+# 	visible = {
+# 		has_completed_focus = GPU_protect_patriots
+# 	}
+# }
 
-GPU_industrial_feudalism_category = {
-	allowed = {
-		tag = GPU
-	}
-	visible = {
-		has_completed_focus = GPU_a_corporatist_germany
-	}
-}
+# GPU_a_new_german_state = {
+# 	allowed = {
+# 		tag = GPU
+# 	}
+# 	visible = {
+# 		has_completed_focus = GPU_preparing_for_german_unification
+# 		NOT = {
+# 			has_completed_focus = GPU_the_frankfurt_parliament
+# 		}
+# 	}
+# 	scripted_gui = GPU_german_unification_scripted_gui
+# 	visible_when_empty = yes
+# }
+
+
+# GPU_anti_berlin_protocols_category = {
+# 	allowed = {
+# 		tag = GPU
+# 	}
+
+# 	visible = {
+# 		has_completed_focus = GPU_anti_berlin_protocols
+# 	}
+# }
+
+# GPU_great_purge_decision_category = {
+# 	allowed = {
+# 		tag = GPU
+# 	}
+# 	visible = {
+# 		has_completed_focus = GPU_deploy_the_secret_police
+# 		NOT = {
+# 			has_completed_focus = GPU_the_state_secured
+# 		}
+# 	}
+# }
+
+# GPU_industrial_feudalism_category = {
+# 	allowed = {
+# 		tag = GPU
+# 	}
+# 	visible = {
+# 		has_completed_focus = GPU_a_corporatist_germany
+# 	}
+# }

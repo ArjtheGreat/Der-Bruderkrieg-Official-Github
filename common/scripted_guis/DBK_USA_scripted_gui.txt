@@ -165,7 +165,7 @@ scripted_gui = {
       }
       USA_election_map_new_york_button_click = {
         set_country_flag = { flag = USA_already_campaigning_in_state days = 20 }
-        add_political_power = -20
+        add_political_power = -50
         if = {
           limit = {
             has_completed_focus = USA_mavericks_campaign_speech
@@ -207,7 +207,7 @@ scripted_gui = {
 
       USA_election_map_new_england_button_click = {
         set_country_flag = { flag = USA_already_campaigning_in_state days = 20 }
-        add_political_power = -20
+        add_political_power = -50
         if = {
           limit = {
             has_completed_focus = USA_mavericks_campaign_speech
@@ -247,7 +247,7 @@ scripted_gui = {
       }
       USA_election_map_mid_atlantic_button_click = {
         set_country_flag = { flag = USA_already_campaigning_in_state days = 20 }
-        add_political_power = -20
+        add_political_power = -50
         if = {
           limit = {
             has_completed_focus = USA_mavericks_campaign_speech
@@ -287,7 +287,7 @@ scripted_gui = {
       }
       USA_election_map_deep_south_button_click = {
         set_country_flag = { flag = USA_already_campaigning_in_state days = 20 }
-        add_political_power = -20
+        add_political_power = -50
         if = {
           limit = {
             has_completed_focus = USA_mavericks_campaign_speech
@@ -327,7 +327,7 @@ scripted_gui = {
       }
       USA_election_map_the_south_button_click = {
         set_country_flag = { flag = USA_already_campaigning_in_state days = 20 }
-        add_political_power = -20
+        add_political_power = -50
         if = {
           limit = {
             has_completed_focus = USA_mavericks_campaign_speech
@@ -367,7 +367,7 @@ scripted_gui = {
       }
       USA_election_map_pacific_button_click = {
         set_country_flag = { flag = USA_already_campaigning_in_state days = 20 }
-        add_political_power = -20
+        add_political_power = -50
         if = {
           limit = {
             has_completed_focus = USA_mavericks_campaign_speech
@@ -407,7 +407,7 @@ scripted_gui = {
       }
       USA_election_map_pacific_northwest_button_click = {
         set_country_flag = { flag = USA_already_campaigning_in_state days = 20 }
-        add_political_power = -20
+        add_political_power = -50
         if = {
           limit = {
             has_completed_focus = USA_mavericks_campaign_speech
@@ -447,7 +447,7 @@ scripted_gui = {
       }
       USA_election_map_rockies_button_click = {
         set_country_flag = { flag = USA_already_campaigning_in_state days = 20 }
-        add_political_power = -20
+        add_political_power = -50
         if = {
           limit = {
             has_completed_focus = USA_mavericks_campaign_speech
@@ -487,7 +487,7 @@ scripted_gui = {
       }
       USA_election_map_great_plains_button_click = {
         set_country_flag = { flag = USA_already_campaigning_in_state days = 20 }
-        add_political_power = -20
+        add_political_power = -50
         if = {
           limit = {
             has_completed_focus = USA_mavericks_campaign_speech
@@ -527,7 +527,7 @@ scripted_gui = {
       }
       USA_election_map_rustbelt_button_click = {
         set_country_flag = { flag = USA_already_campaigning_in_state days = 20 }
-        add_political_power = -20
+        add_political_power = -50
         if = {
           limit = {
             has_completed_focus = USA_mavericks_campaign_speech
@@ -571,50 +571,50 @@ scripted_gui = {
       USA_denounce_mavericks_populism_click = {
         set_country_flag = { flag = USA_already_doing_anti_campaign_action value = 1 days = 25 }
         usa_smith_decrease_long_electoral_college_effect = yes
-        add_political_power = -20
+        add_political_power = -50
       }
       USA_call_out_his_governing_incompetence_click = {
         set_country_flag = { flag = USA_already_doing_anti_campaign_action value = 1 days = 25 }
         usa_smith_decrease_long_electoral_college_effect = yes
-        add_political_power = -20
+        add_political_power = -50
       }
       USA_questioning_his_extensive_ambitions_click = {
         set_country_flag = { flag = USA_already_doing_anti_campaign_action value = 1 days = 25 }
         usa_smith_decrease_long_electoral_college_effect = yes
-        add_political_power = -20
+        add_political_power = -50
       }
 
 
       USA_attack_smiths_catholcism_click = {
         set_country_flag = { flag = USA_already_doing_anti_campaign_action value = 1 days = 25 }
         USA_long_decrease_smith_electoral_college_effect = yes
-        add_political_power = -20
+        add_political_power = -50
       }
       USA_call_out_his_urban_favoritism_click = {
         set_country_flag = { flag = USA_already_doing_anti_campaign_action value = 1 days = 25 }
         USA_long_decrease_smith_electoral_college_effect = yes
-        add_political_power = -20
+        add_political_power = -50
       }
       USA_question_his_conservative_loyalties_click = {
         set_country_flag = { flag = USA_already_doing_anti_campaign_action value = 1 days = 25 }
         USA_long_decrease_smith_electoral_college_effect = yes
-        add_political_power = -20
+        add_political_power = -50
       }
 
       USA_critique_warrens_experience_click = {
         set_country_flag = { flag = USA_already_doing_anti_campaign_action value = 1 days = 25 }
         usa_smith_decrease_warren_electoral_college_effect = yes
-        add_political_power = -20
+        add_political_power = -50
       }
       USA_call_out_his_western_favoritism_click = {
         set_country_flag = { flag = USA_already_doing_anti_campaign_action value = 1 days = 25 }
         usa_smith_decrease_warren_electoral_college_effect = yes
-        add_political_power = -20
+        add_political_power = -50
       }
       USA_denounce_warrens_anti_japanese_rhetoric_click = {
         set_country_flag = { flag = USA_already_doing_anti_campaign_action value = 1 days = 25 }
         usa_smith_decrease_warren_electoral_college_effect = yes
-        add_political_power = -20
+        add_political_power = -50
       }
       
 

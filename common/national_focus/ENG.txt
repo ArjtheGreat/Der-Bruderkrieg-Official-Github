@@ -33,6 +33,7 @@ focus_tree = {
     shared_focus = ENG_broken_crown_jewel
     shared_focus = ENG_stayin_steady
     shared_focus = ENG_the_imperial_federation
+    shared_focus = ENG_rearmament
 	continuous_focus_position = { x = -50 y = 2400 } 
 }
 focus_tree = {
@@ -50,6 +51,7 @@ focus_tree = {
     shared_focus = ENG_broken_crown_jewel
     shared_focus = ENG_stayin_steady
     shared_focus = ENG_the_imperial_federation
+    shared_focus = ENG_rearmament
 	continuous_focus_position = { x = -50 y = 2400 } 
 }
 focus_tree = {
@@ -68,6 +70,7 @@ focus_tree = {
     shared_focus = ENG_broken_crown_jewel
     shared_focus = ENG_stayin_steady
     shared_focus = ENG_the_imperial_federation
+    shared_focus = ENG_rearmament
 	continuous_focus_position = { x = -50 y = 2400 } 
 }
 focus_tree = {
@@ -85,6 +88,7 @@ focus_tree = {
     shared_focus = ENG_broken_crown_jewel
     shared_focus = ENG_stayin_steady
     shared_focus = ENG_the_imperial_federation
+    shared_focus = ENG_rearmament
 	continuous_focus_position = { x = -50 y = 2400 } 
 }
 

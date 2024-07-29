@@ -1,198 +1,198 @@
 
 
-### search_filters = {FOCUS_FILTER_POLITICAL}
-### search_filters = {FOCUS_FILTER_RESEARCH}
-### search_filters = {FOCUS_FILTER_INDUSTRY}
-### search_filters = {FOCUS_FILTER_STABILITY}
-### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+# ### search_filters = {FOCUS_FILTER_POLITICAL}
+# ### search_filters = {FOCUS_FILTER_RESEARCH}
+# ### search_filters = {FOCUS_FILTER_INDUSTRY}
+# ### search_filters = {FOCUS_FILTER_STABILITY}
+# ### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 
 
-#Made by Cheesemeister
+# #Made by Cheesemeister
 
-focus_tree = {
-	id = bulgaria_focus
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = BUL
-		}
-	}
+# focus_tree = {
+# 	id = bulgaria_focus
+# 	country = {
+# 		factor = 0
+# 		modifier = {
+# 			add = 10
+# 			tag = BUL
+# 		}
+# 	}
 
-	default = no
-	continuous_focus_position = { x = 50 y = 1300}
-
-
-
+# 	default = no
+# 	continuous_focus_position = { x = 50 y = 1300}
 
 
 
-#Wholesome balkan hegemon larp
-	focus = {
-		id = BUL_king_of_balkans
-		icon = GFX_focus_BUL_guardians_of_the_balkans
-		x = 10
-		y = 0
-		cost = 6
-		available_if_capitulated = yes
+
+
+
+# #Wholesome balkan hegemon larp
+# 	focus = {
+# 		id = BUL_king_of_balkans
+# 		icon = GFX_focus_BUL_guardians_of_the_balkans
+# 		x = 10
+# 		y = 0
+# 		cost = 6
+# 		available_if_capitulated = yes
 		
-		prerequisite = { 
+# 		prerequisite = { 
 			
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
+# 		}
+# 		search_filters = { FOCUS_FILTER_POLITICAL } 
+# 		ai_will_do = {
+# 			factor = 1
+# 		}
+# 		completion_reward = {
+# 			add_political_power = 100
+# 		}
+# 	}
 
-	focus = {
-		id = BUL_the_ethnic_crisis
-		icon = GFX_focus_BUL_guardians_of_the_balkans
-		x = 8
-		y = 1
-		cost = 6
-		available_if_capitulated = yes
+# 	focus = {
+# 		id = BUL_the_ethnic_crisis
+# 		icon = GFX_focus_BUL_guardians_of_the_balkans
+# 		x = 8
+# 		y = 1
+# 		cost = 6
+# 		available_if_capitulated = yes
 		
-		prerequisite = { 
-			focus = BUL_king_of_balkans
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
+# 		prerequisite = { 
+# 			focus = BUL_king_of_balkans
+# 		}
+# 		search_filters = { FOCUS_FILTER_POLITICAL } 
+# 		ai_will_do = {
+# 			factor = 1
+# 		}
+# 		completion_reward = {
 
-		}
-	}
+# 		}
+# 	}
 
-	focus = {
-		id = BUL_expel_serbian_unionists
-		icon = GFX_focus_BUL_guardians_of_the_balkans
-		x = 7
-		y = 2
-		cost = 6
-		available_if_capitulated = yes
+# 	focus = {
+# 		id = BUL_expel_serbian_unionists
+# 		icon = GFX_focus_BUL_guardians_of_the_balkans
+# 		x = 7
+# 		y = 2
+# 		cost = 6
+# 		available_if_capitulated = yes
 		
-		prerequisite = { 
-			focus = BUL_the_ethnic_crisis
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
+# 		prerequisite = { 
+# 			focus = BUL_the_ethnic_crisis
+# 		}
+# 		search_filters = { FOCUS_FILTER_POLITICAL } 
+# 		ai_will_do = {
+# 			factor = 1
+# 		}
+# 		completion_reward = {
 
-		}
-	}
+# 		}
+# 	}
 
-	focus = {
-		id = BUL_removing_political_extremists
-		icon = GFX_focus_BUL_guardians_of_the_balkans
-		x = 9
-		y = 2
-		cost = 6
-		available_if_capitulated = yes
+# 	focus = {
+# 		id = BUL_removing_political_extremists
+# 		icon = GFX_focus_BUL_guardians_of_the_balkans
+# 		x = 9
+# 		y = 2
+# 		cost = 6
+# 		available_if_capitulated = yes
 		
-		prerequisite = { 
-			focus = BUL_the_ethnic_crisis
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
+# 		prerequisite = { 
+# 			focus = BUL_the_ethnic_crisis
+# 		}
+# 		search_filters = { FOCUS_FILTER_POLITICAL } 
+# 		ai_will_do = {
+# 			factor = 1
+# 		}
+# 		completion_reward = {
 
-		}
-	}
+# 		}
+# 	}
 
-	focus = {
-		id = BUL_industrialising_the_nation
-		icon = GFX_focus_BUL_guardians_of_the_balkans
-		x = 12
-		y = 1
-		cost = 6
-		available_if_capitulated = yes
+# 	focus = {
+# 		id = BUL_industrialising_the_nation
+# 		icon = GFX_focus_BUL_guardians_of_the_balkans
+# 		x = 12
+# 		y = 1
+# 		cost = 6
+# 		available_if_capitulated = yes
 		
-		prerequisite = { 
-			focus = BUL_king_of_balkans
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
+# 		prerequisite = { 
+# 			focus = BUL_king_of_balkans
+# 		}
+# 		search_filters = { FOCUS_FILTER_POLITICAL } 
+# 		ai_will_do = {
+# 			factor = 1
+# 		}
+# 		completion_reward = {
 
-		}
-	}
+# 		}
+# 	}
 
-	focus = {
-		id = BUL_developing_the_economy
-		icon = GFX_focus_BUL_guardians_of_the_balkans
-		x = 12
-		y = 2
-		cost = 6
-		available_if_capitulated = yes
+# 	focus = {
+# 		id = BUL_developing_the_economy
+# 		icon = GFX_focus_BUL_guardians_of_the_balkans
+# 		x = 12
+# 		y = 2
+# 		cost = 6
+# 		available_if_capitulated = yes
 		
-		prerequisite = { 
-			focus = BUL_industrialising_the_nation
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
+# 		prerequisite = { 
+# 			focus = BUL_industrialising_the_nation
+# 		}
+# 		search_filters = { FOCUS_FILTER_POLITICAL } 
+# 		ai_will_do = {
+# 			factor = 1
+# 		}
+# 		completion_reward = {
 
-		}
-	}
+# 		}
+# 	}
 
-	focus = {
-		id = BUL_ask_for_russian_support
-		icon = GFX_focus_BUL_guardians_of_the_balkans
-		x = 11
-		y = 3
-		cost = 6
-		available_if_capitulated = yes
+# 	focus = {
+# 		id = BUL_ask_for_russian_support
+# 		icon = GFX_focus_BUL_guardians_of_the_balkans
+# 		x = 11
+# 		y = 3
+# 		cost = 6
+# 		available_if_capitulated = yes
 		
-		prerequisite = { 
-			focus = BUL_developing_the_economy
-		}
-		mutually_exclusive = {focus = BUL_develop_alone}
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			SOV = {
-				country_event = {
-     				id = bulgaria_asking_for_russian_support.1
-				}
-			}
-		}
-	}
+# 		prerequisite = { 
+# 			focus = BUL_developing_the_economy
+# 		}
+# 		mutually_exclusive = {focus = BUL_develop_alone}
+# 		search_filters = { FOCUS_FILTER_POLITICAL } 
+# 		ai_will_do = {
+# 			factor = 1
+# 		}
+# 		completion_reward = {
+# 			SOV = {
+# 				country_event = {
+#      				id = bulgaria_asking_for_russian_support.1
+# 				}
+# 			}
+# 		}
+# 	}
 
-	focus = {
-		id = BUL_develop_alone
-		icon = GFX_focus_BUL_guardians_of_the_balkans
-		x = 13
-		y = 3
-		cost = 6
-		available_if_capitulated = yes
+# 	focus = {
+# 		id = BUL_develop_alone
+# 		icon = GFX_focus_BUL_guardians_of_the_balkans
+# 		x = 13
+# 		y = 3
+# 		cost = 6
+# 		available_if_capitulated = yes
 		
-		prerequisite = { 
-			focus = BUL_developing_the_economy
-		}
-		mutually_exclusive = {focus = BUL_ask_for_russian_support}
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
+# 		prerequisite = { 
+# 			focus = BUL_developing_the_economy
+# 		}
+# 		mutually_exclusive = {focus = BUL_ask_for_russian_support}
+# 		search_filters = { FOCUS_FILTER_POLITICAL } 
+# 		ai_will_do = {
+# 			factor = 1
+# 		}
+# 		completion_reward = {
 
-		}
-	}
+# 		}
+# 	}
 
 	
 
@@ -200,5 +200,5 @@ focus_tree = {
 
 
 
-#End of focuses 
- }
+# #End of focuses 
+#  }

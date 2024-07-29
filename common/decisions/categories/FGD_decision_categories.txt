@@ -1,73 +1,73 @@
-FGD_hunting_westfalen_nationalists = {
-	allowed = {
-		tag = FGD
-	}
+# FGD_hunting_westfalen_nationalists = {
+# 	allowed = {
+# 		tag = FGD
+# 	}
 
-	visible = {
-		has_country_flag = FGD_unlock_crush_rhine_homefront_decisions
-		has_idea = Nationalist_Sympathisers
-	}
-}
+# 	visible = {
+# 		has_country_flag = FGD_unlock_crush_rhine_homefront_decisions
+# 		has_idea = Nationalist_Sympathisers
+# 	}
+# }
 
-FGD_elections = {
-	allowed = {
-		tag = FGD
-	}
-	visible = {
-		tag = FGD
-		has_completed_focus = FGD_the_dawn_of_the_republic
-	}
-}
+# FGD_elections = {
+# 	allowed = {
+# 		tag = FGD
+# 	}
+# 	visible = {
+# 		tag = FGD
+# 		has_completed_focus = FGD_the_dawn_of_the_republic
+# 	}
+# }
 
-FGD_preparing_the_rhine_homefront_revolt = {
-	allowed = {
-		tag = FGD
-	}
+# FGD_preparing_the_rhine_homefront_revolt = {
+# 	allowed = {
+# 		tag = FGD
+# 	}
 
-	visible = {
-		has_completed_focus = FGD_the_rhine_homefront
-	}
-}
+# 	visible = {
+# 		has_completed_focus = FGD_the_rhine_homefront
+# 	}
+# }
 
-FGD_the_cologne_conference = {
-	allowed = {
-		tag = FGD
-	}
-	visible = {
-		has_completed_focus = FGD_host_the_cologne_conference
-		NOT = {
-			has_country_flag = FGD_the_cologne_conference_over
-		}
-	}
-}
+# FGD_the_cologne_conference = {
+# 	allowed = {
+# 		tag = FGD
+# 	}
+# 	visible = {
+# 		has_completed_focus = FGD_host_the_cologne_conference
+# 		NOT = {
+# 			has_country_flag = FGD_the_cologne_conference_over
+# 		}
+# 	}
+# }
 
-FGD_french_assasination_decisions = {
-	allowed = {
-		tag = FGD
-	}
-	visible = {
-		has_completed_focus = FGD_the_ghost_of_cologne
-		has_war_with = FRA
-	}
-}
+# FGD_french_assasination_decisions = {
+# 	allowed = {
+# 		tag = FGD
+# 	}
+# 	visible = {
+# 		has_completed_focus = FGD_the_ghost_of_cologne
+# 		has_war_with = FRA
+# 	}
+# }
 
 
 
-FGD_agent_zero_revolution = {
-	allowed = {
-		tag = FGD
-	}
-	visible = {
-		has_completed_focus = FGD_destruction_from_within
-	}
-}
+# FGD_agent_zero_revolution = {
+# 	allowed = {
+# 		tag = FGD
+# 	}
+# 	visible = {
+# 		has_completed_focus = FGD_destruction_from_within
+# 	}
+# }
 
-FGD_speers_unity_board = {
-	icon = generic_political_actions
-	allowed = {
-		tag = FGD
-	}
-	visible = {
-		has_completed_focus = FGD_reorganize_board
-	}
-}
+# FGD_speers_unity_board = {
+# 	icon = generic_political_actions
+# 	allowed = {
+# 		tag = FGD
+# 	}
+# 	visible = {
+# 		has_completed_focus = FGD_reorganize_board
+# 	}
+# }
